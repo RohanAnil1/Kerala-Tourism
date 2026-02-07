@@ -5,11 +5,14 @@ export interface Destination {
   slug: string;
   name: string;
   district: string;
+  districtSlug: string;
   type: DestinationType[];
   description: string;
   longDescription: string;
   history: string;
   bestTimeToVisit: string;
+  entryFee: string;
+  timings: string;
   howToReach: {
     air: string;
     rail: string;
@@ -21,6 +24,8 @@ export interface Destination {
   reviews: number;
   crowdLevel: 'low' | 'medium' | 'high';
   budgetRange: 'budget' | 'mid-range' | 'luxury';
+  highlights: string[];
+  travelTips: string[];
   nearbyAttractions: string[];
   featured: boolean;
 }
