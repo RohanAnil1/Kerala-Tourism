@@ -32,7 +32,7 @@ export default function BlogPage() {
   const featuredPost = blogPosts[0];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-950">
       {/* Hero */}
       <section className="relative h-64 md:h-72 overflow-hidden">
         <Image
@@ -54,7 +54,7 @@ export default function BlogPage() {
 
       {/* Search & Filters */}
       <section className="container-custom -mt-6 relative z-20 px-4">
-        <div className="bg-white rounded-2xl shadow-lg p-5 flex flex-col md:flex-row gap-4">
+        <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-5 flex flex-col md:flex-row gap-4">
           <div className="flex-1 relative">
             <Search size={20} className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
             <input
@@ -62,7 +62,7 @@ export default function BlogPage() {
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Search articles..."
-              className="w-full pl-12 pr-4 py-3 rounded-xl border border-gray-200 focus:border-kerala-green focus:ring-2 focus:ring-kerala-green/20 outline-none"
+              className="w-full pl-12 pr-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:text-white focus:border-kerala-green focus:ring-2 focus:ring-kerala-green/20 outline-none"
             />
           </div>
           <div className="flex gap-2 flex-wrap">
@@ -71,7 +71,7 @@ export default function BlogPage() {
                 key={cat}
                 onClick={() => setCategory(cat)}
                 className={`px-4 py-2 rounded-full text-sm transition-all ${
-                  category === cat ? 'bg-kerala-green text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  category === cat ? 'bg-kerala-green text-white' : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
                 }`}
               >
                 {cat}
@@ -85,7 +85,7 @@ export default function BlogPage() {
       {category === 'All' && !search && (
         <section className="container-custom px-4 py-10">
           <Link href={`/blog/${featuredPost.slug}`} className="block group">
-            <div className="bg-white rounded-2xl overflow-hidden shadow-sm card-hover">
+            <div className="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-sm card-hover">
               <div className="grid md:grid-cols-2 gap-0">
                 <div className="relative h-64 md:h-96 overflow-hidden">
                   <Image
@@ -100,17 +100,17 @@ export default function BlogPage() {
                 </div>
                 <div className="p-8 flex flex-col justify-center">
                   <span className="text-kerala-green text-sm font-semibold">{featuredPost.category}</span>
-                  <h2 className="font-display text-2xl md:text-3xl font-bold text-gray-900 mt-2 mb-3">
+                  <h2 className="font-display text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mt-2 mb-3">
                     {featuredPost.title}
                   </h2>
-                  <p className="text-gray-600 mb-4">{featuredPost.excerpt}</p>
+                  <p className="text-gray-600 dark:text-gray-400 mb-4">{featuredPost.excerpt}</p>
                   <div className="flex items-center gap-4 text-sm text-gray-400">
                     <span className="flex items-center gap-1"><Calendar size={14} /> {featuredPost.date}</span>
                     <span className="flex items-center gap-1"><Clock size={14} /> {featuredPost.readTime}</span>
                   </div>
                   <div className="flex items-center gap-3 mt-4">
                     <span className="text-2xl">{featuredPost.authorAvatar}</span>
-                    <span className="text-sm font-medium text-gray-700">{featuredPost.author}</span>
+                    <span className="text-sm font-medium text-gray-700 dark:text-gray-300">{featuredPost.author}</span>
                   </div>
                 </div>
               </div>
@@ -121,13 +121,13 @@ export default function BlogPage() {
 
       {/* Blog Grid */}
       <section className="container-custom px-4 pb-12">
-        <p className="text-gray-500 mb-6">{filtered.length} article{filtered.length !== 1 ? 's' : ''}</p>
+        <p className="text-gray-500 dark:text-gray-400 mb-6">{filtered.length} article{filtered.length !== 1 ? 's' : ''}</p>
 
         {filtered.length === 0 ? (
           <div className="text-center py-20">
             <p className="text-6xl mb-4">📝</p>
-            <h3 className="text-xl font-semibold text-gray-700">No articles found</h3>
-            <p className="text-gray-500">Try a different search or category</p>
+            <h3 className="text-xl font-semibold text-gray-700 dark:text-gray-300">No articles found</h3>
+            <p className="text-gray-500 dark:text-gray-400">Try a different search or category</p>
           </div>
         ) : (
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -138,7 +138,7 @@ export default function BlogPage() {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: i * 0.05 }}
               >
-                <Link href={`/blog/${post.slug}`} className="card-hover block bg-white rounded-2xl overflow-hidden shadow-sm group">
+                <Link href={`/blog/${post.slug}`} className="card-hover block bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-sm group">
                   <div className="relative h-48 overflow-hidden">
                     <Image
                       src={post.image}
@@ -146,15 +146,15 @@ export default function BlogPage() {
                       fill
                       className="object-cover group-hover:scale-110 transition-transform duration-700"
                     />
-                    <div className="absolute top-4 left-4 bg-white/90 text-kerala-green text-xs px-3 py-1 rounded-full font-medium">
+                    <div className="absolute top-4 left-4 bg-white/90 dark:bg-gray-800/90 text-kerala-green text-xs px-3 py-1 rounded-full font-medium">
                       {post.category}
                     </div>
                   </div>
                   <div className="p-5">
-                    <h3 className="font-display text-lg font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-kerala-green transition-colors">
+                    <h3 className="font-display text-lg font-bold text-gray-900 dark:text-white mb-2 line-clamp-2 group-hover:text-kerala-green transition-colors">
                       {post.title}
                     </h3>
-                    <p className="text-gray-600 text-sm mb-4 line-clamp-2">{post.excerpt}</p>
+                    <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-2">{post.excerpt}</p>
                     <div className="flex items-center justify-between text-sm text-gray-400">
                       <div className="flex items-center gap-2">
                         <span>{post.authorAvatar}</span>

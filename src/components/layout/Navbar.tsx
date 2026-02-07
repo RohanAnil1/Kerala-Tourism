@@ -59,7 +59,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
             <div className={`text-2xl md:text-3xl font-display font-bold transition-colors ${
-              scrolled ? 'text-kerala-green' : 'text-white'
+              scrolled ? 'text-kerala-green dark:text-kerala-green' : 'text-white'
             }`}>
               <span className="inline-block">🌴</span>
               <span className="ml-1">Kerala</span>
@@ -81,7 +81,7 @@ export default function Navbar() {
                         ? 'bg-kerala-green text-white'
                         : 'bg-white/20 text-white'
                       : scrolled
-                        ? 'text-gray-700 hover:bg-gray-100'
+                        ? 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
                         : 'text-white/90 hover:bg-white/10'
                   }`}
                 >
@@ -96,7 +96,7 @@ export default function Navbar() {
               <button
                 onClick={() => setLangOpen(!langOpen)}
                 className={`flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-medium transition-all ${
-                  scrolled ? 'text-gray-700 hover:bg-gray-100' : 'text-white/90 hover:bg-white/10'
+                  scrolled ? 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800' : 'text-white/90 hover:bg-white/10'
                 }`}
               >
                 <Globe size={16} />
@@ -153,7 +153,7 @@ export default function Navbar() {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className={`lg:hidden p-2 rounded-lg transition-colors ${
-              scrolled ? 'text-gray-700 hover:bg-gray-100' : 'text-white hover:bg-white/10'
+              scrolled ? 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800' : 'text-white hover:bg-white/10'
             }`}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -175,7 +175,7 @@ export default function Navbar() {
                   className={`flex items-center gap-3 px-4 py-3 rounded-xl text-base font-medium transition-all ${
                     isActive(link.href)
                       ? 'bg-kerala-green text-white'
-                      : 'text-gray-700 hover:bg-gray-50'
+                      : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800'
                   }`}
                 >
                   <Icon size={20} />
@@ -198,7 +198,7 @@ export default function Navbar() {
                     className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-colors ${
                       language === lang.code
                         ? 'bg-kerala-green text-white'
-                        : 'bg-gray-50 text-gray-700 hover:bg-gray-100'
+                        : 'bg-gray-50 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
                     }`}
                   >
                     <span>{lang.flag}</span>

@@ -161,7 +161,7 @@ export default function HomePage() {
       </section>
 
       {/* ==================== TOP EXPERIENCES ==================== */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-white dark:bg-gray-950">
         <div className="container-custom">
           <div className="text-center mb-14">
             <h2 className="section-title">{t('section.topExperiences')}</h2>
@@ -181,13 +181,13 @@ export default function HomePage() {
                 >
                   <Link
                     href="/experiences"
-                    className="card-hover block text-center p-6 rounded-2xl border border-gray-100 hover:border-kerala-green/20 group"
+                    className="card-hover block text-center p-6 rounded-2xl border border-gray-100 dark:border-gray-800 dark:bg-gray-900 hover:border-kerala-green/20 group"
                   >
                     <div className={`${exp.color} w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform`}>
                       <Icon size={28} className="text-white" />
                     </div>
-                    <h3 className="font-semibold text-gray-900 mb-1">{exp.name}</h3>
-                    <p className="text-xs text-gray-500">{exp.desc}</p>
+                    <h3 className="font-semibold text-gray-900 dark:text-white mb-1">{exp.name}</h3>
+                    <p className="text-xs text-gray-500 dark:text-gray-400">{exp.desc}</p>
                   </Link>
                 </motion.div>
               );
@@ -197,7 +197,7 @@ export default function HomePage() {
       </section>
 
       {/* ==================== INTERACTIVE MAP SECTION ==================== */}
-      <section className="section-padding bg-gradient-to-br from-kerala-green/5 to-kerala-lagoon/5">
+      <section className="section-padding bg-gradient-to-br from-kerala-green/5 to-kerala-lagoon/5 dark:from-gray-900 dark:to-gray-950">
         <div className="container-custom">
           <div className="text-center mb-14">
             <h2 className="section-title">{t('section.interactiveMap')}</h2>
@@ -215,10 +215,10 @@ export default function HomePage() {
               >
                 <Link
                   href={`/destinations?district=${district.slug}`}
-                  className="card-hover block p-4 bg-white rounded-xl border border-gray-100 hover:border-kerala-green/30 text-center group"
+                  className="card-hover block p-4 bg-white dark:bg-gray-900 rounded-xl border border-gray-100 dark:border-gray-800 hover:border-kerala-green/30 text-center group"
                 >
                   <div className="text-3xl mb-2">📍</div>
-                  <h3 className="font-semibold text-sm text-gray-900 group-hover:text-kerala-green transition-colors">
+                  <h3 className="font-semibold text-sm text-gray-900 dark:text-white group-hover:text-kerala-green transition-colors">
                     {district.name}
                   </h3>
                   <p className="text-xs text-gray-400 mt-1">{district.attractions} attractions</p>
@@ -230,7 +230,7 @@ export default function HomePage() {
       </section>
 
       {/* ==================== FEATURED DESTINATIONS ==================== */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-white dark:bg-gray-950">
         <div className="container-custom">
           <div className="flex items-end justify-between mb-14">
             <div>
@@ -284,7 +284,7 @@ export default function HomePage() {
                       </div>
                     </div>
                   </div>
-                  <p className="text-gray-600 text-sm mt-3 line-clamp-2">{dest.description}</p>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm mt-3 line-clamp-2">{dest.description}</p>
                 </Link>
               </motion.div>
             ))}
@@ -299,7 +299,7 @@ export default function HomePage() {
       </section>
 
       {/* ==================== FEATURED ITINERARIES ==================== */}
-      <section className="section-padding bg-gradient-to-br from-gray-50 to-white">
+      <section className="section-padding bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-gray-950">
         <div className="container-custom">
           <div className="text-center mb-14">
             <h2 className="section-title">{t('section.featuredItineraries')}</h2>
@@ -315,7 +315,7 @@ export default function HomePage() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.15 }}
               >
-                <Link href="/trip-planner" className="card-hover block bg-white rounded-2xl overflow-hidden border border-gray-100 group">
+                <Link href="/trip-planner" className="card-hover block bg-white dark:bg-gray-900 rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-800 group">
                   <div className="relative h-48 overflow-hidden">
                     <Image
                       src={itin.image}
@@ -332,8 +332,8 @@ export default function HomePage() {
                     </div>
                   </div>
                   <div className="p-5">
-                    <h3 className="font-display text-xl font-bold text-gray-900 mb-2">{itin.title}</h3>
-                    <p className="text-gray-600 text-sm mb-3">{itin.description}</p>
+                    <h3 className="font-display text-xl font-bold text-gray-900 dark:text-white mb-2">{itin.title}</h3>
+                    <p className="text-gray-600 dark:text-gray-400 text-sm mb-3">{itin.description}</p>
                     <div className="flex items-center justify-between">
                       <span className="text-kerala-green font-semibold text-sm">{itin.totalCost}</span>
                       <span className="text-kerala-green text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
@@ -349,7 +349,7 @@ export default function HomePage() {
       </section>
 
       {/* ==================== SEASONS ==================== */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-white dark:bg-gray-950">
         <div className="container-custom">
           <div className="text-center mb-14">
             <h2 className="section-title">{t('section.seasons')}</h2>
@@ -377,7 +377,7 @@ export default function HomePage() {
       </section>
 
       {/* ==================== FEATURED EXPERIENCES ==================== */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-gray-50 dark:bg-gray-900">
         <div className="container-custom">
           <div className="flex items-end justify-between mb-14">
             <div>
@@ -398,7 +398,7 @@ export default function HomePage() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
               >
-                <Link href={`/experiences/${exp.slug}`} className="card-hover block bg-white rounded-2xl overflow-hidden group">
+                <Link href={`/experiences/${exp.slug}`} className="card-hover block bg-white dark:bg-gray-800 rounded-2xl overflow-hidden group">
                   <div className="relative h-52 overflow-hidden">
                     <Image
                       src={exp.images[0]}
@@ -416,9 +416,9 @@ export default function HomePage() {
                     </div>
                   </div>
                   <div className="p-5">
-                    <h3 className="font-display text-lg font-bold text-gray-900 mb-2">{exp.title}</h3>
-                    <p className="text-gray-600 text-sm mb-3 line-clamp-2">{exp.description}</p>
-                    <div className="flex items-center gap-4 text-sm text-gray-500">
+                    <h3 className="font-display text-lg font-bold text-gray-900 dark:text-white mb-2">{exp.title}</h3>
+                    <p className="text-gray-600 dark:text-gray-400 text-sm mb-3 line-clamp-2">{exp.description}</p>
+                    <div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400">
                       <span className="flex items-center gap-1"><Clock size={14} /> {exp.duration}</span>
                       <span className="text-kerala-green font-semibold">{exp.costEstimate}</span>
                     </div>
@@ -431,7 +431,7 @@ export default function HomePage() {
       </section>
 
       {/* ==================== BLOG SECTION ==================== */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-white dark:bg-gray-950">
         <div className="container-custom">
           <div className="flex items-end justify-between mb-14">
             <div>
@@ -452,7 +452,7 @@ export default function HomePage() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
               >
-                <Link href={`/blog/${post.slug}`} className="card-hover block bg-white rounded-2xl overflow-hidden border border-gray-100 group">
+                <Link href={`/blog/${post.slug}`} className="card-hover block bg-white dark:bg-gray-900 rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-800 group">
                   <div className="relative h-48 overflow-hidden">
                     <Image
                       src={post.image}
@@ -465,8 +465,8 @@ export default function HomePage() {
                     </div>
                   </div>
                   <div className="p-5">
-                    <h3 className="font-display text-lg font-bold text-gray-900 mb-2 line-clamp-2">{post.title}</h3>
-                    <p className="text-gray-600 text-sm mb-3 line-clamp-2">{post.excerpt}</p>
+                    <h3 className="font-display text-lg font-bold text-gray-900 dark:text-white mb-2 line-clamp-2">{post.title}</h3>
+                    <p className="text-gray-600 dark:text-gray-400 text-sm mb-3 line-clamp-2">{post.excerpt}</p>
                     <div className="flex items-center justify-between text-sm text-gray-400">
                       <span>{post.author}</span>
                       <span>{post.readTime}</span>

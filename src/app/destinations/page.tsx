@@ -99,7 +99,7 @@ export default function DestinationsPage() {
   const activeFilterCount = selectedTypes.length + (selectedDistrict ? 1 : 0) + (selectedCrowd ? 1 : 0) + (selectedBudget ? 1 : 0);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-950">
       {/* Hero Banner */}
       <section className="relative h-72 md:h-80 overflow-hidden">
         <Image
@@ -121,7 +121,7 @@ export default function DestinationsPage() {
 
       {/* Search & Filters */}
       <section className="container-custom -mt-8 relative z-20 px-4">
-        <div className="bg-white rounded-2xl shadow-xl p-6">
+        <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-xl p-6">
           {/* Search Bar */}
           <div className="flex flex-col md:flex-row gap-4">
             <div className="flex-1 relative">
@@ -131,7 +131,7 @@ export default function DestinationsPage() {
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 placeholder="Search destinations, districts..."
-                className="w-full pl-12 pr-4 py-3 rounded-xl border border-gray-200 focus:border-kerala-green focus:ring-2 focus:ring-kerala-green/20 outline-none transition-all"
+                className="w-full pl-12 pr-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:text-white focus:border-kerala-green focus:ring-2 focus:ring-kerala-green/20 outline-none transition-all"
               />
             </div>
             <button
@@ -139,7 +139,7 @@ export default function DestinationsPage() {
               className={`flex items-center gap-2 px-5 py-3 rounded-xl border transition-all ${
                 showFilters || activeFilterCount > 0
                   ? 'bg-kerala-green text-white border-kerala-green'
-                  : 'border-gray-200 text-gray-700 hover:bg-gray-50'
+                  : 'border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800'
               }`}
             >
               <SlidersHorizontal size={18} />
@@ -153,7 +153,7 @@ export default function DestinationsPage() {
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value as any)}
-              className="px-5 py-3 rounded-xl border border-gray-200 text-gray-700 focus:outline-none focus:border-kerala-green"
+              className="px-5 py-3 rounded-xl border border-gray-200 dark:border-gray-700 dark:bg-gray-800 text-gray-700 dark:text-gray-300 focus:outline-none focus:border-kerala-green"
             >
               <option value="rating">Sort by Rating</option>
               <option value="reviews">Most Reviewed</option>
@@ -171,7 +171,7 @@ export default function DestinationsPage() {
             >
               {/* Type Filters */}
               <div className="mb-5">
-                <h3 className="text-sm font-semibold text-gray-700 mb-3">Type</h3>
+                <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">Type</h3>
                 <div className="flex flex-wrap gap-2">
                   {typeFilters.map(type => (
                     <button
@@ -180,7 +180,7 @@ export default function DestinationsPage() {
                       className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm transition-all ${
                         selectedTypes.includes(type.id)
                           ? 'bg-kerala-green text-white'
-                          : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                          : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
                       }`}
                     >
                       <span>{type.icon}</span> {type.label}
@@ -195,7 +195,7 @@ export default function DestinationsPage() {
                 <select
                   value={selectedDistrict}
                   onChange={(e) => setSelectedDistrict(e.target.value)}
-                  className="px-4 py-2 rounded-xl border border-gray-200 text-sm focus:outline-none focus:border-kerala-green"
+                  className="px-4 py-2 rounded-xl border border-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300 text-sm focus:outline-none focus:border-kerala-green"
                 >
                   <option value="">All Districts</option>
                   {districts.map(d => (
@@ -207,7 +207,7 @@ export default function DestinationsPage() {
               {/* Crowd & Budget */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div>
-                  <h3 className="text-sm font-semibold text-gray-700 mb-3">Crowd Level</h3>
+                  <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">Crowd Level</h3>
                   <div className="flex gap-2">
                     {crowdFilters.map(c => (
                       <button
@@ -223,14 +223,14 @@ export default function DestinationsPage() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-sm font-semibold text-gray-700 mb-3">Budget Range</h3>
+                  <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">Budget Range</h3>
                   <div className="flex gap-2">
                     {budgetFilters.map(b => (
                       <button
                         key={b.id}
                         onClick={() => setSelectedBudget(selectedBudget === b.id ? '' : b.id)}
                         className={`px-4 py-2 rounded-full text-sm transition-all ${
-                          selectedBudget === b.id ? 'bg-kerala-green text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                          selectedBudget === b.id ? 'bg-kerala-green text-white' : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
                         }`}
                       >
                         {b.icon} {b.label}
@@ -255,15 +255,14 @@ export default function DestinationsPage() {
 
       {/* Results */}
       <section className="container-custom px-4 py-12">
-        <p className="text-gray-500 mb-6">
-          {filteredDestinations.length} destination{filteredDestinations.length !== 1 ? 's' : ''} found
+        <p className="text-gray-500 dark:text-gray-400 mb-6">{filteredDestinations.length !== 1 ? 's' : ''} found
         </p>
 
         {filteredDestinations.length === 0 ? (
           <div className="text-center py-20">
             <p className="text-6xl mb-4">🔍</p>
-            <h3 className="text-xl font-semibold text-gray-700 mb-2">No destinations found</h3>
-            <p className="text-gray-500 mb-4">Try adjusting your filters or search term</p>
+            <h3 className="text-xl font-semibold text-gray-700 dark:text-gray-300 mb-2">No destinations found</h3>
+            <p className="text-gray-500 dark:text-gray-400 mb-4">Try adjusting your filters or search term</p>
             <button onClick={clearFilters} className="btn-primary">Clear Filters</button>
           </div>
         ) : (
@@ -275,7 +274,7 @@ export default function DestinationsPage() {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: i * 0.05 }}
               >
-                <Link href={`/destinations/${dest.slug}`} className="card-hover block bg-white rounded-2xl overflow-hidden shadow-sm group">
+                <Link href={`/destinations/${dest.slug}`} className="card-hover block bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-sm group">
                   <div className="relative h-56 overflow-hidden">
                     <Image
                       src={dest.images[0]}
@@ -313,16 +312,16 @@ export default function DestinationsPage() {
                   </div>
 
                   <div className="p-5">
-                    <p className="text-gray-600 text-sm mb-3 line-clamp-2">{dest.description}</p>
+                    <p className="text-gray-600 dark:text-gray-400 text-sm mb-3 line-clamp-2">{dest.description}</p>
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
                         <div className="flex items-center gap-1 text-yellow-500">
                           <Star size={14} fill="currentColor" />
-                          <span className="text-gray-900 font-semibold text-sm">{dest.rating}</span>
+                          <span className="text-gray-900 dark:text-white font-semibold text-sm">{dest.rating}</span>
                         </div>
                         <span className="text-gray-400 text-sm">({dest.reviews.toLocaleString()})</span>
                       </div>
-                      <span className="text-xs capitalize bg-gray-100 text-gray-600 px-3 py-1 rounded-full">
+                      <span className="text-xs capitalize bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 px-3 py-1 rounded-full">
                         {dest.budgetRange}
                       </span>
                     </div>

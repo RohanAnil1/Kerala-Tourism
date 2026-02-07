@@ -157,9 +157,9 @@ function CookieConsent() {
   if (!show) return null;
 
   return (
-    <div className="cookie-banner bg-white text-gray-800 px-6 py-4 shadow-2xl border-t">
+    <div className="cookie-banner bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 px-6 py-4 shadow-2xl border-t dark:border-gray-700">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-        <p className="text-sm text-gray-600">
+        <p className="text-sm text-gray-600 dark:text-gray-400">
           🍪 We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.
         </p>
         <div className="flex gap-3">
@@ -177,7 +177,7 @@ function CookieConsent() {
               localStorage.setItem('cookie-consent', 'essential');
               setShow(false);
             }}
-            className="border border-gray-300 text-gray-600 px-5 py-2 rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors"
+            className="border border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-400 px-5 py-2 rounded-lg text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
           >
             Essential Only
           </button>

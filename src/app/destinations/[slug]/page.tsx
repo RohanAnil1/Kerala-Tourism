@@ -17,7 +17,7 @@ export default function DestinationDetailPage({ params }: { params: Promise<{ sl
   }
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white dark:bg-gray-950">
       {/* Hero */}
       <section className="relative h-[60vh] md:h-[70vh] overflow-hidden">
         <Image
@@ -92,8 +92,8 @@ export default function DestinationDetailPage({ params }: { params: Promise<{ sl
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
             >
-              <h2 className="font-display text-2xl font-bold text-gray-900 mb-4">About {destination.name}</h2>
-              <p className="text-gray-700 leading-relaxed text-lg">{destination.longDescription}</p>
+              <h2 className="font-display text-2xl font-bold text-gray-900 dark:text-white mb-4">About {destination.name}</h2>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">{destination.longDescription}</p>
             </motion.section>
 
             {/* History */}
@@ -102,8 +102,8 @@ export default function DestinationDetailPage({ params }: { params: Promise<{ sl
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.1 }}
             >
-              <h2 className="font-display text-2xl font-bold text-gray-900 mb-4">History & Cultural Significance</h2>
-              <p className="text-gray-700 leading-relaxed">{destination.history}</p>
+              <h2 className="font-display text-2xl font-bold text-gray-900 dark:text-white mb-4">History & Cultural Significance</h2>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{destination.history}</p>
             </motion.section>
 
             {/* Image Gallery */}
@@ -112,7 +112,7 @@ export default function DestinationDetailPage({ params }: { params: Promise<{ sl
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.2 }}
             >
-              <h2 className="font-display text-2xl font-bold text-gray-900 mb-4">Gallery</h2>
+              <h2 className="font-display text-2xl font-bold text-gray-900 dark:text-white mb-4">Gallery</h2>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                 {destination.images.map((img, i) => (
                   <div key={i} className="relative h-40 md:h-52 rounded-xl overflow-hidden group cursor-pointer">
@@ -133,22 +133,22 @@ export default function DestinationDetailPage({ params }: { params: Promise<{ sl
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.3 }}
             >
-              <h2 className="font-display text-2xl font-bold text-gray-900 mb-4">How to Reach</h2>
+              <h2 className="font-display text-2xl font-bold text-gray-900 dark:text-white mb-4">How to Reach</h2>
               <div className="grid gap-4">
                 {[
-                  { icon: Plane, label: 'By Air', info: destination.howToReach.air, color: 'bg-blue-50 text-blue-600' },
-                  { icon: Train, label: 'By Rail', info: destination.howToReach.rail, color: 'bg-green-50 text-green-600' },
-                  { icon: Car, label: 'By Road', info: destination.howToReach.road, color: 'bg-orange-50 text-orange-600' },
+                  { icon: Plane, label: 'By Air', info: destination.howToReach.air, color: 'bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400' },
+                  { icon: Train, label: 'By Rail', info: destination.howToReach.rail, color: 'bg-green-50 dark:bg-green-900/30 text-green-600 dark:text-green-400' },
+                  { icon: Car, label: 'By Road', info: destination.howToReach.road, color: 'bg-orange-50 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400' },
                 ].map((item) => {
                   const Icon = item.icon;
                   return (
-                    <div key={item.label} className="flex gap-4 p-4 bg-gray-50 rounded-xl">
+                    <div key={item.label} className="flex gap-4 p-4 bg-gray-50 dark:bg-gray-900 rounded-xl">
                       <div className={`w-12 h-12 rounded-xl ${item.color} flex items-center justify-center shrink-0`}>
                         <Icon size={22} />
                       </div>
                       <div>
-                        <h3 className="font-semibold text-gray-900">{item.label}</h3>
-                        <p className="text-gray-600 text-sm mt-1">{item.info}</p>
+                        <h3 className="font-semibold text-gray-900 dark:text-white">{item.label}</h3>
+                        <p className="text-gray-600 dark:text-gray-400 text-sm mt-1">{item.info}</p>
                       </div>
                     </div>
                   );
@@ -162,8 +162,8 @@ export default function DestinationDetailPage({ params }: { params: Promise<{ sl
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.4 }}
             >
-              <h2 className="font-display text-2xl font-bold text-gray-900 mb-4">Location</h2>
-              <div className="rounded-xl overflow-hidden h-80 bg-gray-100">
+              <h2 className="font-display text-2xl font-bold text-gray-900 dark:text-white mb-4">Location</h2>
+              <div className="rounded-xl overflow-hidden h-80 bg-gray-100 dark:bg-gray-800">
                 <iframe
                   src={`https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d50000!2d${destination.coordinates.lng}!3d${destination.coordinates.lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin`}
                   width="100%"
@@ -180,28 +180,28 @@ export default function DestinationDetailPage({ params }: { params: Promise<{ sl
           {/* Sidebar */}
           <div className="space-y-6">
             {/* Quick Info Card */}
-            <div className="bg-gray-50 rounded-2xl p-6 sticky top-24">
-              <h3 className="font-display text-xl font-bold text-gray-900 mb-4">Quick Info</h3>
+            <div className="bg-gray-50 dark:bg-gray-900 rounded-2xl p-6 sticky top-24">
+              <h3 className="font-display text-xl font-bold text-gray-900 dark:text-white mb-4">Quick Info</h3>
               
               <div className="space-y-4">
                 <div>
-                  <p className="text-sm text-gray-500 mb-1">Best Time to Visit</p>
-                  <p className="font-medium text-gray-900 flex items-center gap-2">
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">Best Time to Visit</p>
+                  <p className="font-medium text-gray-900 dark:text-white flex items-center gap-2">
                     <Clock size={16} className="text-kerala-green" />
                     {destination.bestTimeToVisit}
                   </p>
                 </div>
 
                 <div>
-                  <p className="text-sm text-gray-500 mb-1">Budget Range</p>
-                  <p className="font-medium text-gray-900 capitalize">
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">Budget Range</p>
+                  <p className="font-medium text-gray-900 dark:text-white capitalize">
                     {destination.budgetRange === 'budget' ? '💰 Budget Friendly' :
                      destination.budgetRange === 'mid-range' ? '💰💰 Mid Range' : '💰💰💰 Luxury'}
                   </p>
                 </div>
 
                 <div>
-                  <p className="text-sm text-gray-500 mb-1">Crowd Level</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">Crowd Level</p>
                   <p className={`font-medium capitalize ${
                     destination.crowdLevel === 'low' ? 'text-green-600' :
                     destination.crowdLevel === 'medium' ? 'text-yellow-600' : 'text-red-600'
@@ -212,7 +212,7 @@ export default function DestinationDetailPage({ params }: { params: Promise<{ sl
                 </div>
 
                 <div>
-                  <p className="text-sm text-gray-500 mb-1">Rating</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">Rating</p>
                   <div className="flex items-center gap-2">
                     <div className="flex">
                       {Array.from({ length: 5 }).map((_, i) => (
@@ -224,7 +224,7 @@ export default function DestinationDetailPage({ params }: { params: Promise<{ sl
                         />
                       ))}
                     </div>
-                    <span className="font-bold text-gray-900">{destination.rating}</span>
+                    <span className="font-bold text-gray-900 dark:text-white">{destination.rating}</span>
                   </div>
                 </div>
               </div>
@@ -240,11 +240,11 @@ export default function DestinationDetailPage({ params }: { params: Promise<{ sl
             </div>
 
             {/* Nearby Attractions */}
-            <div className="bg-gray-50 rounded-2xl p-6">
-              <h3 className="font-display text-xl font-bold text-gray-900 mb-4">Nearby Attractions</h3>
+            <div className="bg-gray-50 dark:bg-gray-900 rounded-2xl p-6">
+              <h3 className="font-display text-xl font-bold text-gray-900 dark:text-white mb-4">Nearby Attractions</h3>
               <ul className="space-y-3">
                 {destination.nearbyAttractions.map((attraction, i) => (
-                  <li key={i} className="flex items-center gap-3 text-gray-700">
+                  <li key={i} className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
                     <span className="w-6 h-6 bg-kerala-green/10 text-kerala-green rounded-full flex items-center justify-center text-xs font-bold">
                       {i + 1}
                     </span>

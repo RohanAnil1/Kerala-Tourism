@@ -60,7 +60,7 @@ export default function TripPlannerPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-950">
       {/* Hero */}
       <section className="relative h-64 md:h-72 overflow-hidden">
         <Image
@@ -85,7 +85,7 @@ export default function TripPlannerPage() {
 
       {/* Progress Steps */}
       <div className="container-custom px-4 -mt-6 relative z-20">
-        <div className="bg-white rounded-2xl shadow-lg p-4 flex items-center justify-center gap-2 md:gap-8">
+        <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-4 flex items-center justify-center gap-2 md:gap-8">
           {[
             { num: 1, label: 'Duration' },
             { num: 2, label: 'Style' },
@@ -119,15 +119,15 @@ export default function TripPlannerPage() {
               exit={{ x: -50, opacity: 0 }}
               className="max-w-2xl mx-auto"
             >
-              <div className="bg-white rounded-2xl shadow-lg p-8 text-center">
+              <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-8 text-center">
                 <Calendar size={40} className="text-kerala-green mx-auto mb-4" />
-                <h2 className="font-display text-2xl font-bold text-gray-900 mb-2">How many days?</h2>
-                <p className="text-gray-500 mb-8">Choose the duration of your Kerala trip</p>
+                <h2 className="font-display text-2xl font-bold text-gray-900 dark:text-white mb-2">How many days?</h2>
+                <p className="text-gray-500 dark:text-gray-400 mb-8">Choose the duration of your Kerala trip</p>
 
                 <div className="flex items-center justify-center gap-6 mb-8">
                   <button
                     onClick={() => setDays(Math.max(1, days - 1))}
-                    className="w-12 h-12 rounded-full bg-gray-100 text-gray-700 text-xl font-bold hover:bg-gray-200 transition-colors"
+                    className="w-12 h-12 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-xl font-bold hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
                   >
                     −
                   </button>
@@ -137,7 +137,7 @@ export default function TripPlannerPage() {
                   </div>
                   <button
                     onClick={() => setDays(Math.min(14, days + 1))}
-                    className="w-12 h-12 rounded-full bg-gray-100 text-gray-700 text-xl font-bold hover:bg-gray-200 transition-colors"
+                    className="w-12 h-12 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-xl font-bold hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
                   >
                     +
                   </button>
@@ -149,7 +149,7 @@ export default function TripPlannerPage() {
                       key={d}
                       onClick={() => setDays(d)}
                       className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${
-                        days === d ? 'bg-kerala-green text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                        days === d ? 'bg-kerala-green text-white' : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
                       }`}
                     >
                       {d} Days
@@ -173,10 +173,10 @@ export default function TripPlannerPage() {
               exit={{ x: -50, opacity: 0 }}
               className="max-w-3xl mx-auto"
             >
-              <div className="bg-white rounded-2xl shadow-lg p-8 text-center">
+              <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-8 text-center">
                 <Compass size={40} className="text-kerala-green mx-auto mb-4" />
-                <h2 className="font-display text-2xl font-bold text-gray-900 mb-2">What&apos;s your travel style?</h2>
-                <p className="text-gray-500 mb-8">Choose what best describes your ideal trip</p>
+                <h2 className="font-display text-2xl font-bold text-gray-900 dark:text-white mb-2">What&apos;s your travel style?</h2>
+                <p className="text-gray-500 dark:text-gray-400 mb-8">Choose what best describes your ideal trip</p>
 
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
                   {styleOptions.map(opt => (
@@ -185,13 +185,13 @@ export default function TripPlannerPage() {
                       onClick={() => setStyle(opt.id)}
                       className={`p-5 rounded-xl border-2 transition-all text-left ${
                         style === opt.id
-                          ? 'border-kerala-green bg-kerala-green/5'
-                          : 'border-gray-200 hover:border-gray-300'
+                          ? 'border-kerala-green bg-kerala-green/5 dark:bg-kerala-green/10'
+                          : 'border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600'
                       }`}
                     >
                       <span className="text-3xl block mb-2">{opt.icon}</span>
-                      <h3 className="font-semibold text-gray-900">{opt.label}</h3>
-                      <p className="text-gray-500 text-xs mt-1">{opt.desc}</p>
+                      <h3 className="font-semibold text-gray-900 dark:text-white">{opt.label}</h3>
+                      <p className="text-gray-500 dark:text-gray-400 text-xs mt-1">{opt.desc}</p>
                       {style === opt.id && (
                         <Check size={16} className="text-kerala-green mt-2" />
                       )}
@@ -222,10 +222,10 @@ export default function TripPlannerPage() {
               exit={{ x: -50, opacity: 0 }}
               className="max-w-2xl mx-auto"
             >
-              <div className="bg-white rounded-2xl shadow-lg p-8 text-center">
+              <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-8 text-center">
                 <Wallet size={40} className="text-kerala-green mx-auto mb-4" />
-                <h2 className="font-display text-2xl font-bold text-gray-900 mb-2">What&apos;s your budget?</h2>
-                <p className="text-gray-500 mb-8">Per person estimate for the entire trip</p>
+                <h2 className="font-display text-2xl font-bold text-gray-900 dark:text-white mb-2">What&apos;s your budget?</h2>
+                <p className="text-gray-500 dark:text-gray-400 mb-8">Per person estimate for the entire trip</p>
 
                 <div className="grid gap-4 mb-8">
                   {budgetOptions.map(opt => (
@@ -234,14 +234,14 @@ export default function TripPlannerPage() {
                       onClick={() => setBudget(opt.id)}
                       className={`p-5 rounded-xl border-2 transition-all flex items-center gap-4 text-left ${
                         budget === opt.id
-                          ? 'border-kerala-green bg-kerala-green/5'
-                          : 'border-gray-200 hover:border-gray-300'
+                          ? 'border-kerala-green bg-kerala-green/5 dark:bg-kerala-green/10'
+                          : 'border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600'
                       }`}
                     >
                       <span className="text-3xl">{opt.icon}</span>
                       <div className="flex-1">
-                        <h3 className="font-semibold text-gray-900">{opt.label}</h3>
-                        <p className="text-gray-500 text-sm">{opt.desc}</p>
+                        <h3 className="font-semibold text-gray-900 dark:text-white">{opt.label}</h3>
+                        <p className="text-gray-500 dark:text-gray-400 text-sm">{opt.desc}</p>
                       </div>
                       {budget === opt.id && <Check size={20} className="text-kerala-green" />}
                     </button>
@@ -280,13 +280,13 @@ export default function TripPlannerPage() {
               className="max-w-4xl mx-auto"
             >
               {/* Summary Card */}
-              <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8 mb-8">
+              <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-6 md:p-8 mb-8">
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
                   <div>
-                    <h2 className="font-display text-2xl md:text-3xl font-bold text-gray-900">
+                    <h2 className="font-display text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">
                       {generatedItinerary.title}
                     </h2>
-                    <p className="text-gray-500 mt-1">{generatedItinerary.description}</p>
+                    <p className="text-gray-500 dark:text-gray-400 mt-1">{generatedItinerary.description}</p>
                     <div className="flex flex-wrap gap-3 mt-3">
                       <span className="bg-kerala-green/10 text-kerala-green px-3 py-1 rounded-full text-sm font-medium">
                         {generatedItinerary.days} Days
@@ -304,13 +304,13 @@ export default function TripPlannerPage() {
                   </div>
 
                   <div className="flex gap-2 no-print">
-                    <button onClick={exportPDF} className="flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium hover:bg-gray-200 transition-colors">
+                    <button onClick={exportPDF} className="flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-lg text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
                       <Download size={16} /> Export PDF
                     </button>
-                    <button className="flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium hover:bg-gray-200 transition-colors">
+                    <button className="flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-lg text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
                       <Share2 size={16} /> Share
                     </button>
-                    <button onClick={() => { setStep(1); setGeneratedItinerary(null); }} className="flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium hover:bg-gray-200 transition-colors">
+                    <button onClick={() => { setStep(1); setGeneratedItinerary(null); }} className="flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-lg text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
                       <Edit size={16} /> Modify
                     </button>
                   </div>
@@ -325,19 +325,19 @@ export default function TripPlannerPage() {
                     initial={{ y: 10, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: day.day * 0.1 }}
-                    className="bg-white rounded-2xl shadow-sm overflow-hidden"
+                    className="bg-white dark:bg-gray-900 rounded-2xl shadow-sm overflow-hidden"
                   >
                     <button
                       onClick={() => setExpandedDay(expandedDay === day.day ? null : day.day)}
-                      className="w-full flex items-center justify-between p-5 hover:bg-gray-50 transition-colors"
+                      className="w-full flex items-center justify-between p-5 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
                     >
                       <div className="flex items-center gap-4">
                         <div className="w-12 h-12 rounded-xl bg-kerala-green text-white flex items-center justify-center font-bold">
                           D{day.day}
                         </div>
                         <div className="text-left">
-                          <h3 className="font-semibold text-gray-900">{day.title}</h3>
-                          <p className="text-gray-500 text-sm flex items-center gap-1">
+                          <h3 className="font-semibold text-gray-900 dark:text-white">{day.title}</h3>
+                          <p className="text-gray-500 dark:text-gray-400 text-sm flex items-center gap-1">
                             <MapPin size={14} /> {day.location}
                           </p>
                         </div>
@@ -360,12 +360,12 @@ export default function TripPlannerPage() {
                             <div className="grid md:grid-cols-2 gap-6 pt-5">
                               {/* Activities */}
                               <div>
-                                <h4 className="font-semibold text-gray-900 mb-3 flex items-center gap-2">
+                                <h4 className="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
                                   <Compass size={16} className="text-kerala-green" /> Activities
                                 </h4>
                                 <ul className="space-y-2">
                                   {day.activities.map((activity, i) => (
-                                    <li key={i} className="flex items-start gap-2 text-gray-600 text-sm">
+                                    <li key={i} className="flex items-start gap-2 text-gray-600 dark:text-gray-400 text-sm">
                                       <span className="w-5 h-5 bg-kerala-green/10 text-kerala-green rounded-full flex items-center justify-center text-xs font-bold mt-0.5 shrink-0">
                                         {i + 1}
                                       </span>
@@ -378,22 +378,22 @@ export default function TripPlannerPage() {
                               {/* Details */}
                               <div className="space-y-4">
                                 <div>
-                                  <h4 className="font-semibold text-gray-900 mb-1 flex items-center gap-2">
+                                  <h4 className="font-semibold text-gray-900 dark:text-white mb-1 flex items-center gap-2">
                                     <Bed size={16} className="text-blue-500" /> Stay
                                   </h4>
-                                  <p className="text-gray-600 text-sm">{day.accommodation}</p>
+                                  <p className="text-gray-600 dark:text-gray-400 text-sm">{day.accommodation}</p>
                                 </div>
                                 <div>
-                                  <h4 className="font-semibold text-gray-900 mb-1 flex items-center gap-2">
+                                  <h4 className="font-semibold text-gray-900 dark:text-white mb-1 flex items-center gap-2">
                                     <Utensils size={16} className="text-orange-500" /> Meals
                                   </h4>
-                                  <p className="text-gray-600 text-sm">{day.meals}</p>
+                                  <p className="text-gray-600 dark:text-gray-400 text-sm">{day.meals}</p>
                                 </div>
                                 <div>
-                                  <h4 className="font-semibold text-gray-900 mb-1 flex items-center gap-2">
+                                  <h4 className="font-semibold text-gray-900 dark:text-white mb-1 flex items-center gap-2">
                                     <Lightbulb size={16} className="text-yellow-500" /> Pro Tip
                                   </h4>
-                                  <p className="text-gray-600 text-sm italic">{day.tips}</p>
+                                  <p className="text-gray-600 dark:text-gray-400 text-sm italic">{day.tips}</p>
                                 </div>
                               </div>
                             </div>
@@ -407,7 +407,7 @@ export default function TripPlannerPage() {
 
               {/* CTA */}
               <div className="text-center mt-10 no-print">
-                <p className="text-gray-500 mb-4">Love this itinerary? Start planning your dream Kerala trip today!</p>
+                <p className="text-gray-500 dark:text-gray-400 mb-4">Love this itinerary? Start planning your dream Kerala trip today!</p>
                 <button className="btn-primary text-lg px-10 py-4 flex items-center gap-2 mx-auto">
                   <Plane size={20} /> Start Booking
                 </button>

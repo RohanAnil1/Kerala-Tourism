@@ -17,7 +17,7 @@ export default function ExperienceDetailPage({ params }: { params: Promise<{ slu
   }
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white dark:bg-gray-950">
       {/* Hero */}
       <section className="relative h-[50vh] md:h-[60vh] overflow-hidden">
         <Image
@@ -71,12 +71,12 @@ export default function ExperienceDetailPage({ params }: { params: Promise<{ slu
               ].map((stat) => {
                 const Icon = stat.icon;
                 return (
-                  <div key={stat.label} className="bg-gray-50 rounded-xl p-4 text-center">
+                  <div key={stat.label} className="bg-gray-50 dark:bg-gray-900 rounded-xl p-4 text-center">
                     <div className={`w-10 h-10 rounded-lg ${stat.color} flex items-center justify-center mx-auto mb-2`}>
                       <Icon size={20} />
                     </div>
-                    <p className="text-xs text-gray-500">{stat.label}</p>
-                    <p className="font-semibold text-gray-900 text-sm capitalize">{stat.value}</p>
+                    <p className="text-xs text-gray-500 dark:text-gray-400">{stat.label}</p>
+                    <p className="font-semibold text-gray-900 dark:text-white text-sm capitalize">{stat.value}</p>
                   </div>
                 );
               })}
@@ -84,18 +84,18 @@ export default function ExperienceDetailPage({ params }: { params: Promise<{ slu
 
             {/* Description */}
             <motion.section initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
-              <h2 className="font-display text-2xl font-bold text-gray-900 mb-4">About This Experience</h2>
-              <p className="text-gray-700 leading-relaxed text-lg">{experience.longDescription}</p>
+              <h2 className="font-display text-2xl font-bold text-gray-900 dark:text-white mb-4">About This Experience</h2>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">{experience.longDescription}</p>
             </motion.section>
 
             {/* Highlights */}
             <motion.section initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.1 }}>
-              <h2 className="font-display text-2xl font-bold text-gray-900 mb-4">Highlights</h2>
+              <h2 className="font-display text-2xl font-bold text-gray-900 dark:text-white mb-4">Highlights</h2>
               <div className="grid gap-3">
                 {experience.highlights.map((highlight, i) => (
-                  <div key={i} className="flex items-start gap-3 p-3 bg-kerala-green/5 rounded-xl">
+                  <div key={i} className="flex items-start gap-3 p-3 bg-kerala-green/5 dark:bg-kerala-green/10 rounded-xl">
                     <CheckCircle size={20} className="text-kerala-green mt-0.5 shrink-0" />
-                    <span className="text-gray-700">{highlight}</span>
+                    <span className="text-gray-700 dark:text-gray-300">{highlight}</span>
                   </div>
                 ))}
               </div>
@@ -103,10 +103,10 @@ export default function ExperienceDetailPage({ params }: { params: Promise<{ slu
 
             {/* Inclusions */}
             <motion.section initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.2 }}>
-              <h2 className="font-display text-2xl font-bold text-gray-900 mb-4">What&apos;s Included</h2>
+              <h2 className="font-display text-2xl font-bold text-gray-900 dark:text-white mb-4">What&apos;s Included</h2>
               <div className="grid md:grid-cols-2 gap-3">
                 {experience.inclusions.map((item, i) => (
-                  <div key={i} className="flex items-center gap-3 text-gray-700">
+                  <div key={i} className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
                     <CheckCircle size={16} className="text-green-500" />
                     {item}
                   </div>
@@ -116,8 +116,8 @@ export default function ExperienceDetailPage({ params }: { params: Promise<{ slu
 
             {/* Safety Tips */}
             <motion.section initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.3 }}>
-              <h2 className="font-display text-2xl font-bold text-gray-900 mb-4">Safety Tips</h2>
-              <div className="bg-amber-50 border border-amber-200 rounded-xl p-6">
+              <h2 className="font-display text-2xl font-bold text-gray-900 dark:text-white mb-4">Safety Tips</h2>
+              <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-xl p-6">
                 <div className="flex items-center gap-2 mb-3">
                   <Shield size={20} className="text-amber-600" />
                   <span className="font-semibold text-amber-800">Important Safety Information</span>
@@ -135,7 +135,7 @@ export default function ExperienceDetailPage({ params }: { params: Promise<{ slu
 
             {/* Gallery */}
             <motion.section initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4 }}>
-              <h2 className="font-display text-2xl font-bold text-gray-900 mb-4">Gallery</h2>
+              <h2 className="font-display text-2xl font-bold text-gray-900 dark:text-white mb-4">Gallery</h2>
               <div className="grid grid-cols-2 gap-3">
                 {experience.images.map((img, i) => (
                   <div key={i} className="relative h-48 rounded-xl overflow-hidden">
@@ -148,18 +148,18 @@ export default function ExperienceDetailPage({ params }: { params: Promise<{ slu
 
           {/* Sidebar - Booking Card */}
           <div className="space-y-6">
-            <div className="bg-gray-50 rounded-2xl p-6 sticky top-24">
-              <h3 className="font-display text-xl font-bold text-gray-900 mb-2">Book This Experience</h3>
+            <div className="bg-gray-50 dark:bg-gray-900 rounded-2xl p-6 sticky top-24">
+              <h3 className="font-display text-xl font-bold text-gray-900 dark:text-white mb-2">Book This Experience</h3>
               <p className="text-kerala-green text-2xl font-bold mb-4">{experience.costEstimate}</p>
               
               <div className="space-y-3 mb-6">
-                <div className="flex items-center gap-2 text-gray-600 text-sm">
+                <div className="flex items-center gap-2 text-gray-600 dark:text-gray-400 text-sm">
                   <Clock size={16} /> {experience.duration}
                 </div>
-                <div className="flex items-center gap-2 text-gray-600 text-sm">
+                <div className="flex items-center gap-2 text-gray-600 dark:text-gray-400 text-sm">
                   <MapPin size={16} /> {experience.location}
                 </div>
-                <div className="flex items-center gap-2 text-gray-600 text-sm">
+                <div className="flex items-center gap-2 text-gray-600 dark:text-gray-400 text-sm">
                   <Calendar size={16} /> Best: {experience.bestSeason}
                 </div>
               </div>

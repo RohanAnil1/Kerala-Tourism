@@ -30,7 +30,7 @@ export default function ExperiencesPage() {
   }, [search, selectedCategory]);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-950">
       {/* Hero */}
       <section className="relative h-72 md:h-80 overflow-hidden">
         <Image
@@ -52,7 +52,7 @@ export default function ExperiencesPage() {
 
       {/* Search & Category Filter */}
       <section className="container-custom -mt-8 relative z-20 px-4">
-        <div className="bg-white rounded-2xl shadow-xl p-6">
+        <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-xl p-6">
           <div className="relative mb-5">
             <Search size={20} className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
             <input
@@ -60,7 +60,7 @@ export default function ExperiencesPage() {
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Search experiences..."
-              className="w-full pl-12 pr-4 py-3 rounded-xl border border-gray-200 focus:border-kerala-green focus:ring-2 focus:ring-kerala-green/20 outline-none transition-all"
+              className="w-full pl-12 pr-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:text-white focus:border-kerala-green focus:ring-2 focus:ring-kerala-green/20 outline-none transition-all"
             />
           </div>
 
@@ -68,7 +68,7 @@ export default function ExperiencesPage() {
             <button
               onClick={() => setSelectedCategory('')}
               className={`px-4 py-2 rounded-full text-sm transition-all ${
-                !selectedCategory ? 'bg-kerala-green text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                !selectedCategory ? 'bg-kerala-green text-white' : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
               }`}
             >
               All
@@ -78,7 +78,7 @@ export default function ExperiencesPage() {
                 key={cat.id}
                 onClick={() => setSelectedCategory(selectedCategory === cat.id ? '' : cat.id)}
                 className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm transition-all ${
-                  selectedCategory === cat.id ? 'bg-kerala-green text-white' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  selectedCategory === cat.id ? 'bg-kerala-green text-white' : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
                 }`}
               >
                 <span>{cat.icon}</span> {cat.label}
@@ -90,13 +90,13 @@ export default function ExperiencesPage() {
 
       {/* Results */}
       <section className="container-custom px-4 py-12">
-        <p className="text-gray-500 mb-6">{filtered.length} experience{filtered.length !== 1 ? 's' : ''} found</p>
+        <p className="text-gray-500 dark:text-gray-400 mb-6">{filtered.length} experience{filtered.length !== 1 ? 's' : ''} found</p>
 
         {filtered.length === 0 ? (
           <div className="text-center py-20">
             <p className="text-6xl mb-4">🎭</p>
-            <h3 className="text-xl font-semibold text-gray-700 mb-2">No experiences found</h3>
-            <p className="text-gray-500">Try a different search or category</p>
+            <h3 className="text-xl font-semibold text-gray-700 dark:text-gray-300 mb-2">No experiences found</h3>
+            <p className="text-gray-500 dark:text-gray-400">Try a different search or category</p>
           </div>
         ) : (
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -107,7 +107,7 @@ export default function ExperiencesPage() {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: i * 0.05 }}
               >
-                <Link href={`/experiences/${exp.slug}`} className="card-hover block bg-white rounded-2xl overflow-hidden shadow-sm group">
+                <Link href={`/experiences/${exp.slug}`} className="card-hover block bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-sm group">
                   <div className="relative h-52 overflow-hidden">
                     <Image
                       src={exp.images[0]}
@@ -138,23 +138,23 @@ export default function ExperiencesPage() {
                   </div>
 
                   <div className="p-5">
-                    <h3 className="font-display text-lg font-bold text-gray-900 mb-2">{exp.title}</h3>
-                    <p className="text-gray-600 text-sm mb-4 line-clamp-2">{exp.description}</p>
+                    <h3 className="font-display text-lg font-bold text-gray-900 dark:text-white mb-2">{exp.title}</h3>
+                    <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-2">{exp.description}</p>
                     
                     <div className="grid grid-cols-2 gap-3 text-sm">
-                      <div className="flex items-center gap-2 text-gray-500">
+                      <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400">
                         <Clock size={14} className="text-kerala-green" />
                         {exp.duration}
                       </div>
-                      <div className="flex items-center gap-2 text-gray-500">
+                      <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400">
                         <IndianRupee size={14} className="text-kerala-green" />
                         {exp.costEstimate}
                       </div>
-                      <div className="flex items-center gap-2 text-gray-500">
+                      <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400">
                         <MapPin size={14} className="text-kerala-green" />
                         {exp.location}
                       </div>
-                      <div className="flex items-center gap-2 text-gray-500">
+                      <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400">
                         <Gauge size={14} className="text-kerala-green" />
                         {exp.bestSeason}
                       </div>

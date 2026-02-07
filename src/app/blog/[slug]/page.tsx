@@ -18,7 +18,7 @@ export default function BlogDetailPage({ params }: { params: Promise<{ slug: str
   const relatedPosts = blogPosts.filter(p => p.id !== post.id).slice(0, 3);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white dark:bg-gray-950">
       {/* Hero */}
       <section className="relative h-[40vh] md:h-[50vh] overflow-hidden">
         <Image src={post.image} alt={post.title} fill className="object-cover" priority />
@@ -53,7 +53,7 @@ export default function BlogDetailPage({ params }: { params: Promise<{ slug: str
         {/* Tags */}
         <div className="flex flex-wrap gap-2 mb-8">
           {post.tags.map(tag => (
-            <span key={tag} className="bg-gray-100 text-gray-600 text-sm px-3 py-1 rounded-full flex items-center gap-1">
+            <span key={tag} className="bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-sm px-3 py-1 rounded-full flex items-center gap-1">
               <Tag size={12} /> {tag}
             </span>
           ))}
@@ -63,10 +63,10 @@ export default function BlogDetailPage({ params }: { params: Promise<{ slug: str
         <article className="prose prose-lg prose-green max-w-none">
           {post.content.split('\n').map((paragraph, i) => {
             if (paragraph.startsWith('## ')) {
-              return <h2 key={i} className="font-display text-2xl font-bold text-gray-900 mt-10 mb-4">{paragraph.replace('## ', '')}</h2>;
+              return <h2 key={i} className="font-display text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">{paragraph.replace('## ', '')}</h2>;
             }
             if (paragraph.startsWith('### ')) {
-              return <h3 key={i} className="font-display text-xl font-bold text-gray-900 mt-6 mb-3">{paragraph.replace('### ', '')}</h3>;
+              return <h3 key={i} className="font-display text-xl font-bold text-gray-900 dark:text-white mt-6 mb-3">{paragraph.replace('### ', '')}</h3>;
             }
             if (paragraph.startsWith('- **')) {
               const match = paragraph.match(/- \*\*(.+?)\*\* — (.+)/);
@@ -85,7 +85,7 @@ export default function BlogDetailPage({ params }: { params: Promise<{ slug: str
                 return (
                   <div key={i} className="flex items-start gap-3 my-2 ml-4">
                     <strong>{match[1]}</strong>
-                    <span className="text-gray-600">— {match[2]}</span>
+                    <span className="text-gray-600 dark:text-gray-400">— {match[2]}</span>
                   </div>
                 );
               }
@@ -103,21 +103,21 @@ export default function BlogDetailPage({ params }: { params: Promise<{ slug: str
               );
             }
             if (paragraph.trim() === '') return <div key={i} className="h-4" />;
-            return <p key={i} className="text-gray-700 leading-relaxed my-4">{paragraph}</p>;
+            return <p key={i} className="text-gray-700 dark:text-gray-300 leading-relaxed my-4">{paragraph}</p>;
           })}
         </article>
 
         {/* Share */}
-        <div className="mt-12 pt-8 border-t flex items-center justify-between">
+        <div className="mt-12 pt-8 border-t dark:border-gray-800 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <span className="text-gray-600 font-medium">Share this article:</span>
+            <span className="text-gray-600 dark:text-gray-400 font-medium">Share this article:</span>
             <button className="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700">
               <Facebook size={18} />
             </button>
             <button className="w-10 h-10 rounded-full bg-sky-500 text-white flex items-center justify-center hover:bg-sky-600">
               <Twitter size={18} />
             </button>
-            <button className="w-10 h-10 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center hover:bg-gray-300">
+            <button className="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-400 flex items-center justify-center hover:bg-gray-300 dark:hover:bg-gray-700">
               <Share2 size={18} />
             </button>
           </div>
@@ -129,14 +129,14 @@ export default function BlogDetailPage({ params }: { params: Promise<{ slug: str
         {/* Related Posts */}
         {relatedPosts.length > 0 && (
           <div className="mt-16">
-            <h2 className="font-display text-2xl font-bold text-gray-900 mb-6">Related Articles</h2>
+            <h2 className="font-display text-2xl font-bold text-gray-900 dark:text-white mb-6">Related Articles</h2>
             <div className="grid md:grid-cols-3 gap-4">
               {relatedPosts.map(related => (
                 <Link key={related.id} href={`/blog/${related.slug}`} className="card-hover block group">
                   <div className="relative h-36 rounded-xl overflow-hidden mb-3">
                     <Image src={related.image} alt={related.title} fill className="object-cover group-hover:scale-110 transition-transform duration-500" />
                   </div>
-                  <h3 className="font-semibold text-gray-900 text-sm line-clamp-2 group-hover:text-kerala-green transition-colors">
+                  <h3 className="font-semibold text-gray-900 dark:text-white text-sm line-clamp-2 group-hover:text-kerala-green transition-colors">
                     {related.title}
                   </h3>
                   <p className="text-gray-400 text-xs mt-1">{related.readTime}</p>
