@@ -1,6 +1,5 @@
 'use client';
 
-import { use } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
@@ -8,8 +7,8 @@ import { getExperienceBySlug } from '@/data/experiences';
 import { ArrowLeft, Star, Clock, MapPin, IndianRupee, Gauge, Shield, CheckCircle, Calendar, Heart, Share2 } from 'lucide-react';
 import { notFound } from 'next/navigation';
 
-export default function ExperienceDetailPage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = use(params);
+export default function ExperienceDetailPage({ params }: { params: { slug: string } }) {
+  const { slug } = params;
   const experience = getExperienceBySlug(slug);
 
   if (!experience) {

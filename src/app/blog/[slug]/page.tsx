@@ -1,14 +1,13 @@
 'use client';
 
-import { use } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getBlogBySlug, blogPosts } from '@/data/blog';
 import { ArrowLeft, Calendar, Clock, Tag, Share2, Heart, Facebook, Twitter } from 'lucide-react';
 import { notFound } from 'next/navigation';
 
-export default function BlogDetailPage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = use(params);
+export default function BlogDetailPage({ params }: { params: { slug: string } }) {
+  const { slug } = params;
   const post = getBlogBySlug(slug);
 
   if (!post) {

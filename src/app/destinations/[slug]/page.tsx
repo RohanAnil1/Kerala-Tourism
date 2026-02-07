@@ -33,13 +33,12 @@ const CROWD_COLORS = {
 export default function DestinationDetailPage({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: { slug: string };
 }) {
   const [galleryOpen, setGalleryOpen] = useState(false);
   const [activeImage, setActiveImage] = useState(0);
 
-  // Unwrap params (Next.js 15 async params)
-  const { slug } = require('react').use(params);
+  const { slug } = params;
 
   const destination = getDestinationBySlug(slug);
   if (!destination) notFound();
