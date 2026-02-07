@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, Suspense } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
@@ -33,7 +33,7 @@ const budgetFilters = [
   { id: 'luxury', label: 'Luxury', icon: '💰💰💰' },
 ];
 
-export default function DestinationsPage() {
+function DestinationsContent() {
   const { t } = useLanguage();
   const searchParams = useSearchParams();
   const initialDistrict = searchParams.get('district') || '';
@@ -333,5 +333,17 @@ export default function DestinationsPage() {
         )}
       </section>
     </div>
+  );
+}
+
+export default function DestinationsPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-gray-50 dark:bg-gray-950 flex items-center justify-center">
+        <div className="animate-pulse text-kerala-green text-xl">Loading destinations...</div>
+      </div>
+    }>
+      <DestinationsContent />
+    </Suspense>
   );
 }
