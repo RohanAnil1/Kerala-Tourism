@@ -4,7 +4,8 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { Menu, X, Globe, MapPin, Compass, Calendar, BookOpen, Home, Hotel, Settings, ChevronDown } from 'lucide-react';
+import { Menu, X, Globe, MapPin, Compass, Calendar, BookOpen, Home, Hotel, Settings, ChevronDown, Sun, Moon } from 'lucide-react';
+import { useTheme } from 'next-themes';
 import { Language } from '@/types';
 
 const languages: { code: Language; label: string; flag: string }[] = [
@@ -18,8 +19,12 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
   const { t, language, setLanguage } = useLanguage();
+  const { theme, setTheme } = useTheme();
+
+  useEffect(() => setMounted(true), []);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -45,7 +50,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'bg-white/95 backdrop-blur-lg shadow-lg shadow-black/5'
+          ? 'bg-white/95 dark:bg-gray-900/95 backdrop-blur-lg shadow-lg shadow-black/5'
           : 'bg-transparent'
       }`}
     >
@@ -120,11 +125,24 @@ export default function Navbar() {
               )}
             </div>
 
+            {/* Dark Mode Toggle */}
+            {mounted && (
+              <button
+                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                className={`p-2 rounded-lg transition-all ${
+                  scrolled ? 'text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800' : 'text-white/90 hover:bg-white/10'
+                }`}
+                aria-label="Toggle dark mode"
+              >
+                {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
+              </button>
+            )}
+
             {/* Admin Link */}
             <Link
               href="/admin"
               className={`flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-medium transition-all ${
-                scrolled ? 'text-gray-500 hover:bg-gray-100' : 'text-white/70 hover:bg-white/10'
+                scrolled ? 'text-gray-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800' : 'text-white/70 hover:bg-white/10'
               }`}
             >
               <Settings size={16} />
@@ -145,7 +163,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="lg:hidden bg-white border-t shadow-xl animate-slide-down">
+        <div className="lg:hidden bg-white dark:bg-gray-900 border-t dark:border-gray-800 shadow-xl animate-slide-down">
           <div className="px-4 py-4 space-y-1">
             {navLinks.map((link) => {
               const Icon = link.icon;
@@ -190,11 +208,22 @@ export default function Navbar() {
               </div>
             </div>
 
+            {/* Mobile Dark Mode Toggle */}
+            {mounted && (
+              <button
+                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                className="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 w-full"
+              >
+                {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+                {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
+              </button>
+            )}
+
             {/* Mobile Admin */}
             <Link
               href="/admin"
               onClick={() => setIsOpen(false)}
-              className="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-500 hover:bg-gray-50"
+              className="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800"
             >
               <Settings size={20} />
               {t('nav.admin')}
