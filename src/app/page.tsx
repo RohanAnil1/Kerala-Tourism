@@ -1,9 +1,9 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { motion, AnimatePresence, useScroll, useTransform, useInView } from 'framer-motion';
+import { motion, useScroll, useTransform, useInView } from 'framer-motion';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Play, ChevronRight, Star, Clock, MapPin, ArrowRight, Sparkles, Mountain, Waves, TreePine, Sun, ArrowUpRight } from 'lucide-react';
 import { getFeaturedDestinations } from '@/data/destinations';
@@ -54,28 +54,8 @@ function SectionHeader({ label, title, subtitle, center = true }: { label?: stri
 }
 
 /* ---------- DATA ---------- */
-const heroSlides = [
-  {
-    image: 'https://images.unsplash.com/photo-1602158123411-e64e5d76e7c5?w=1920',
-    title: 'Backwaters of Alleppey',
-    subtitle: 'Cruise through palm-fringed canals on a traditional houseboat',
-  },
-  {
-    image: 'https://images.unsplash.com/photo-1595815771614-ade9d652a65d?w=1920',
-    title: 'Misty Munnar',
-    subtitle: 'Endless tea plantations draped in clouds',
-  },
-  {
-    image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=1920',
-    title: 'Cultural Heritage',
-    subtitle: 'Ancient temples, Kathakali, and vibrant festivals',
-  },
-  {
-    image: 'https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?w=1920',
-    title: 'Golden Beaches',
-    subtitle: 'Pristine coastline along the Arabian Sea',
-  },
-];
+const HERO_VIDEO = 'https://videos.pexels.com/video-files/6981411/6981411-hd_1920_1080_25fps.mp4';
+const HERO_POSTER = 'https://images.unsplash.com/photo-1602158123411-e64e5d76e7c5?w=1920';
 
 const seasons = [
   { id: 'monsoon', name: 'Monsoon Magic', months: 'Jun - Sep', icon: '🌧️', color: 'from-blue-600 to-cyan-500', desc: 'Lush green Kerala, Ayurveda at its best, spectacular waterfalls', image: 'https://images.unsplash.com/photo-1580309237429-661ea0f15805?w=800' },
@@ -95,7 +75,6 @@ const topExperiences = [
 /* ---------- MAIN COMPONENT ---------- */
 export default function HomePage() {
   const { t } = useLanguage();
-  const [currentSlide, setCurrentSlide] = useState(0);
   const featuredDestinations = getFeaturedDestinations();
   const featuredExperiences = getFeaturedExperiences();
   const featuredBlogs = getFeaturedBlogs();
@@ -104,38 +83,29 @@ export default function HomePage() {
   const heroY = useTransform(scrollYProgress, [0, 1], ['0%', '30%']);
   const heroOpacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
-    }, 6000);
-    return () => clearInterval(timer);
-  }, []);
-
   return (
     <div className="bg-white dark:bg-gray-950">
       {/* ==================== HERO SECTION ==================== */}
       <section ref={heroRef} className="relative h-screen overflow-hidden">
-        {/* Parallax Background */}
+        {/* Video Background - Athirappilly Waterfall */}
         <motion.div style={{ y: heroY }} className="absolute inset-0">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={currentSlide}
-              initial={{ opacity: 0, scale: 1.15 }}
-              animate={{ opacity: 1, scale: 1.05 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 1.8, ease: [0.23, 1, 0.32, 1] }}
-              className="absolute inset-0"
+          <motion.div
+            initial={{ opacity: 0, scale: 1.15 }}
+            animate={{ opacity: 1, scale: 1.05 }}
+            transition={{ duration: 1.8, ease: [0.23, 1, 0.32, 1] }}
+            className="absolute inset-0"
+          >
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              poster={HERO_POSTER}
+              className="absolute inset-0 w-full h-full object-cover"
             >
-              <Image
-                src={heroSlides[currentSlide].image}
-                alt={heroSlides[currentSlide].title}
-                fill
-                className="object-cover"
-                priority
-                sizes="100vw"
-              />
-            </motion.div>
-          </AnimatePresence>
+              <source src={HERO_VIDEO} type="video/mp4" />
+            </video>
+          </motion.div>
         </motion.div>
 
         {/* Cinematic Overlay */}
@@ -165,20 +135,16 @@ export default function HomePage() {
               {t('hero.title')}
             </h1>
 
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={currentSlide}
-                initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                exit={{ y: -20, opacity: 0 }}
-                transition={{ duration: 0.5 }}
-                className="mb-2"
-              >
-                <p className="text-white/90 text-xl md:text-2xl font-display font-medium italic">
-                  {heroSlides[currentSlide].title}
-                </p>
-              </motion.div>
-            </AnimatePresence>
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              className="mb-2"
+            >
+              <p className="text-white/90 text-xl md:text-2xl font-display font-medium italic">
+                Athirappilly Waterfalls — The Niagara of India
+              </p>
+            </motion.div>
 
             <p className="text-white/60 text-base md:text-lg max-w-2xl mx-auto mb-12 font-light">
               {t('hero.subtitle')}
@@ -206,20 +172,12 @@ export default function HomePage() {
             </div>
           </motion.div>
 
-          {/* Slide Indicators */}
+          {/* Location Badge */}
           <div className="absolute bottom-12 flex items-center gap-2">
-            {heroSlides.map((slide, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentSlide(index)}
-                className="group relative py-2"
-                aria-label={`Go to slide ${index + 1}`}
-              >
-                <div className={`h-1 rounded-full transition-all duration-700 ease-spring ${
-                  index === currentSlide ? 'w-12 bg-kerala-gold' : 'w-3 bg-white/30 group-hover:bg-white/50'
-                }`} />
-              </button>
-            ))}
+            <div className="glass rounded-full px-4 py-2 flex items-center gap-2">
+              <MapPin size={14} className="text-kerala-gold" />
+              <span className="text-white/80 text-xs font-medium tracking-wide">Athirappilly, Thrissur District</span>
+            </div>
           </div>
         </motion.div>
 
