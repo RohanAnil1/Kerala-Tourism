@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { kerallaFoods, getFeaturedFoods, FoodCategory } from '@/data/foods';
-import { UtensilsCrossed, Leaf, Flame, MapPin, ChevronRight, Filter, X } from 'lucide-react';
+import { UtensilsCrossed, Leaf, Flame, MapPin, ChevronRight, Filter } from 'lucide-react';
 
 const categories: { value: FoodCategory; label: string; icon: string }[] = [
   { value: 'main-course', label: 'Main Course', icon: '🍛' },
@@ -63,13 +63,13 @@ export default function FoodsPage() {
               Kerala Cuisine
             </span>
             <h1 className="text-5xl md:text-7xl font-display font-bold text-white mb-6">
-              Kerala's Special{' '}
+              Kerala&apos;s Special{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-kerala-gold to-yellow-300">
                 Foods
               </span>
             </h1>
             <p className="text-xl text-gray-200 leading-relaxed max-w-2xl">
-              Discover the rich flavors and aromatic spices of God's Own Country. From traditional sadya to coastal delicacies, experience Kerala's culinary heritage.
+              Discover the rich flavors and aromatic spices of God&apos;s Own Country. From traditional sadya to coastal delicacies, experience Kerala&apos;s culinary heritage.
             </p>
           </motion.div>
         </div>
@@ -343,10 +343,10 @@ export default function FoodsPage() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-6">
-              Experience Kerala's Culinary Heritage
+              Experience Kerala&apos;s Culinary Heritage
             </h2>
             <p className="text-xl text-white/90 mb-8">
-              Plan your food trail across Kerala's diverse regions and taste authentic flavors
+              Plan your food trail across Kerala&apos;s diverse regions and taste authentic flavors
             </p>
             <Link
               href="/destinations"
