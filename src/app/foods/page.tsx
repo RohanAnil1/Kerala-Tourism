@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { kerallaFoods, getFeaturedFoods, FoodCategory } from '@/data/foods';
+import { keralaFoods, getFeaturedFoods, FoodCategory } from '@/data/foods';
 import { UtensilsCrossed, Leaf, Flame, MapPin, ChevronRight, Filter } from 'lucide-react';
 
 const categories: { value: FoodCategory; label: string; icon: string }[] = [
@@ -28,7 +28,7 @@ export default function FoodsPage() {
   const [vegetarianOnly, setVegetarianOnly] = useState(false);
   const [filterOpen, setFilterOpen] = useState(false);
 
-  const filteredFoods = kerallaFoods.filter(food => {
+  const filteredFoods = keralaFoods.filter(food => {
     if (selectedCategory !== 'all' && food.category !== selectedCategory) return false;
     if (vegetarianOnly && !food.vegetarian) return false;
     return true;

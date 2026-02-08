@@ -43,7 +43,7 @@ const FOOD_IMG = {
   sweets: 'https://images.unsplash.com/photo-1606312617954-9b478c5c8f44?w=800',
 };
 
-export const kerallaFoods: Food[] = [
+export const keralaFoods: Food[] = [
   {
     id: '1',
     slug: 'kerala-sadya',
@@ -287,21 +287,21 @@ export const kerallaFoods: Food[] = [
 ];
 
 export function getFeaturedFoods(): Food[] {
-  return kerallaFoods.filter(food => food.featured);
+  return keralaFoods.filter(food => food.featured);
 }
 
 export function getFoodsByCategory(category: FoodCategory): Food[] {
-  return kerallaFoods.filter(food => food.category === category);
+  return keralaFoods.filter(food => food.category === category);
 }
 
 export function getFoodBySlug(slug: string): Food | undefined {
-  return kerallaFoods.find(food => food.slug === slug);
+  return keralaFoods.find(food => food.slug === slug);
 }
 
 export function getVegetarianFoods(): Food[] {
-  return kerallaFoods.filter(food => food.vegetarian);
+  return keralaFoods.filter(food => food.vegetarian);
 }
 
 export function getFoodsBySpiceLevel(level: 'mild' | 'medium' | 'hot' | 'very-hot'): Food[] {
-  return kerallaFoods.filter(food => food.spiceLevel === level);
+  return keralaFoods.filter(food => food.spiceLevel === level);
 }
