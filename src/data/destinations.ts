@@ -1,4 +1,4 @@
-import { Destination, District } from '@/types';
+import { Destination, DestinationType, District } from '@/types';
 
 // ========== VERIFIED KERALA-SPECIFIC UNSPLASH IMAGES ==========
 const IMG = {
@@ -3814,7 +3814,7 @@ export function getDestinationsByDistrict(districtSlug: string): Destination[] {
   return destinations.filter(d => d.districtSlug === districtSlug).sort((a, b) => b.reviews - a.reviews);
 }
 export function getDestinationsByType(type: string): Destination[] {
-  return destinations.filter(d => d.type.includes(type as any));
+  return destinations.filter(d => d.type.includes(type as DestinationType));
 }
 export function getFeaturedDestinations(): Destination[] {
   return destinations.filter(d => d.featured).sort((a, b) => b.reviews - a.reviews);

@@ -77,7 +77,7 @@ export const accommodations: Accommodation[] = [
     rating: 4.7,
     reviews: 2400,
     amenities: ['AC', 'Private Chef', 'Upper Deck', 'Fishing', 'Village Stops', 'Sunset Points'],
-    images: ['https://images.unsplash.com/photo-1602158123411-e64e5d76e7c5?w=800'],
+    images: ['https://images.unsplash.com/photo-1595815771614-ade9d652a65d?w=800'],
     coordinates: { lat: 9.4981, lng: 76.3388 },
     featured: true,
   },

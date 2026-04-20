@@ -2,211 +2,1551 @@ import { BlogPost } from '@/types';
 
 export const blogPosts: BlogPost[] = [
   {
-    id: '1',
-    slug: 'ultimate-kerala-backwater-guide',
-    title: 'The Ultimate Guide to Kerala Backwaters: Everything You Need to Know',
-    excerpt: 'From choosing the perfect houseboat to hidden canals most tourists miss, this comprehensive guide covers everything about experiencing Kerala\'s magical backwaters.',
-    content: `Kerala's backwaters are a network of interconnected canals, rivers, lakes, and inlets that stretch along the coast. This labyrinthine system, totaling over 900 km, is one of the most unique geographical features in the world and a must-visit for anyone traveling to India.
-
-## Types of Backwater Experiences
-
-### 1. Houseboat Cruise (Kettuvallam)
-The most popular way to experience the backwaters. These traditional rice barges have been converted into floating hotels with bedrooms, bathrooms, kitchens, and open-air lounges.
-
-### 2. Canoe/Kayak Tours
-For a more intimate experience, small canoes can navigate the narrow canals that houseboats can't enter. You'll get closer to village life and nature.
-
-### 3. Village Walks
-Combine your backwater experience with walks through coir-making villages, toddy shops, and rice paddies.
-
-## Best Backwater Destinations
-
-- **Alleppey** — The most popular, with well-organized houseboat tours
-- **Kumarakom** — More exclusive, luxury-oriented experience
-- **Kollam to Alleppey** — The classic 8-hour public boat journey
-- **Valiyaparamba** — Northern Kerala's hidden backwater gem
-
-## Tips for the Best Experience
-
-1. Book a **private houseboat** for couples; shared options for budget travelers
-2. The best time is **October to March** — pleasant weather, less rain
-3. **Monsoon season** (June-August) offers lush green scenery but some routes close
-4. Always check the houseboat operator's **government certification**
-5. Try the **sunset cruise** — it's magical when the sky turns orange over the palm-fringed waters`,
-    author: 'Priya Nair',
-    authorAvatar: '👩🏽',
-    date: '2025-12-15',
-    readTime: '8 min read',
-    category: 'Travel Guide',
-    tags: ['backwaters', 'houseboat', 'alleppey', 'kumarakom'],
-    image: 'https://images.unsplash.com/photo-1602158123411-e64e5d76e7c5?w=800',
-    featured: true,
+    "id": "1",
+    "slug": "thiruvananthapuram-thiruvananthapuram",
+    "title": "Thiruvananthapuram in Thiruvananthapuram: What Travelers Should Know",
+    "excerpt": "Thiruvananthapuram, also known as Trivandrum, is the capital city of the Indian state of Kerala. As of 2011, the Thiruvananthapuram Municipal Corporation had a population of 957,730 over an area of 214.86 km2, making ...",
+    "content": "## Overview\nThiruvananthapuram, also known as Trivandrum, is the capital city of the Indian state of Kerala. As of 2011, the Thiruvananthapuram Municipal Corporation had a population of 957,730 over an area of 214.86 km2, making it the largest and most populous city in Kerala. The larger Thiruvananthapuram metropolitan area has over 1.7 million inhabitants within an area of 543 km2. Thiruvananthapuram is one of the few cities in India that functions as a capital city, a heritage city, a maritime city, an information technology city, a space research city, a defence city, an automotive tech city, a bioscience city, a tourism city, and a city known for its research and development institutions. It is also among the few cities in the world where both an international airport and an international seaport are located within the city in close proximity to the city center.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Thiruvananthapuram matters when planning a trip in Thiruvananthapuram district.\n\n## Quick Notes\n- District: Thiruvananthapuram\n- Topic: Thiruvananthapuram\n- Source URL: https://en.wikipedia.org/wiki/Thiruvananthapuram",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-03-14",
+    "readTime": "4 min read",
+    "category": "Travel Guide",
+    "tags": [
+      "thiruvananthapuram",
+      "kerala",
+      "thiruvananthapuram",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Padmanabhaswamy_Temple_Thiruvananthapuram.jpg/330px-Padmanabhaswamy_Temple_Thiruvananthapuram.jpg",
+    "featured": true,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Thiruvananthapuram",
+    "district": "Thiruvananthapuram"
   },
   {
-    id: '2',
-    slug: 'kerala-monsoon-magic',
-    title: 'Why Monsoon is the Best Time to Visit Kerala',
-    excerpt: 'Forget the crowds and embrace the rain — Kerala\'s monsoon season offers Ayurveda at its best, lush landscapes, and deeply discounted prices.',
-    content: `While most tourists flock to Kerala between October and March, the monsoon season (June to September) offers a completely different and arguably more authentic experience.
-
-## Why Visit During Monsoon?
-
-### 1. Ayurveda is Most Effective
-According to Ayurvedic tradition, the monsoon is the ideal time for treatments. The cool, moist atmosphere opens the body's pores, making therapies like Panchakarma more effective.
-
-### 2. Waterfalls at Their Majestic Best
-Athirappilly, Soochipara, Meenmutty — all of Kerala's waterfalls reach their peak flow during monsoon, creating spectacular displays.
-
-### 3. Incredible Value
-Hotel rates drop by 30-50%. You'll get luxury experiences at mid-range prices.
-
-### 4. Lush Green Landscapes
-Everything turns an incredible shade of green. The paddy fields, tea plantations, and forests look like they're out of a painting.
-
-## Monsoon Travel Tips
-
-- Carry waterproof gear and quick-dry clothing
-- Book accommodations with good indoor facilities
-- Avoid river activities during heavy rain
-- Embrace the rain — some of the best experiences happen in it!`,
-    author: 'Arun Kumar',
-    authorAvatar: '👨🏽',
-    date: '2025-11-28',
-    readTime: '6 min read',
-    category: 'Seasonal',
-    tags: ['monsoon', 'ayurveda', 'budget-travel', 'waterfalls'],
-    image: 'https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=800',
-    featured: true,
+    "id": "2",
+    "slug": "thiruvananthapuram-padmanabhaswamy-temple",
+    "title": "Padmanabhaswamy Temple in Thiruvananthapuram: What Travelers Should Know",
+    "excerpt": "The Padmanabhaswamy Temple is a Hindu temple dedicated to Vishnu in Thiruvananthapuram, Kerala, India. It is one of the 108 Divya Desams, sacred sites of the Sri Vaishnava tradition.",
+    "content": "## Overview\nThe Padmanabhaswamy Temple is a Hindu temple dedicated to Vishnu in Thiruvananthapuram, Kerala, India. It is one of the 108 Divya Desams, sacred sites of the Sri Vaishnava tradition.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Padmanabhaswamy Temple matters when planning a trip in Thiruvananthapuram district.\n\n## Quick Notes\n- District: Thiruvananthapuram\n- Topic: Padmanabhaswamy Temple\n- Source URL: https://en.wikipedia.org/wiki/Padmanabhaswamy_Temple",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-03-13",
+    "readTime": "4 min read",
+    "category": "Heritage",
+    "tags": [
+      "thiruvananthapuram",
+      "kerala",
+      "padmanabhaswamy",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Sree_Padmanabhaswamy_temple_01.jpg/330px-Sree_Padmanabhaswamy_temple_01.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Padmanabhaswamy_Temple",
+    "district": "Thiruvananthapuram"
   },
   {
-    id: '3',
-    slug: 'kerala-food-trail',
-    title: 'The Kerala Food Trail: 25 Dishes You Must Try',
-    excerpt: 'From the iconic Kerala Sadhya to Malabar Biryani, explore the rich culinary landscape of God\'s Own Country through its most beloved dishes.',
-    content: `Kerala's cuisine is as diverse as its geography — from the coconut-rich dishes of the coast to the spice-laden recipes of the hills. Here are 25 dishes that define Kerala's culinary identity.
-
-## Must-Try Kerala Dishes
-
-### Breakfast
-1. **Appam with Stew** — Lacy rice pancakes with coconut milk stew
-2. **Puttu with Kadala Curry** — Steamed rice cake with chickpea curry
-3. **Idiyappam** — String hoppers with coconut milk
-4. **Dosa Varieties** — Paper dosa, masala dosa, ghee roast
-
-### Lunch (The Sadhya)
-5. **Kerala Sadhya** — Grand vegetarian feast on banana leaf with 24+ dishes
-6. **Fish Curry (Meen Curry)** — Kerala's signature dish with kodampuli
-7. **Avial** — Mixed vegetables in coconut-yogurt sauce
-8. **Olan** — Ash gourd in coconut milk
-9. **Karimeen Pollichathu** — Pearl spot fish wrapped in banana leaf
-
-### Malabar Specials
-10. **Malabar Biryani** — Fragrant rice with ghee and spices
-11. **Pathiri** — Thin rice bread
-12. **Unnakkaya** — Sweet banana fritters
-
-### Snacks
-13. **Banana Chips** — Kerala's most famous snack
-14. **Pazhampori** — Banana fritters
-15. **Sukhiyan** — Sweet lentil-filled snack
-
-### Desserts
-16. **Payasam** — Multiple varieties (ada, paal, semiya)
-17. **Unniyappam** — Sweet rice flour dumplings
-18. **Kozhukatta** — Sweet rice dumplings
-
-## Where to Eat
-
-- **Thiruvananthapuram** — Street food at Chalai Market
-- **Kochi** — Fort Kochi cafes and Mattancherry food stalls
-- **Kozhikode** — SM Street (Mittai Theruvu) for halwa and snacks
-- **Alleppey** — Fresh fish at the beach shacks`,
-    author: 'Meera Menon',
-    authorAvatar: '👩🏽',
-    date: '2025-11-10',
-    readTime: '10 min read',
-    category: 'Food & Culture',
-    tags: ['food', 'cuisine', 'sadhya', 'malabar'],
-    image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800',
-    featured: true,
+    "id": "3",
+    "slug": "thiruvananthapuram-kovalam",
+    "title": "Kovalam in Thiruvananthapuram: What Travelers Should Know",
+    "excerpt": "Kovalam is a beach and seaside resort in the city of Thiruvananthapuram in Kerala, India. Kovalam is located 12.6 km (7.8 mi) southeast of the city center",
+    "content": "## Overview\nKovalam is a beach and seaside resort in the city of Thiruvananthapuram in Kerala, India. Kovalam is located 12.6 km (7.8 mi) southeast of the city center. The beaches around Kovalam are popular vacation destinations for both domestic and international travellers.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Kovalam matters when planning a trip in Thiruvananthapuram district.\n\n## Quick Notes\n- District: Thiruvananthapuram\n- Topic: Kovalam\n- Source URL: https://en.wikipedia.org/wiki/Kovalam",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-03-12",
+    "readTime": "4 min read",
+    "category": "Nature",
+    "tags": [
+      "thiruvananthapuram",
+      "kerala",
+      "kovalam",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Kovalam_beach_trivandrum_kerala.jpg/330px-Kovalam_beach_trivandrum_kerala.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Kovalam",
+    "district": "Thiruvananthapuram"
   },
   {
-    id: '4',
-    slug: 'solo-travel-kerala-women',
-    title: 'Solo Women\'s Travel Guide to Kerala: Safe, Vibrant & Unforgettable',
-    excerpt: 'Kerala consistently ranks as one of India\'s safest states for women. Here\'s how to make the most of your solo trip.',
-    content: `Kerala is widely regarded as one of the safest destinations in India for solo women travelers. With its high literacy rate, progressive social attitudes, and well-developed tourism infrastructure, it's an ideal choice for a first solo trip in India.
-
-## Safety Tips
-
-- Kerala is generally very safe, but standard solo travel precautions apply
-- Dress modestly at temples and rural areas
-- Use official transport — Kerala's public bus system is excellent
-- Share your itinerary with someone you trust
-- Keep emergency numbers saved: Police (100), Women's Helpline (181)
-
-## Best Experiences for Solo Women
-
-1. **Yoga & Ayurveda Retreats** — Perfect for solo travelers
-2. **Cooking Classes** — Learn to make Kerala cuisine in local homes
-3. **Backwater Village Walks** — Safe and fascinating cultural immersion
-4. **Art & Craft Workshops** — Try coir making, mural painting
-5. **Homestays** — Stay with local families for authentic experiences`,
-    author: 'Lakshmi Krishnan',
-    authorAvatar: '👩🏽',
-    date: '2025-10-22',
-    readTime: '7 min read',
-    category: 'Travel Guide',
-    tags: ['solo-travel', 'women', 'safety', 'tips'],
-    image: 'https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=800',
-    featured: false,
+    "id": "4",
+    "slug": "thiruvananthapuram-varkala",
+    "title": "Varkala in Thiruvananthapuram: What Travelers Should Know",
+    "excerpt": "Varkala, historically known as Balita is a major coastal municipality and a northern suburb of Thiruvananthapuram, the capital city of the Indian state of Kerala. In legends and myths related to Kerala, texts like the...",
+    "content": "## Overview\nVarkala, historically known as Balita is a major coastal municipality and a northern suburb of Thiruvananthapuram, the capital city of the Indian state of Kerala. In legends and myths related to Kerala, texts like the Kerala Mahatmyam describe the Varkala region as one of the sacred places of Kerala.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Varkala matters when planning a trip in Thiruvananthapuram district.\n\n## Quick Notes\n- District: Thiruvananthapuram\n- Topic: Varkala\n- Source URL: https://en.wikipedia.org/wiki/Varkala",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-03-11",
+    "readTime": "4 min read",
+    "category": "Food & Culture",
+    "tags": [
+      "thiruvananthapuram",
+      "kerala",
+      "varkala",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Varkala_Beach%2C_Varkala%2C_Kerala.jpg/330px-Varkala_Beach%2C_Varkala%2C_Kerala.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Varkala",
+    "district": "Thiruvananthapuram"
   },
   {
-    id: '5',
-    slug: 'onam-festival-guide',
-    title: 'Onam Festival: Kerala\'s Grand Harvest Celebration',
-    excerpt: 'Everything about Kerala\'s biggest festival — from the legend of King Mahabali to the grand Onam Sadhya feast.',
-    content: `Onam is Kerala's most important festival, celebrated for ten days in August-September. It marks the harvest season and commemorates the mythical King Mahabali's annual return to Kerala.
-
-## The Legend
-
-According to legend, King Mahabali was a just and beloved Asura king who ruled Kerala during its golden age. His kingdom was so prosperous that even the gods became envious. Lord Vishnu, in the form of Vamana (a dwarf Brahmin), pushed Mahabali to the netherworld but granted him permission to visit his people once a year — during Onam.
-
-## How Onam is Celebrated
-
-### Pookalam (Flower Carpet)
-Intricate flower arrangements are created in front of homes using fresh flowers, growing more elaborate each day.
-
-### Onam Sadhya
-The grand vegetarian feast served on banana leaf with 24+ dishes is the culinary highlight.
-
-### Vallam Kali (Boat Race)
-Snake boat races on the backwaters are the most spectacular sporting events during Onam.
-
-### Pulikali (Tiger Dance)
-Men paint themselves as tigers and hunters and dance through the streets of Thrissur.
-
-### Kaikottikali
-Women perform this graceful clap dance in circles around a traditional lamp.
-
-## When & Where
-
-Onam typically falls in August-September. Kochi, Thrissur, and Thiruvananthapuram have the most elaborate celebrations.`,
-    author: 'Vishnu Mohan',
-    authorAvatar: '👨🏽',
-    date: '2025-09-15',
-    readTime: '9 min read',
-    category: 'Festivals',
-    tags: ['onam', 'festival', 'culture', 'sadhya'],
-    image: 'https://images.unsplash.com/photo-1602158123411-e64e5d76e7c5?w=800',
-    featured: false,
+    "id": "5",
+    "slug": "thiruvananthapuram-napier-museum",
+    "title": "Napier Museum in Thiruvananthapuram: What Travelers Should Know",
+    "excerpt": "The Napier Museum is an art and natural history museum situated in Thiruvananthapuram, India.",
+    "content": "## Overview\nThe Napier Museum is an art and natural history museum situated in Thiruvananthapuram, India.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Napier Museum matters when planning a trip in Thiruvananthapuram district.\n\n## Quick Notes\n- District: Thiruvananthapuram\n- Topic: Napier Museum\n- Source URL: https://en.wikipedia.org/wiki/Napier_Museum",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-03-10",
+    "readTime": "4 min read",
+    "category": "Seasonal",
+    "tags": [
+      "thiruvananthapuram",
+      "kerala",
+      "napier",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Napier_Museum_TVM.jpg/330px-Napier_Museum_TVM.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Napier_Museum",
+    "district": "Thiruvananthapuram"
   },
+  {
+    "id": "6",
+    "slug": "kollam-kollam",
+    "title": "Kollam in Kollam: What Travelers Should Know",
+    "excerpt": "Kollam, is an ancient seaport and the fourth largest city in the Indian state of Kerala. Located on the southern tip of the Malabar Coast of the Arabian Sea, the city is on the banks of Ashtamudi Lake and is 71 kilome...",
+    "content": "## Overview\nKollam, is an ancient seaport and the fourth largest city in the Indian state of Kerala. Located on the southern tip of the Malabar Coast of the Arabian Sea, the city is on the banks of Ashtamudi Lake and is 71 kilometers (44 mi) northwest of the Thiruvananthapuram. Kollam is one of India's oldest continuously inhabited cities, with evidence of habitation stretching back to the megalithic; the city has also been a maritime entrepôt millennia, the earliest attestation of which dates back to the Phoenicians and Romans. It is the southern gateway to the Backwaters of Kerala, and is known for its cashew processing, coir manufacturing, and tourism industries.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Kollam matters when planning a trip in Kollam district.\n\n## Quick Notes\n- District: Kollam\n- Topic: Kollam\n- Source URL: https://en.wikipedia.org/wiki/Kollam",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-03-09",
+    "readTime": "4 min read",
+    "category": "Travel Guide",
+    "tags": [
+      "kollam",
+      "kerala",
+      "kollam",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Location_map_India_Kollam_EN.svg/330px-Location_map_India_Kollam_EN.svg.png",
+    "featured": true,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Kollam",
+    "district": "Kollam"
+  },
+  {
+    "id": "7",
+    "slug": "kollam-ashtamudi-lake",
+    "title": "Ashtamudi Lake in Kollam: What Travelers Should Know",
+    "excerpt": "Ashtamudi Lake, in the Kollam District of the Indian state of Kerala is a unique wetland ecosystem and a large palm-shaped water body. It is second only in size to the Vembanad estuary ecosystem of the state",
+    "content": "## Overview\nAshtamudi Lake, in the Kollam District of the Indian state of Kerala is a unique wetland ecosystem and a large palm-shaped water body. It is second only in size to the Vembanad estuary ecosystem of the state. Ashtamudi means 'eight hills or peaks' in the local Malayalam language. The name is indicative of the lake's topography with its multiple branches. The lake is also called the gateway to the backwaters of Kerala and is well known for its houseboat and backwater resorts.\nAshtamudi Wetland was included in the list of wetlands of international importance, as defined by the Ramsar Convention for the conservation and sustainable utilization of wetlands.\n Ashtamudi Estuary is the deepest among all the estuaries in Kerala, with a maximum depth of 6.4 meters at the confluence zone.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Ashtamudi Lake matters when planning a trip in Kollam district.\n\n## Quick Notes\n- District: Kollam\n- Topic: Ashtamudi Lake\n- Source URL: https://en.wikipedia.org/wiki/Ashtamudi_Lake",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-03-08",
+    "readTime": "4 min read",
+    "category": "Heritage",
+    "tags": [
+      "kollam",
+      "kerala",
+      "ashtamudi",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Ashtamudi_Kerala.jpg/330px-Ashtamudi_Kerala.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Ashtamudi_Lake",
+    "district": "Kollam"
+  },
+  {
+    "id": "8",
+    "slug": "kollam-jatayu-earth-s-center-nature-park",
+    "title": "Jatayu Earth's Center Nature Park in Kollam: What Travelers Should Know",
+    "excerpt": "Jatayu Earth's Center, also known as Jatayu Nature Park is a national park and tourism centre at Chadayamangalam in Kollam district of Kerala, India. It stands at an altitude of 350 m (1,150 ft) above mean sea level",
+    "content": "## Overview\nJatayu Earth's Center, also known as Jatayu Nature Park is a national park and tourism centre at Chadayamangalam in Kollam district of Kerala, India. It stands at an altitude of 350 m (1,150 ft) above mean sea level. To get to the top, there is a cable car, and it is the only cable car in Kerala. The honor of being the largest bird sculpture in the world belongs to Jatayu.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Jatayu Earth's Center Nature Park matters when planning a trip in Kollam district.\n\n## Quick Notes\n- District: Kollam\n- Topic: Jatayu Earth's Center Nature Park\n- Source URL: https://en.wikipedia.org/wiki/Jatayu_Earth's_Center_Nature_Park",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-03-07",
+    "readTime": "4 min read",
+    "category": "Nature",
+    "tags": [
+      "kollam",
+      "kerala",
+      "jatayu",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Jatayu_Earth_Centre.jpg/330px-Jatayu_Earth_Centre.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Jatayu_Earth's_Center_Nature_Park",
+    "district": "Kollam"
+  },
+  {
+    "id": "9",
+    "slug": "kollam-thenmala",
+    "title": "Thenmala in Kollam: What Travelers Should Know",
+    "excerpt": "Thenmala is a tourist destination on the eastern side of Kollam district in Kerala, India. It is home to the first ecotourism centre in India",
+    "content": "## Overview\nThenmala is a tourist destination on the eastern side of Kollam district in Kerala, India. It is home to the first ecotourism centre in India. The word 'Thenmala' means \"Honey hill\" in the Malayalam language. It is known for its high-quality honey export. The town is 66 km away from Kollam city, 69 km from the state capital, Trivandrum and is just 14 km away from the Tamil Nadu state border. The interstate National Highway 744, connecting Kollam with Madurai in Tamil Nadu, and State Highway 2 of Kerala are passing through Thenmala.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Thenmala matters when planning a trip in Kollam district.\n\n## Quick Notes\n- District: Kollam\n- Topic: Thenmala\n- Source URL: https://en.wikipedia.org/wiki/Thenmala",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-03-06",
+    "readTime": "4 min read",
+    "category": "Food & Culture",
+    "tags": [
+      "kollam",
+      "kerala",
+      "thenmala",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/13_kannara_bridge_near_shencottah.jpeg/330px-13_kannara_bridge_near_shencottah.jpeg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Thenmala",
+    "district": "Kollam"
+  },
+  {
+    "id": "10",
+    "slug": "kollam-sasthamcotta-lake",
+    "title": "Sasthamcotta Lake in Kollam: What Travelers Should Know",
+    "excerpt": "Sasthamcotta Lake or Sasthamkotta Lake, also categorized as a wetland, is the largest fresh water lake in Kerala, a state of India on the south of the West Coast. The lake is named after the ancient Sastha temple loca...",
+    "content": "## Overview\nSasthamcotta Lake or Sasthamkotta Lake, also categorized as a wetland, is the largest fresh water lake in Kerala, a state of India on the south of the West Coast. The lake is named after the ancient Sastha temple located on its bank. It meets the drinking water needs of half million people of the Quilon district and also provides fishing resources. The purity of the lake water for drinking use is attributed to the presence of large population of larva called cavaborus that consumes bacteria in the lake water. The lake is a designated wetland of international importance under the Ramsar Convention since November 2002.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Sasthamcotta Lake matters when planning a trip in Kollam district.\n\n## Quick Notes\n- District: Kollam\n- Topic: Sasthamcotta Lake\n- Source URL: https://en.wikipedia.org/wiki/Sasthamcotta_Lake",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-03-05",
+    "readTime": "4 min read",
+    "category": "Seasonal",
+    "tags": [
+      "kollam",
+      "kerala",
+      "sasthamcotta",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Sasthamcotta_Lake_By_ArunElectra.jpg/330px-Sasthamcotta_Lake_By_ArunElectra.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Sasthamcotta_Lake",
+    "district": "Kollam"
+  },
+  {
+    "id": "11",
+    "slug": "pathanamthitta-pathanamthitta-district",
+    "title": "Pathanamthitta district in Pathanamthitta: What Travelers Should Know",
+    "excerpt": "Pathanamthitta district, is one of the 14 districts in the Indian state of Kerala. The district headquarters is in the town of Pathanamthitta",
+    "content": "## Overview\nPathanamthitta district, is one of the 14 districts in the Indian state of Kerala. The district headquarters is in the town of Pathanamthitta. There are four municipalities in Pathanamthitta: Adoor, Pandalam, Pathanamthitta and Thiruvalla. and Major Towns of Konni, Kozhanchery, Ranni, and Mallappalli.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Pathanamthitta district matters when planning a trip in Pathanamthitta district.\n\n## Quick Notes\n- District: Pathanamthitta\n- Topic: Pathanamthitta district\n- Source URL: https://en.wikipedia.org/wiki/Pathanamthitta_district",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-03-04",
+    "readTime": "4 min read",
+    "category": "Travel Guide",
+    "tags": [
+      "pathanamthitta",
+      "kerala",
+      "pathanamthitta",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Thiruvallakkar.jpg/330px-Thiruvallakkar.jpg",
+    "featured": true,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Pathanamthitta_district",
+    "district": "Pathanamthitta"
+  },
+  {
+    "id": "12",
+    "slug": "pathanamthitta-sabarimala-place",
+    "title": "Sabarimala (place) in Pathanamthitta: What Travelers Should Know",
+    "excerpt": "Sabarimala is a hill situated in Perunad village, Ranni Taluk,Thiruvalla Revenue Division of Pathanamthitta district in Kerala State. This hill is situated at 72 kilometers from Pathanamthitta town",
+    "content": "## Overview\nSabarimala is a hill situated in Perunad village, Ranni Taluk,Thiruvalla Revenue Division of Pathanamthitta district in Kerala State. This hill is situated at 72 kilometers from Pathanamthitta town. The distance from Ranni to Sabarimala is 60 kilometers. A motorable road is built from Ranni to Pampa, valley of Sabarimala hills. Sabarimala Sree Dharmasastha Temple, Malikappuram Temple are situated on one side of this hills. Sabarimala is located inside Periyar National Park in the Western Ghats. The height of Sabarimala from mean sea level is 1,260 meters.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Sabarimala (place) matters when planning a trip in Pathanamthitta district.\n\n## Quick Notes\n- District: Pathanamthitta\n- Topic: Sabarimala (place)\n- Source URL: https://en.wikipedia.org/wiki/Sabarimala_(place)",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-03-03",
+    "readTime": "4 min read",
+    "category": "Heritage",
+    "tags": [
+      "pathanamthitta",
+      "kerala",
+      "sabarimala",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/MOUNTAINS_SABARIMALA_KERALA_-_panoramio.jpg/330px-MOUNTAINS_SABARIMALA_KERALA_-_panoramio.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Sabarimala_(place)",
+    "district": "Pathanamthitta"
+  },
+  {
+    "id": "13",
+    "slug": "pathanamthitta-aranmula",
+    "title": "Aranmula in Pathanamthitta: What Travelers Should Know",
+    "excerpt": "Aranmula, a temple town in Kerala, India, is renowned as the cultural capital of Pathanamthitta district. Situated on the banks of the Pampa, it has been a significant pilgrimage centre since ancient times and an impo...",
+    "content": "## Overview\nAranmula, a temple town in Kerala, India, is renowned as the cultural capital of Pathanamthitta district. Situated on the banks of the Pampa, it has been a significant pilgrimage centre since ancient times and an important trade post when the river served as the main transport route. Located near Kozhencherry in Pathanamthitta, Aranmula is easily accessible from Chengannur railway station, just 10 km away. Today, it is one of the fastest-growing villages in the region.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Aranmula matters when planning a trip in Pathanamthitta district.\n\n## Quick Notes\n- District: Pathanamthitta\n- Topic: Aranmula\n- Source URL: https://en.wikipedia.org/wiki/Aranmula",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-03-02",
+    "readTime": "4 min read",
+    "category": "Nature",
+    "tags": [
+      "pathanamthitta",
+      "kerala",
+      "aranmula",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Aranmula_Temple.JPG/330px-Aranmula_Temple.JPG",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Aranmula",
+    "district": "Pathanamthitta"
+  },
+  {
+    "id": "14",
+    "slug": "pathanamthitta-gavi-kerala",
+    "title": "Gavi, Kerala in Pathanamthitta: What Travelers Should Know",
+    "excerpt": "Gavi is a village in Konni taluk Pathanamthitta district, Kerala, India.The nearest railway station is Thiruvalla (120 km). It is located 28 km southwest of Vandiperiyar, a town in Idukki on N.H 220, the highway conne...",
+    "content": "## Overview\nGavi is a village in Konni taluk Pathanamthitta district, Kerala, India.The nearest railway station is Thiruvalla (120 km). It is located 28 km southwest of Vandiperiyar, a town in Idukki on N.H 220, the highway connecting Kollam and Madurai. Until 2012, Gavi was not known to many people and it became a major tourist destination after the release of Malayalam movie Ordinary, which was mainly shot at Gavi.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Gavi, Kerala matters when planning a trip in Pathanamthitta district.\n\n## Quick Notes\n- District: Pathanamthitta\n- Topic: Gavi, Kerala\n- Source URL: https://en.wikipedia.org/wiki/Gavi%2C_Kerala",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-03-01",
+    "readTime": "4 min read",
+    "category": "Food & Culture",
+    "tags": [
+      "pathanamthitta",
+      "kerala",
+      "gavi",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Gavi%2C_Kerala.jpg/330px-Gavi%2C_Kerala.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Gavi%2C_Kerala",
+    "district": "Pathanamthitta"
+  },
+  {
+    "id": "15",
+    "slug": "pathanamthitta-konni-kerala",
+    "title": "Konni, Kerala in Pathanamthitta: What Travelers Should Know",
+    "excerpt": "Konni, also spelt Konny, is a town and taluk headquarters in Pathanamthitta district of Kerala, India. Konni is known for its elephant cages, forests, and rubber plantations",
+    "content": "## Overview\nKonni, also spelt Konny, is a town and taluk headquarters in Pathanamthitta district of Kerala, India. Konni is known for its elephant cages, forests, and rubber plantations. It is also known as \"Aanakoodinte Nadu\". Nearest town is Pathanamthitta. Konni is located 32 km (20 mi) from Chengannur railway station and NH 183 in Chengannur. It is well-connected via the Muvattupuzha - Punalur state highway.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Konni, Kerala matters when planning a trip in Pathanamthitta district.\n\n## Quick Notes\n- District: Pathanamthitta\n- Topic: Konni, Kerala\n- Source URL: https://en.wikipedia.org/wiki/Konni%2C_Kerala",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-02-28",
+    "readTime": "4 min read",
+    "category": "Seasonal",
+    "tags": [
+      "pathanamthitta",
+      "kerala",
+      "konni",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/%E0%B4%95%E0%B5%8B%E0%B4%A8%E0%B5%8D%E0%B4%A8%E0%B4%BF_%E0%B4%86%E0%B4%A8%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B5%82%E0%B4%9F%E0%B5%8D2.JPG/330px-%E0%B4%95%E0%B5%8B%E0%B4%A8%E0%B5%8D%E0%B4%A8%E0%B4%BF_%E0%B4%86%E0%B4%A8%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B5%82%E0%B4%9F%E0%B5%8D2.JPG",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Konni%2C_Kerala",
+    "district": "Pathanamthitta"
+  },
+  {
+    "id": "16",
+    "slug": "alappuzha-alappuzha",
+    "title": "Alappuzha in Alappuzha: What Travelers Should Know",
+    "excerpt": "Alappuzha or Alleppey is a municipality and town on the Laccadive Sea in the southern Indian state of Kerala. It is the district headquarters of the Alappuzha District, and is located about 130 km (80.8 mi) north of t...",
+    "content": "## Overview\nAlappuzha or Alleppey is a municipality and town on the Laccadive Sea in the southern Indian state of Kerala. It is the district headquarters of the Alappuzha District, and is located about 130 km (80.8 mi) north of the state capital Thiruvananthapuram. As per the 2011 Indian census, Alappuzha has a population of 240,991 people, and a population density of 3,675/km2 (9,520/sq mi).\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Alappuzha matters when planning a trip in Alappuzha district.\n\n## Quick Notes\n- District: Alappuzha\n- Topic: Alappuzha\n- Source URL: https://en.wikipedia.org/wiki/Alappuzha",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-02-27",
+    "readTime": "4 min read",
+    "category": "Travel Guide",
+    "tags": [
+      "alappuzha",
+      "kerala",
+      "alappuzha",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Alappuzha_Boat_Beauty_W.jpg/330px-Alappuzha_Boat_Beauty_W.jpg",
+    "featured": true,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Alappuzha",
+    "district": "Alappuzha"
+  },
+  {
+    "id": "17",
+    "slug": "alappuzha-kuttanad",
+    "title": "Kuttanad in Alappuzha: What Travelers Should Know",
+    "excerpt": "Kuttanad is a river delta landscape region in the state of Kerala, India, known for its vast paddy fields and geographical peculiarities. It is in the Districts of Alappuzha, Kottayam and Pathanamthitta",
+    "content": "## Overview\nKuttanad is a river delta landscape region in the state of Kerala, India, known for its vast paddy fields and geographical peculiarities. It is in the Districts of Alappuzha, Kottayam and Pathanamthitta. The region has the lowest altitude in India, and is one of the few places in the world where farming is carried on around 1.2 to 3.0 metres below sea level, using rice paddies largely located on reclaimed land amid the delta. Kuttanad is historically important in the ancient history of South India and is the major rice producer in the state. Farmers of Kuttanad are famous for Biosaline Farming. The United Nations Food and Agriculture Organization (FAO) has declared the Kuttanad Farming System as a Globally Important Agricultural Heritage System (GIAHS) in 2013.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Kuttanad matters when planning a trip in Alappuzha district.\n\n## Quick Notes\n- District: Alappuzha\n- Topic: Kuttanad\n- Source URL: https://en.wikipedia.org/wiki/Kuttanad",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-02-26",
+    "readTime": "4 min read",
+    "category": "Heritage",
+    "tags": [
+      "alappuzha",
+      "kerala",
+      "kuttanad",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Kerala_Kuttanad1.jpg/330px-Kerala_Kuttanad1.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Kuttanad",
+    "district": "Alappuzha"
+  },
+  {
+    "id": "18",
+    "slug": "alappuzha-nehru-trophy-boat-race",
+    "title": "Nehru Trophy Boat Race in Alappuzha: What Travelers Should Know",
+    "excerpt": "The Nehru Trophy Boat Race is an annual vallam kali held in the Punnamada Lake near Alappuzha, Kerala, India. Vallam Kali or Vallamkaliy literally means boat play/game, but can be translated to boat race in English",
+    "content": "## Overview\nThe Nehru Trophy Boat Race is an annual vallam kali held in the Punnamada Lake near Alappuzha, Kerala, India. Vallam Kali or Vallamkaliy literally means boat play/game, but can be translated to boat race in English. The most popular event of the race is the competition of Chundan Vallams. Hence the race is also known as Snake Boat Race in English. Other categories of boats which participate in various events of the race are Churulan Vallam, Iruttukuthy Vallam, Odi Vallam, Veppu Vallam , Vadakkanody Vallam and Kochu Vallam.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Nehru Trophy Boat Race matters when planning a trip in Alappuzha district.\n\n## Quick Notes\n- District: Alappuzha\n- Topic: Nehru Trophy Boat Race\n- Source URL: https://en.wikipedia.org/wiki/Nehru_Trophy_Boat_Race",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-02-25",
+    "readTime": "4 min read",
+    "category": "Nature",
+    "tags": [
+      "alappuzha",
+      "kerala",
+      "nehru",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Kerala_backwaters_view.jpg/1280px-Kerala_backwaters_view.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Nehru_Trophy_Boat_Race",
+    "district": "Alappuzha"
+  },
+  {
+    "id": "19",
+    "slug": "alappuzha-vembanad",
+    "title": "Vembanad in Alappuzha: What Travelers Should Know",
+    "excerpt": "Vembanad is the longest lake in India, and the largest in the state of Kerala. The lake has an area of 2,033 square kilometres (785 sq mi) and a maximum length of 96.5 km (60 mi).",
+    "content": "## Overview\nVembanad is the longest lake in India, and the largest in the state of Kerala. The lake has an area of 2,033 square kilometres (785 sq mi) and a maximum length of 96.5 km (60 mi).\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Vembanad matters when planning a trip in Alappuzha district.\n\n## Quick Notes\n- District: Alappuzha\n- Topic: Vembanad\n- Source URL: https://en.wikipedia.org/wiki/Vembanad",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-02-24",
+    "readTime": "4 min read",
+    "category": "Food & Culture",
+    "tags": [
+      "alappuzha",
+      "kerala",
+      "vembanad",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Kumarkom.jpg/330px-Kumarkom.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Vembanad",
+    "district": "Alappuzha"
+  },
+  {
+    "id": "20",
+    "slug": "alappuzha-ambalappuzha-sree-krishna-swamy-temple",
+    "title": "Ambalappuzha Sree Krishna Swamy Temple in Alappuzha: What Travelers Should Know",
+    "excerpt": "Ambalappuzha Sree Krishna Swamy Temple is an Indian Hindu temple dedicated to Krishna at Ambalappuzha in Alappuzha district of Kerala. The temple is believed to have been built during 15th century CE by the local rule...",
+    "content": "## Overview\nAmbalappuzha Sree Krishna Swamy Temple is an Indian Hindu temple dedicated to Krishna at Ambalappuzha in Alappuzha district of Kerala. The temple is believed to have been built during 15th century CE by the local ruler Chembakasserry Pooradam Thirunal-Devanarayanan Thampuran. It is one of the seven greatest temples in Travancore. It is considered one among the 108 Abhimana Kshethram of Vaishnavate tradition.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Ambalappuzha Sree Krishna Swamy Temple matters when planning a trip in Alappuzha district.\n\n## Quick Notes\n- District: Alappuzha\n- Topic: Ambalappuzha Sree Krishna Swamy Temple\n- Source URL: https://en.wikipedia.org/wiki/Ambalappuzha_Sree_Krishna_Swamy_Temple",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-02-23",
+    "readTime": "4 min read",
+    "category": "Seasonal",
+    "tags": [
+      "alappuzha",
+      "kerala",
+      "ambalappuzha",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Ambalappuzha_Temple.JPG/330px-Ambalappuzha_Temple.JPG",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Ambalappuzha_Sree_Krishna_Swamy_Temple",
+    "district": "Alappuzha"
+  },
+  {
+    "id": "21",
+    "slug": "kottayam-kottayam",
+    "title": "Kottayam in Kottayam: What Travelers Should Know",
+    "excerpt": "Kottayam is a city in the Kottayam district of Kerala, India. It is the district headquarters of the district and is located about 151 km (93.8 mi) north of the state capital Thiruvananthapuram",
+    "content": "## Overview\nKottayam is a city in the Kottayam district of Kerala, India. It is the district headquarters of the district and is located about 151 km (93.8 mi) north of the state capital Thiruvananthapuram. As per the 2011 Indian census, Kottayam has a population of 136,812 people, and a population density of 2,470/km2 (6,400/sq mi). \nKottayam is also referred to as \"the City of Letters\" as many of the first Malayalam daily newspapers, such as Deepika, Malayala Manorama, and Mangalam, were started and are headquartered in Kottayam, as are a number of publishing houses.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Kottayam matters when planning a trip in Kottayam district.\n\n## Quick Notes\n- District: Kottayam\n- Topic: Kottayam\n- Source URL: https://en.wikipedia.org/wiki/Kottayam",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-02-22",
+    "readTime": "4 min read",
+    "category": "Travel Guide",
+    "tags": [
+      "kottayam",
+      "kerala",
+      "kottayam",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Kottayam_Collage.jpg/330px-Kottayam_Collage.jpg",
+    "featured": true,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Kottayam",
+    "district": "Kottayam"
+  },
+  {
+    "id": "22",
+    "slug": "kottayam-kumarakom",
+    "title": "Kumarakom in Kottayam: What Travelers Should Know",
+    "excerpt": "Kumarakom is a tourism destination near the city of Kottayam in Kerala, India. It is near the Vembanad Lake, the largest lake in the state of Kerala",
+    "content": "## Overview\nKumarakom is a tourism destination near the city of Kottayam in Kerala, India. It is near the Vembanad Lake, the largest lake in the state of Kerala. In January 2023 The New York Times mentioned Kumarakom's backwater tourism.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Kumarakom matters when planning a trip in Kottayam district.\n\n## Quick Notes\n- District: Kottayam\n- Topic: Kumarakom\n- Source URL: https://en.wikipedia.org/wiki/Kumarakom",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-02-21",
+    "readTime": "4 min read",
+    "category": "Heritage",
+    "tags": [
+      "kottayam",
+      "kerala",
+      "kumarakom",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Kumarkom.jpg/330px-Kumarkom.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Kumarakom",
+    "district": "Kottayam"
+  },
+  {
+    "id": "23",
+    "slug": "kottayam-vagamon",
+    "title": "Vagamon in Kottayam: What Travelers Should Know",
+    "excerpt": "Vagamon is an Indian hill station and a revenue village located in Peerumedu Taluk of Idukki district, and also Meenachil taluk and Kanjirappally taluk of Kottayam district in the state of Kerala, India. Located in th...",
+    "content": "## Overview\nVagamon is an Indian hill station and a revenue village located in Peerumedu Taluk of Idukki district, and also Meenachil taluk and Kanjirappally taluk of Kottayam district in the state of Kerala, India. Located in the Western Ghats 25 kilometres (16 mi) east of Erattupetta on the border of Kottayam-Idukki districts, Vagamon is known for its natural environment. The Vagamon glass bridge is the longest cantilever glass bridge in India.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Vagamon matters when planning a trip in Kottayam district.\n\n## Quick Notes\n- District: Kottayam\n- Topic: Vagamon\n- Source URL: https://en.wikipedia.org/wiki/Vagamon",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-02-20",
+    "readTime": "4 min read",
+    "category": "Nature",
+    "tags": [
+      "kottayam",
+      "kerala",
+      "vagamon",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Vagamon_meadows.JPG/330px-Vagamon_meadows.JPG",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Vagamon",
+    "district": "Kottayam"
+  },
+  {
+    "id": "24",
+    "slug": "kottayam-ilaveezha-poonchira",
+    "title": "Ilaveezha Poonchira in Kottayam: What Travelers Should Know",
+    "excerpt": "Ilaveezhapoonchira is a tourist destination located in Melukavu village in Kottayam district near Kanjar. Ilaveezha Poonchira is surrounded by three enchanting hillocks - Mankunnu, Kodayathoormala and Thonippara",
+    "content": "## Overview\nIlaveezhapoonchira is a tourist destination located in Melukavu village in Kottayam district near Kanjar. Ilaveezha Poonchira is surrounded by three enchanting hillocks - Mankunnu, Kodayathoormala and Thonippara. This makes the place ideal for trekking.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Ilaveezha Poonchira matters when planning a trip in Kottayam district.\n\n## Quick Notes\n- District: Kottayam\n- Topic: Ilaveezha Poonchira\n- Source URL: https://en.wikipedia.org/wiki/Ilaveezha_Poonchira",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-02-19",
+    "readTime": "4 min read",
+    "category": "Food & Culture",
+    "tags": [
+      "kottayam",
+      "kerala",
+      "ilaveezha",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Ilaveezha_Poonchira_top_view.jpg/330px-Ilaveezha_Poonchira_top_view.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Ilaveezha_Poonchira",
+    "district": "Kottayam"
+  },
+  {
+    "id": "25",
+    "slug": "kottayam-vaikom-sree-mahadeva-temple",
+    "title": "Vaikom Sree Mahadeva Temple in Kottayam: What Travelers Should Know",
+    "excerpt": "The Vaikom Sree Mahadeva Temple is a temple dedicated to the Hindu god Shiva in Vaikom, Kottayam, Kerala, India.",
+    "content": "## Overview\nThe Vaikom Sree Mahadeva Temple is a temple dedicated to the Hindu god Shiva in Vaikom, Kottayam, Kerala, India.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Vaikom Sree Mahadeva Temple matters when planning a trip in Kottayam district.\n\n## Quick Notes\n- District: Kottayam\n- Topic: Vaikom Sree Mahadeva Temple\n- Source URL: https://en.wikipedia.org/wiki/Vaikom_Sree_Mahadeva_Temple",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-02-18",
+    "readTime": "4 min read",
+    "category": "Seasonal",
+    "tags": [
+      "kottayam",
+      "kerala",
+      "vaikom",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Pambady_Rajan_carrying_Idol_of_vaikom_mahadeva_temple.jpg/330px-Pambady_Rajan_carrying_Idol_of_vaikom_mahadeva_temple.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Vaikom_Sree_Mahadeva_Temple",
+    "district": "Kottayam"
+  },
+  {
+    "id": "26",
+    "slug": "idukki-idukki-district",
+    "title": "Idukki district in Idukki: What Travelers Should Know",
+    "excerpt": "Idukki district is one of the 14 districts in the Indian state of Kerala in the southwest of the country. It is the largest district in Kerala and lies amid the Cardamom Hills of Western Ghats in Kerala",
+    "content": "## Overview\nIdukki district is one of the 14 districts in the Indian state of Kerala in the southwest of the country. It is the largest district in Kerala and lies amid the Cardamom Hills of Western Ghats in Kerala. Idukki district contains two municipal towns – Kattappana and Thodupuzha, and five taluks.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Idukki district matters when planning a trip in Idukki district.\n\n## Quick Notes\n- District: Idukki\n- Topic: Idukki district\n- Source URL: https://en.wikipedia.org/wiki/Idukki_district",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-02-17",
+    "readTime": "4 min read",
+    "category": "Travel Guide",
+    "tags": [
+      "idukki",
+      "kerala",
+      "idukki",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Sunrise_at_Munnar%2CKerala.jpg/330px-Sunrise_at_Munnar%2CKerala.jpg",
+    "featured": true,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Idukki_district",
+    "district": "Idukki"
+  },
+  {
+    "id": "27",
+    "slug": "idukki-munnar",
+    "title": "Munnar in Idukki: What Travelers Should Know",
+    "excerpt": "Munnar is a town located in the Idukki district of the southwestern Indian state of Kerala. Munnar is situated at around 1,600 metres (5,200 ft) above mean sea level, in the Western Ghats mountain range",
+    "content": "## Overview\nMunnar is a town located in the Idukki district of the southwestern Indian state of Kerala. Munnar is situated at around 1,600 metres (5,200 ft) above mean sea level, in the Western Ghats mountain range. This ancient plantation settlement, dominated by its tea industry, is also a growing modern hill station.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Munnar matters when planning a trip in Idukki district.\n\n## Quick Notes\n- District: Idukki\n- Topic: Munnar\n- Source URL: https://en.wikipedia.org/wiki/Munnar",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-02-16",
+    "readTime": "4 min read",
+    "category": "Heritage",
+    "tags": [
+      "idukki",
+      "kerala",
+      "munnar",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Munnar_Overview.jpg/330px-Munnar_Overview.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Munnar",
+    "district": "Idukki"
+  },
+  {
+    "id": "28",
+    "slug": "idukki-idukki-dam",
+    "title": "Idukki Dam in Idukki: What Travelers Should Know",
+    "excerpt": "The Idukki Dam is a double-curvature thin arch dam constructed across the Periyar River in a narrow gorge between two granite hills locally known as Kuravan and Kurathi, in Idukki district, in the state of Kerala, Ind...",
+    "content": "## Overview\nThe Idukki Dam is a double-curvature thin arch dam constructed across the Periyar River in a narrow gorge between two granite hills locally known as Kuravan and Kurathi, in Idukki district, in the state of Kerala, India. It is constructed and owned by the Kerala State Electricity Board. It supports a 780 MW hydroelectric power station in Moolamattom, which started generating power on 4 October 1975. At 168.91 metres (554.2 ft), it is one of the highest arch dams in Asia. The Indo-Canadian project was inaugurated by Prime Minister Indira Gandhi on February 17, 1976.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Idukki Dam matters when planning a trip in Idukki district.\n\n## Quick Notes\n- District: Idukki\n- Topic: Idukki Dam\n- Source URL: https://en.wikipedia.org/wiki/Idukki_Dam",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-02-15",
+    "readTime": "4 min read",
+    "category": "Nature",
+    "tags": [
+      "idukki",
+      "kerala",
+      "idukki",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Idukki009.jpg/330px-Idukki009.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Idukki_Dam",
+    "district": "Idukki"
+  },
+  {
+    "id": "29",
+    "slug": "idukki-eravikulam-national-park",
+    "title": "Eravikulam National Park in Idukki: What Travelers Should Know",
+    "excerpt": "Eravikulam National Park  is a 97 km2 national park located along the Western Ghats in the Idukki and Ernakulam districts of Kerala in India. The park is situated between 10º05'N and 10º20' north, and 77º0' and 77º10'...",
+    "content": "## Overview\nEravikulam National Park  is a 97 km2 national park located along the Western Ghats in the Idukki and Ernakulam districts of Kerala in India. The park is situated between 10º05'N and 10º20' north, and 77º0' and 77º10' east and is the first national park in Kerala. It was established in 1978.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Eravikulam National Park matters when planning a trip in Idukki district.\n\n## Quick Notes\n- District: Idukki\n- Topic: Eravikulam National Park\n- Source URL: https://en.wikipedia.org/wiki/Eravikulam_National_Park",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-02-14",
+    "readTime": "4 min read",
+    "category": "Food & Culture",
+    "tags": [
+      "idukki",
+      "kerala",
+      "eravikulam",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Eravikulam_National_Park_%2849444006652%29.jpg/330px-Eravikulam_National_Park_%2849444006652%29.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Eravikulam_National_Park",
+    "district": "Idukki"
+  },
+  {
+    "id": "30",
+    "slug": "idukki-anamudi",
+    "title": "Anamudi in Idukki: What Travelers Should Know",
+    "excerpt": "Anamudi is a mountain located in Ernakulam district and Idukki district of the Indian state of Kerala. With an elevation of 2,695 m (8,842 ft), it is the highest peak in the Western Ghats and in South India.",
+    "content": "## Overview\nAnamudi is a mountain located in Ernakulam district and Idukki district of the Indian state of Kerala. With an elevation of 2,695 m (8,842 ft), it is the highest peak in the Western Ghats and in South India.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Anamudi matters when planning a trip in Idukki district.\n\n## Quick Notes\n- District: Idukki\n- Topic: Anamudi\n- Source URL: https://en.wikipedia.org/wiki/Anamudi",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-02-13",
+    "readTime": "4 min read",
+    "category": "Seasonal",
+    "tags": [
+      "idukki",
+      "kerala",
+      "anamudi",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/AnaimudiPeak_DSC_4834.jpg/330px-AnaimudiPeak_DSC_4834.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Anamudi",
+    "district": "Idukki"
+  },
+  {
+    "id": "31",
+    "slug": "ernakulam-ernakulam-district",
+    "title": "Ernakulam district in Ernakulam: What Travelers Should Know",
+    "excerpt": "Ernakulam district is one of the 14 districts in the Indian state of Kerala, and takes its name from the eponymous city division in Kochi. It is situated in the central part of the state, spans an area of about 2,408 ...",
+    "content": "## Overview\nErnakulam district is one of the 14 districts in the Indian state of Kerala, and takes its name from the eponymous city division in Kochi. It is situated in the central part of the state, spans an area of about 2,408 km2 (930 sq mi), and is home to over 9% of Kerala's population. Its headquarters are located at Kakkanad. The district includes Kochi, also known as the commercial capital of Kerala, which is famous for its ancient churches, Hindu temples, synagogues and mosques.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Ernakulam district matters when planning a trip in Ernakulam district.\n\n## Quick Notes\n- District: Ernakulam\n- Topic: Ernakulam district\n- Source URL: https://en.wikipedia.org/wiki/Ernakulam_district",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-02-12",
+    "readTime": "4 min read",
+    "category": "Travel Guide",
+    "tags": [
+      "ernakulam",
+      "kerala",
+      "ernakulam",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Kochi_Skyline.jpg/330px-Kochi_Skyline.jpg",
+    "featured": true,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Ernakulam_district",
+    "district": "Ernakulam"
+  },
+  {
+    "id": "32",
+    "slug": "ernakulam-kochi",
+    "title": "Kochi in Ernakulam: What Travelers Should Know",
+    "excerpt": "Kochi, formerly known as Cochin, is a major port city along the Malabar Coast of India bordering the Laccadive Sea. It is part of the district of Ernakulam in the state of Kerala",
+    "content": "## Overview\nKochi, formerly known as Cochin, is a major port city along the Malabar Coast of India bordering the Laccadive Sea. It is part of the district of Ernakulam in the state of Kerala. The city is also commonly referred to as Ernakulam. As of 2011, the Kochi Municipal Corporation had a population of 677,381 over an area of 94.88 km2, and the larger Kochi urban agglomeration had over 2.1 million inhabitants within an area of 440 km2, making it the largest and the most populous metropolitan area in Kerala. Kochi city is also part of the Greater Cochin development region and is classified as a Tier-II city by the Government of India. The civic body that governs the city is the Kochi Municipal Corporation, which was constituted in the year 1967, and the statutory bodies that oversee its development are the Greater Cochin Development Authority (GCDA) and the Goshree Islands Development Authority (GIDA).\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Kochi matters when planning a trip in Ernakulam district.\n\n## Quick Notes\n- District: Ernakulam\n- Topic: Kochi\n- Source URL: https://en.wikipedia.org/wiki/Kochi",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-02-11",
+    "readTime": "4 min read",
+    "category": "Heritage",
+    "tags": [
+      "ernakulam",
+      "kerala",
+      "kochi",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Kochi_Skyline.jpg/330px-Kochi_Skyline.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Kochi",
+    "district": "Ernakulam"
+  },
+  {
+    "id": "33",
+    "slug": "ernakulam-fort-kochi",
+    "title": "Fort Kochi in Ernakulam: What Travelers Should Know",
+    "excerpt": "Fort Kochi, formerly also known as Fort Cochin, is a region of Kochi city in Kerala, India. Fort Kochi takes its name from the Fort Manuel of Kochi, the first European fort on Indian soil, controlled by the Portuguese...",
+    "content": "## Overview\nFort Kochi, formerly also known as Fort Cochin, is a region of Kochi city in Kerala, India. Fort Kochi takes its name from the Fort Manuel of Kochi, the first European fort on Indian soil, controlled by the Portuguese East Indies. This is part of a handful of water-bound islands and islets toward the south-west of the mainland Kochi, and collectively known as Old Kochi or West Kochi. Adjacent to this is the locality of Mattancherry. In 1967, these three municipalities along with a few adjoining areas, were amalgamated to form the Kochi Municipal Corporation.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Fort Kochi matters when planning a trip in Ernakulam district.\n\n## Quick Notes\n- District: Ernakulam\n- Topic: Fort Kochi\n- Source URL: https://en.wikipedia.org/wiki/Fort_Kochi",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-02-10",
+    "readTime": "4 min read",
+    "category": "Nature",
+    "tags": [
+      "ernakulam",
+      "kerala",
+      "fort",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Kochi%2C_Fishing_nets_at_sunset%2C_Kerala%2C_India.jpg/330px-Kochi%2C_Fishing_nets_at_sunset%2C_Kerala%2C_India.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Fort_Kochi",
+    "district": "Ernakulam"
+  },
+  {
+    "id": "34",
+    "slug": "ernakulam-mattancherry",
+    "title": "Mattancherry in Ernakulam: What Travelers Should Know",
+    "excerpt": "Mattancherry is a historic ward of Kochi, Kerala. It is about 9 km south-west from the city centre",
+    "content": "## Overview\nMattancherry is a historic ward of Kochi, Kerala. It is about 9 km south-west from the city centre. Mattanchery is home to many sites of historical and cultural significance, including the Paradesi Synagogue, which was the centre of life in the Jewish Quarter. In addition to the Cochin Jews and Paradesi Jews, Mattanchery is also home to Konkanis and Gujaratis, with the Gujarati street in Mattancherry being a cultural icon for Keralite Gujaratis.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Mattancherry matters when planning a trip in Ernakulam district.\n\n## Quick Notes\n- District: Ernakulam\n- Topic: Mattancherry\n- Source URL: https://en.wikipedia.org/wiki/Mattancherry",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-02-09",
+    "readTime": "4 min read",
+    "category": "Food & Culture",
+    "tags": [
+      "ernakulam",
+      "kerala",
+      "mattancherry",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Jew_Street_Mattancherry%2C_Fort_Kochi%2C_Ernakulam%2C_Kerala%2C_India_IMG_20190526_150112.jpg/330px-Jew_Street_Mattancherry%2C_Fort_Kochi%2C_Ernakulam%2C_Kerala%2C_India_IMG_20190526_150112.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Mattancherry",
+    "district": "Ernakulam"
+  },
+  {
+    "id": "35",
+    "slug": "ernakulam-cherai-beach",
+    "title": "Cherai Beach in Ernakulam: What Travelers Should Know",
+    "excerpt": "Cherai Beach is located in Cherai on the northern side of Vypin Island, a suburb of the city of Kochi in the state of Kerala, India. One of the most visited beaches in the state, it is situated around 25 km from downt...",
+    "content": "## Overview\nCherai Beach is located in Cherai on the northern side of Vypin Island, a suburb of the city of Kochi in the state of Kerala, India. One of the most visited beaches in the state, it is situated around 25 km from downtown Kochi and 20 km from Cochin International Airport.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Cherai Beach matters when planning a trip in Ernakulam district.\n\n## Quick Notes\n- District: Ernakulam\n- Topic: Cherai Beach\n- Source URL: https://en.wikipedia.org/wiki/Cherai_Beach",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-02-08",
+    "readTime": "4 min read",
+    "category": "Seasonal",
+    "tags": [
+      "ernakulam",
+      "kerala",
+      "cherai",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Sunrise_at_Cherai_Beach.jpg/330px-Sunrise_at_Cherai_Beach.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Cherai_Beach",
+    "district": "Ernakulam"
+  },
+  {
+    "id": "36",
+    "slug": "thrissur-thrissur",
+    "title": "Thrissur in Thrissur: What Travelers Should Know",
+    "excerpt": "Thrissur, formerly Trichur, also known by its historical name Thrissivaperur, is a city and the headquarters of the Thrissur district in Kerala, India. It is the third largest urban agglomeration in Kerala after Kochi...",
+    "content": "## Overview\nThrissur, formerly Trichur, also known by its historical name Thrissivaperur, is a city and the headquarters of the Thrissur district in Kerala, India. It is the third largest urban agglomeration in Kerala after Kochi and Kozhikode, and the 21st largest in India. Thrissur is classified as a Tier-2 city by the Government of India. The city is built around a 65-acre (26 ha) hillock called Thekkinkadu Maidanam which seats the Vadakkumnathan temple. It is located 284 kilometres (176 mi) north-west of the state's capital city, Thiruvananthapuram. Thrissur was once the capital of the Kingdom of Cochin, and was a point of contact for the Assyrians, Greeks, Persians, Arabs, Romans, Portuguese, Dutch and English.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Thrissur matters when planning a trip in Thrissur district.\n\n## Quick Notes\n- District: Thrissur\n- Topic: Thrissur\n- Source URL: https://en.wikipedia.org/wiki/Thrissur",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-02-07",
+    "readTime": "4 min read",
+    "category": "Travel Guide",
+    "tags": [
+      "thrissur",
+      "kerala",
+      "thrissur",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/JJP_112.jpg/330px-JJP_112.jpg",
+    "featured": true,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Thrissur",
+    "district": "Thrissur"
+  },
+  {
+    "id": "37",
+    "slug": "thrissur-thrissur-pooram",
+    "title": "Thrissur Pooram in Thrissur: What Travelers Should Know",
+    "excerpt": "The Thrissur Pooram is an annual Hindu temple festival held in Thrissur, Kerala, India. It is held at the Vadakkunnathan Temple in Thrissur every year on the Pooram day—the day when the moon rises with the Pooram star...",
+    "content": "## Overview\nThe Thrissur Pooram is an annual Hindu temple festival held in Thrissur, Kerala, India. It is held at the Vadakkunnathan Temple in Thrissur every year on the Pooram day—the day when the moon rises with the Pooram star in the Malayalam Calendar month of Medam. It is the largest and most famous of all poorams in India. Thrissur pooram is also one of the largest festivals in Asia with more than 1 million visitors. The Thrissur Pooram Exhibition is conducted over a period of 40 to 50 days during the Thrissur Pooram.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Thrissur Pooram matters when planning a trip in Thrissur district.\n\n## Quick Notes\n- District: Thrissur\n- Topic: Thrissur Pooram\n- Source URL: https://en.wikipedia.org/wiki/Thrissur_Pooram",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-02-06",
+    "readTime": "4 min read",
+    "category": "Heritage",
+    "tags": [
+      "thrissur",
+      "kerala",
+      "thrissur",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Kudamatom_at_thrissur_pooram_2013_7618.JPG/330px-Kudamatom_at_thrissur_pooram_2013_7618.JPG",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Thrissur_Pooram",
+    "district": "Thrissur"
+  },
+  {
+    "id": "38",
+    "slug": "thrissur-athirappilly-falls",
+    "title": "Athirappilly Falls in Thrissur: What Travelers Should Know",
+    "excerpt": "Athirappilly Falls is situated in Athirappilly Panchayat in Chalakudy Taluk of Thrissur District in Kerala, India on the Chalakudy River, which originates from the upper reaches of the Western Ghats at the entrance to...",
+    "content": "## Overview\nAthirappilly Falls is situated in Athirappilly Panchayat in Chalakudy Taluk of Thrissur District in Kerala, India on the Chalakudy River, which originates from the upper reaches of the Western Ghats at the entrance to the Sholayar ranges. It is the largest waterfall in Kerala, which stands tall at 81.5 feet. Just a short drive from Athirappilly is the Vazhachal Falls, which is close to dense green forests that are home to many endangered and endemic species of flora and fauna.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Athirappilly Falls matters when planning a trip in Thrissur district.\n\n## Quick Notes\n- District: Thrissur\n- Topic: Athirappilly Falls\n- Source URL: https://en.wikipedia.org/wiki/Athirappilly_Falls",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-02-05",
+    "readTime": "4 min read",
+    "category": "Nature",
+    "tags": [
+      "thrissur",
+      "kerala",
+      "athirappilly",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/The_View_of_the_Athirapally_Falls_during_the_onset_of_Monsoon.jpg/330px-The_View_of_the_Athirapally_Falls_during_the_onset_of_Monsoon.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Athirappilly_Falls",
+    "district": "Thrissur"
+  },
+  {
+    "id": "39",
+    "slug": "thrissur-guruvayur-temple",
+    "title": "Guruvayur Temple in Thrissur: What Travelers Should Know",
+    "excerpt": "The Guruvayur Sri Krishna Temple is situated in the town of Guruvayur, Thrissur district, Kerala, India. Located approximately 26 kilometers northwest of Thrissur city, the temple stands as one of the most revered and...",
+    "content": "## Overview\nThe Guruvayur Sri Krishna Temple is situated in the town of Guruvayur, Thrissur district, Kerala, India. Located approximately 26 kilometers northwest of Thrissur city, the temple stands as one of the most revered and actively visited Hindu pilgrimage sites globally. Dedicated to the deity Guruvayurappan, a beloved form of Vishnu, the temple is affectionately hailed by devotees as Bhuloka Vaikunta —the Holy Abode of Vishnu on Earth. In terms of foot traffic, it is one of the busiest Vaishnava shrines in the country. Reverence for this ancient shrine is deeply ingrained in the spiritual landscape of South India, placing it among the 108 Abhimana Kshethram of the Vaishnavate tradition. The temple is a synthesis of profound mythology, traditional Kerala architecture, and meticulously maintained ritual practices, all centered on the loving worship of Lord Krishna.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Guruvayur Temple matters when planning a trip in Thrissur district.\n\n## Quick Notes\n- District: Thrissur\n- Topic: Guruvayur Temple\n- Source URL: https://en.wikipedia.org/wiki/Guruvayur_Temple",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-02-04",
+    "readTime": "4 min read",
+    "category": "Food & Culture",
+    "tags": [
+      "thrissur",
+      "kerala",
+      "guruvayur",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Guruvayoor_Temple_1.jpg/330px-Guruvayoor_Temple_1.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Guruvayur_Temple",
+    "district": "Thrissur"
+  },
+  {
+    "id": "40",
+    "slug": "thrissur-kerala-kalamandalam",
+    "title": "Kerala Kalamandalam in Thrissur: What Travelers Should Know",
+    "excerpt": "Kerala Kalamandalam, a deemed-to-be-University of Art and Culture by the Government of India, is a major centre for learning Indian performing arts, especially those that developed in the country's southern states, wi...",
+    "content": "## Overview\nKerala Kalamandalam, a deemed-to-be-University of Art and Culture by the Government of India, is a major centre for learning Indian performing arts, especially those that developed in the country's southern states, with special emphasis on those from Kerala. The institution, on the banks of the Bharathapuzha river, is situated in the small town of Cheruthuruthi in Thrissur district.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Kerala Kalamandalam matters when planning a trip in Thrissur district.\n\n## Quick Notes\n- District: Thrissur\n- Topic: Kerala Kalamandalam\n- Source URL: https://en.wikipedia.org/wiki/Kerala_Kalamandalam",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-02-03",
+    "readTime": "4 min read",
+    "category": "Seasonal",
+    "tags": [
+      "thrissur",
+      "kerala",
+      "kerala",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Koothambalam_at_Kerala_Kalamandalam.jpg/330px-Koothambalam_at_Kerala_Kalamandalam.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Kerala_Kalamandalam",
+    "district": "Thrissur"
+  },
+  {
+    "id": "41",
+    "slug": "palakkad-palakkad-district",
+    "title": "Palakkad district in Palakkad: What Travelers Should Know",
+    "excerpt": "Palakkad district is one of the 14 districts in the Indian state of Kerala. It was carved out of the southeastern region of the former Malabar District on 1 January 1957",
+    "content": "## Overview\nPalakkad district is one of the 14 districts in the Indian state of Kerala. It was carved out of the southeastern region of the former Malabar District on 1 January 1957. It is located at the central region of Kerala and is the second largest district in the state after Idukki. The town of Palakkad is the district headquarters. Palakkad is bordered on the northwest by the Malappuram district, on the southwest by the Thrissur district, on the northeast by Nilgiris district, and on the east by Coimbatore district of Tamil Nadu. The district is nicknamed \"The granary of Kerala\". Palakkad is the gateway to Kerala due to the presence of the Palakkad Gap, in the Western Ghats. The 2,383 m high Anginda peak, which is situated in the border of Palakkad district, Nilgiris district, and Malappuram district, in Silent Valley National Park, is the highest point of elevation in Palakkad district. Palakkad town is about 347 kilometres (216 mi) northeast of the state capital, Thiruvananthapuram.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Palakkad district matters when planning a trip in Palakkad district.\n\n## Quick Notes\n- District: Palakkad\n- Topic: Palakkad district\n- Source URL: https://en.wikipedia.org/wiki/Palakkad_district",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-02-02",
+    "readTime": "4 min read",
+    "category": "Travel Guide",
+    "tags": [
+      "palakkad",
+      "kerala",
+      "palakkad",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Palakkad_Fort_5.jpg/330px-Palakkad_Fort_5.jpg",
+    "featured": true,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Palakkad_district",
+    "district": "Palakkad"
+  },
+  {
+    "id": "42",
+    "slug": "palakkad-palakkad-fort",
+    "title": "Palakkad Fort in Palakkad: What Travelers Should Know",
+    "excerpt": "Palakkad Fort is an old fort situated in the heart of Palakkad city of Kerala state, southern India.",
+    "content": "## Overview\nPalakkad Fort is an old fort situated in the heart of Palakkad city of Kerala state, southern India.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Palakkad Fort matters when planning a trip in Palakkad district.\n\n## Quick Notes\n- District: Palakkad\n- Topic: Palakkad Fort\n- Source URL: https://en.wikipedia.org/wiki/Palakkad_Fort",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-02-01",
+    "readTime": "4 min read",
+    "category": "Heritage",
+    "tags": [
+      "palakkad",
+      "kerala",
+      "palakkad",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Palakkad_Tipu_Fort.jpg/330px-Palakkad_Tipu_Fort.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Palakkad_Fort",
+    "district": "Palakkad"
+  },
+  {
+    "id": "43",
+    "slug": "palakkad-silent-valley-national-park",
+    "title": "Silent Valley National Park in Palakkad: What Travelers Should Know",
+    "excerpt": "Silent Valley National Park is a national park in Kerala, India. It is located in the Nilgiri hills and has a core area of 89.52 km2 (34.56 sq mi)",
+    "content": "## Overview\nSilent Valley National Park is a national park in Kerala, India. It is located in the Nilgiri hills and has a core area of 89.52 km2 (34.56 sq mi). It is surrounded by a buffer zone of 148 km2 (57 sq mi). This national park has some rare species of flora and fauna. Silent Valley National Park was explored in 1847 by the botanist Robert Wight. It is located in the border of Mannarkkad Taluk of Palakkad district, Nilambur Taluk of Malappuram district, Kerala, and Nilgiris district of Tamil Nadu.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Silent Valley National Park matters when planning a trip in Palakkad district.\n\n## Quick Notes\n- District: Palakkad\n- Topic: Silent Valley National Park\n- Source URL: https://en.wikipedia.org/wiki/Silent_Valley_National_Park",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-01-31",
+    "readTime": "4 min read",
+    "category": "Nature",
+    "tags": [
+      "palakkad",
+      "kerala",
+      "silent",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/SAN_BIRDS_48.jpg/330px-SAN_BIRDS_48.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Silent_Valley_National_Park",
+    "district": "Palakkad"
+  },
+  {
+    "id": "44",
+    "slug": "palakkad-malampuzha-dam",
+    "title": "Malampuzha Dam in Palakkad: What Travelers Should Know",
+    "excerpt": "Malampuzha Dam is the largest dam and reservoir in Kerala, located near Palakkad, in the state of Kerala in South India, built post-independence by the then Madras state. Situated in the scenic hills of the Western Gh...",
+    "content": "## Overview\nMalampuzha Dam is the largest dam and reservoir in Kerala, located near Palakkad, in the state of Kerala in South India, built post-independence by the then Madras state. Situated in the scenic hills of the Western Ghats in the background, it is a combination of a masonry dam with a length of 1,849 metres and an earthen dam with a length of 220 metres making it the longest dam in the state. The dam is 355 feet high and impounds the Malampuzha River, a tributary of Bharathappuzha, Kerala's second-longest river. There is a network of two canal systems that serve the dam's reservoir of 42,090 hectares.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Malampuzha Dam matters when planning a trip in Palakkad district.\n\n## Quick Notes\n- District: Palakkad\n- Topic: Malampuzha Dam\n- Source URL: https://en.wikipedia.org/wiki/Malampuzha_Dam",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-01-30",
+    "readTime": "4 min read",
+    "category": "Food & Culture",
+    "tags": [
+      "palakkad",
+      "kerala",
+      "malampuzha",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Malampuzha_Dam_Navas_10.jpg/330px-Malampuzha_Dam_Navas_10.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Malampuzha_Dam",
+    "district": "Palakkad"
+  },
+  {
+    "id": "45",
+    "slug": "palakkad-nelliampathi",
+    "title": "Nelliampathi in Palakkad: What Travelers Should Know",
+    "excerpt": "Nelliyampathy is a hill station, located 60 kilometres (37 mi) from Palakkad, state of Kerala, India.",
+    "content": "## Overview\nNelliyampathy is a hill station, located 60 kilometres (37 mi) from Palakkad, state of Kerala, India.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Nelliampathi matters when planning a trip in Palakkad district.\n\n## Quick Notes\n- District: Palakkad\n- Topic: Nelliampathi\n- Source URL: https://en.wikipedia.org/wiki/Nelliampathi",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-01-29",
+    "readTime": "4 min read",
+    "category": "Seasonal",
+    "tags": [
+      "palakkad",
+      "kerala",
+      "nelliampathi",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/The_Western_Ghats003.jpg/330px-The_Western_Ghats003.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Nelliampathi",
+    "district": "Palakkad"
+  },
+  {
+    "id": "46",
+    "slug": "malappuram-malappuram-district",
+    "title": "Malappuram district in Malappuram: What Travelers Should Know",
+    "excerpt": "Malappuram district, is one of the 14 districts in the Indian state of Kerala, with a coastline of 70 km (43 mi). The most populous district of Kerala, Malappuram is home to around 13% of the total population of the s...",
+    "content": "## Overview\nMalappuram district, is one of the 14 districts in the Indian state of Kerala, with a coastline of 70 km (43 mi). The most populous district of Kerala, Malappuram is home to around 13% of the total population of the state. The district was formed on 16 June 1969, spanning an area of about 3,554 km2 (1,372 sq mi). It is the third-largest district of Kerala by area. It is bounded by Western Ghats and the Arabian Sea on either side. The district is divided into seven Taluks: Eranad, Kondotty, Nilambur, Perinthalmanna, Ponnani, Tirur, and Tirurangadi.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Malappuram district matters when planning a trip in Malappuram district.\n\n## Quick Notes\n- District: Malappuram\n- Topic: Malappuram district\n- Source URL: https://en.wikipedia.org/wiki/Malappuram_district",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-01-28",
+    "readTime": "4 min read",
+    "category": "Travel Guide",
+    "tags": [
+      "malappuram",
+      "kerala",
+      "malappuram",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Manjeri_Town_Calicut_Road_View.jpg/330px-Manjeri_Town_Calicut_Road_View.jpg",
+    "featured": true,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Malappuram_district",
+    "district": "Malappuram"
+  },
+  {
+    "id": "47",
+    "slug": "malappuram-nilambur",
+    "title": "Nilambur in Malappuram: What Travelers Should Know",
+    "excerpt": "Nilambur is a major town, a municipality and a Taluk in the Malappuram district of the Indian state of Kerala. It is located close to the Nilgiris range of the Western Ghats on the banks of the Chaliyar River",
+    "content": "## Overview\nNilambur is a major town, a municipality and a Taluk in the Malappuram district of the Indian state of Kerala. It is located close to the Nilgiris range of the Western Ghats on the banks of the Chaliyar River. This place is also known as 'Teak Town' because of the abundance of Nilambur teaks, which is a variety of a large, deciduous tree that occurs in mixed hardwood forests. Unlike many municipalities of India, Nilambur is covered with large amounts of vegetation, making it very scenic.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Nilambur matters when planning a trip in Malappuram district.\n\n## Quick Notes\n- District: Malappuram\n- Topic: Nilambur\n- Source URL: https://en.wikipedia.org/wiki/Nilambur",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-01-27",
+    "readTime": "4 min read",
+    "category": "Heritage",
+    "tags": [
+      "malappuram",
+      "kerala",
+      "nilambur",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Great_Horn_Bill_1.jpg/330px-Great_Horn_Bill_1.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Nilambur",
+    "district": "Malappuram"
+  },
+  {
+    "id": "48",
+    "slug": "malappuram-teak-museum",
+    "title": "Teak Museum in Malappuram: What Travelers Should Know",
+    "excerpt": "Teak Museum is located 6 km from Nilambur, a town in the Malappuram district of Kerala, South India. Teak occurs naturally in India with the main teak forests found in Kerala",
+    "content": "## Overview\nTeak Museum is located 6 km from Nilambur, a town in the Malappuram district of Kerala, South India. Teak occurs naturally in India with the main teak forests found in Kerala. This museum is the world's first teak museum.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Teak Museum matters when planning a trip in Malappuram district.\n\n## Quick Notes\n- District: Malappuram\n- Topic: Teak Museum\n- Source URL: https://en.wikipedia.org/wiki/Teak_Museum",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-01-26",
+    "readTime": "4 min read",
+    "category": "Nature",
+    "tags": [
+      "malappuram",
+      "kerala",
+      "teak",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Nilambur_Teak_Museum_03957.JPG/330px-Nilambur_Teak_Museum_03957.JPG",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Teak_Museum",
+    "district": "Malappuram"
+  },
+  {
+    "id": "49",
+    "slug": "malappuram-kottakkunnu",
+    "title": "Kottakkunnu in Malappuram: What Travelers Should Know",
+    "excerpt": "Kottakkunnu is a hill station in Malappuram district of Kerala state, India. Widely known as Kotta Kunnu, it is situated at a height of 915 metres and is a popular tourist destination in the state of Kerala located at...",
+    "content": "## Overview\nKottakkunnu is a hill station in Malappuram district of Kerala state, India. Widely known as Kotta Kunnu, it is situated at a height of 915 metres and is a popular tourist destination in the state of Kerala located at Malappuram.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Kottakkunnu matters when planning a trip in Malappuram district.\n\n## Quick Notes\n- District: Malappuram\n- Topic: Kottakkunnu\n- Source URL: https://en.wikipedia.org/wiki/Kottakkunnu",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-01-25",
+    "readTime": "4 min read",
+    "category": "Food & Culture",
+    "tags": [
+      "malappuram",
+      "kerala",
+      "kottakkunnu",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Kottakkunnu.jpg/330px-Kottakkunnu.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Kottakkunnu",
+    "district": "Malappuram"
+  },
+  {
+    "id": "50",
+    "slug": "malappuram-kadalundi-bird-sanctuary",
+    "title": "Kadalundi Bird Sanctuary in Malappuram: What Travelers Should Know",
+    "excerpt": "The Kadalundi Bird Sanctuary lies in Kadalundi grama panchayat of Kozhikode district and Vallikkunnu Grama Panchayat of Malappuram district in Kerala, India. It spreads over a cluster of islands where the Kadalundi Ri...",
+    "content": "## Overview\nThe Kadalundi Bird Sanctuary lies in Kadalundi grama panchayat of Kozhikode district and Vallikkunnu Grama Panchayat of Malappuram district in Kerala, India. It spreads over a cluster of islands where the Kadalundi River flows into the Arabian Sea. The Sanctuary hill is around 200 metres (660 ft) above sea level. It is located 19 kilometres (12 mi) away from the Kozhikode city centre.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Kadalundi Bird Sanctuary matters when planning a trip in Malappuram district.\n\n## Quick Notes\n- District: Malappuram\n- Topic: Kadalundi Bird Sanctuary\n- Source URL: https://en.wikipedia.org/wiki/Kadalundi_Bird_Sanctuary",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-01-24",
+    "readTime": "4 min read",
+    "category": "Seasonal",
+    "tags": [
+      "malappuram",
+      "kerala",
+      "kadalundi",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Kadalundi_Bird_Sanctuary.jpg/330px-Kadalundi_Bird_Sanctuary.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Kadalundi_Bird_Sanctuary",
+    "district": "Malappuram"
+  },
+  {
+    "id": "51",
+    "slug": "kozhikode-kozhikode",
+    "title": "Kozhikode in Kozhikode: What Travelers Should Know",
+    "excerpt": "Kozhikode, also known as Calicut, is a city along the Malabar Coast in the state of Kerala in India. The city is also known as the City of Spices.",
+    "content": "## Overview\nKozhikode, also known as Calicut, is a city along the Malabar Coast in the state of Kerala in India. The city is also known as the City of Spices.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Kozhikode matters when planning a trip in Kozhikode district.\n\n## Quick Notes\n- District: Kozhikode\n- Topic: Kozhikode\n- Source URL: https://en.wikipedia.org/wiki/Kozhikode",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-01-23",
+    "readTime": "4 min read",
+    "category": "Travel Guide",
+    "tags": [
+      "kozhikode",
+      "kerala",
+      "kozhikode",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Kozhikode_beach_kites.jpg/330px-Kozhikode_beach_kites.jpg",
+    "featured": true,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Kozhikode",
+    "district": "Kozhikode"
+  },
+  {
+    "id": "52",
+    "slug": "kozhikode-kappad",
+    "title": "Kappad in Kozhikode: What Travelers Should Know",
+    "excerpt": "Kappad, or Kappakadavu locally, is a beach and village near Koyilandy, in the Kozhikode district, Kerala, India.",
+    "content": "## Overview\nKappad, or Kappakadavu locally, is a beach and village near Koyilandy, in the Kozhikode district, Kerala, India.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Kappad matters when planning a trip in Kozhikode district.\n\n## Quick Notes\n- District: Kozhikode\n- Topic: Kappad\n- Source URL: https://en.wikipedia.org/wiki/Kappad",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-01-22",
+    "readTime": "4 min read",
+    "category": "Heritage",
+    "tags": [
+      "kozhikode",
+      "kerala",
+      "kappad",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Kappad_Beach.jpg/330px-Kappad_Beach.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Kappad",
+    "district": "Kozhikode"
+  },
+  {
+    "id": "53",
+    "slug": "kozhikode-beypore",
+    "title": "Beypore in Kozhikode: What Travelers Should Know",
+    "excerpt": "Beypore or Beypur is a port town in Kozhikode district in the state of Kerala, India. It is located opposite to Chaliyam, the estuary where the river Chaliyar empties into the Arabian Sea",
+    "content": "## Overview\nBeypore or Beypur is a port town in Kozhikode district in the state of Kerala, India. It is located opposite to Chaliyam, the estuary where the river Chaliyar empties into the Arabian Sea. Beypore is part of Kozhikode Municipal Corporation. The town was formerly known as Vaypura or Vadaparappanad and also as Beydary. Tipu Sultan, ruler of Mysore, named the town Sultan Pattanam. There is a marina and a beach, while Beypore port is one of the oldest ports in Kerala, which historically traded with the Middle East. Beypore is noted for building wooden ships, known as dhows or urus in the Malayalam language. These ships were usually bought by Arab merchants for trading and fishing but are now used as tourist ships. According to Captain Iwata, founder member of the Association of Sumerian Ships in Japan, Sumerian ships might have been built in Beypore. There is evidence to prove that Beypore had direct trade links with Mesopotamia and was a prominent link on the maritime silk route. The first railway line of Kerala was laid in 1861 from Tirur to Beypore (Chaliyam), passing through Tanur, Parappanangadi, Vallikkunnu, and Kadalundi.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Beypore matters when planning a trip in Kozhikode district.\n\n## Quick Notes\n- District: Kozhikode\n- Topic: Beypore\n- Source URL: https://en.wikipedia.org/wiki/Beypore",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-01-21",
+    "readTime": "4 min read",
+    "category": "Nature",
+    "tags": [
+      "kozhikode",
+      "kerala",
+      "beypore",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Kerala_backwaters_view.jpg/1280px-Kerala_backwaters_view.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Beypore",
+    "district": "Kozhikode"
+  },
+  {
+    "id": "54",
+    "slug": "kozhikode-sm-city-zamboanga",
+    "title": "SM City Zamboanga in Kozhikode: What Travelers Should Know",
+    "excerpt": "SM City Zamboanga is a shopping mall currently under construction in Zamboanga City. Developed and owned by SM Prime Holdings, it will be the second SM Supermall in both the city and the Zamboanga Peninsula",
+    "content": "## Overview\nSM City Zamboanga is a shopping mall currently under construction in Zamboanga City. Developed and owned by SM Prime Holdings, it will be the second SM Supermall in both the city and the Zamboanga Peninsula. Once completed, it will become the 90th SM Supermall in the Philippines, and the 8th in Mindanao following SM City Mindpro. Upon its opening, SM City Zamboanga is set to become the second largest mall in the city and the region, following KCC Mall de Zamboanga which is located just across the same street.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why SM City Zamboanga matters when planning a trip in Kozhikode district.\n\n## Quick Notes\n- District: Kozhikode\n- Topic: SM City Zamboanga\n- Source URL: https://en.wikipedia.org/wiki/SM_City_Zamboanga",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-01-20",
+    "readTime": "4 min read",
+    "category": "Food & Culture",
+    "tags": [
+      "kozhikode",
+      "kerala",
+      "sm",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/SMZA_20260307_133055.jpg/330px-SMZA_20260307_133055.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/SM_City_Zamboanga",
+    "district": "Kozhikode"
+  },
+  {
+    "id": "55",
+    "slug": "kozhikode-kozhikode-beach",
+    "title": "Kozhikode Beach in Kozhikode: What Travelers Should Know",
+    "excerpt": "Kozhikode Beach is a beach on the western side of Kozhikode, situated on the Malabar Coast of India. The beach is accessible through four road overbridges in the city",
+    "content": "## Overview\nKozhikode Beach is a beach on the western side of Kozhikode, situated on the Malabar Coast of India. The beach is accessible through four road overbridges in the city. The beach has paved stones and illumination. There is one Lions Park for the children and an aquarium. Kozhikode Beach has always been a prominent place for conducting public meetings. The beach road was renamed 'Gandhi Road' in 1934 after Gandhi visited Kozhikode in 1934.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Kozhikode Beach matters when planning a trip in Kozhikode district.\n\n## Quick Notes\n- District: Kozhikode\n- Topic: Kozhikode Beach\n- Source URL: https://en.wikipedia.org/wiki/Kozhikode_Beach",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-01-19",
+    "readTime": "4 min read",
+    "category": "Seasonal",
+    "tags": [
+      "kozhikode",
+      "kerala",
+      "kozhikode",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Kozhikode_Beach_Coastline.jpg/330px-Kozhikode_Beach_Coastline.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Kozhikode_Beach",
+    "district": "Kozhikode"
+  },
+  {
+    "id": "56",
+    "slug": "wayanad-wayanad-district",
+    "title": "Wayanad district in Wayanad: What Travelers Should Know",
+    "excerpt": "Wayanad district, or Wynad, is a district in the north-east of the Indian state of Kerala, with its administrative headquarters at the municipality of Kalpetta. It is the only plateau in Kerala",
+    "content": "## Overview\nWayanad district, or Wynad, is a district in the north-east of the Indian state of Kerala, with its administrative headquarters at the municipality of Kalpetta. It is the only plateau in Kerala. The Wayanad Plateau forms a continuation of the Mysore Plateau, the southern portion of the Deccan Plateau. It is set high in the Western Ghats with altitudes ranging from 700 to 2,100 meters and some areas resemble to Eastern Ghats including Kolagapara, Kurumbalakotta and some parts of Vadakkanad and Chekadi. Vellari Mala, a 2,240 m (7,349 ft) high peak situated on the trijunction of Wayanad, Malappuram, and Kozhikode districts, is the highest point in Wayanad district. The district was formed on 1 November 1980 as the 12th district in Kerala, by carving out areas from Kozhikode and Kannur districts. An area of 885.92 km2 in the district is forested. Wayanad has three municipal towns—Kalpetta, Mananthavady and Sulthan Bathery. There are many indigenous tribes in this area. \nThe Kabini River, a tributary of the Kaveri River, originates at Wayanad. Wayanad district, along with the Chaliyar valley in the neighbouring Nilambur in Malappuram district, is known for natural gold fields, which are also seen in other parts of the Nilgiri Biosphere Reserve. The Chaliyar river, which is the fourth longest river of Kerala, originates on the Wayanad plateau. The historically important Edakkal Caves are located in Wayanad district.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Wayanad district matters when planning a trip in Wayanad district.\n\n## Quick Notes\n- District: Wayanad\n- Topic: Wayanad district\n- Source URL: https://en.wikipedia.org/wiki/Wayanad_district",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-01-18",
+    "readTime": "4 min read",
+    "category": "Travel Guide",
+    "tags": [
+      "wayanad",
+      "kerala",
+      "wayanad",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Blue%2C_Green_%26_White.jpg/330px-Blue%2C_Green_%26_White.jpg",
+    "featured": true,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Wayanad_district",
+    "district": "Wayanad"
+  },
+  {
+    "id": "57",
+    "slug": "wayanad-edakkal-caves",
+    "title": "Edakkal caves in Wayanad: What Travelers Should Know",
+    "excerpt": "The Edakkal caves are two natural caves at a remote location in sultan bathery in the Wayanad district of Kerala in India. They lie 1,200 m (3,900 ft) above sea level on Ambukutty Mala, near an ancient trade route con...",
+    "content": "## Overview\nThe Edakkal caves are two natural caves at a remote location in sultan bathery in the Wayanad district of Kerala in India. They lie 1,200 m (3,900 ft) above sea level on Ambukutty Mala, near an ancient trade route connecting the high mountains of Mysore to the ports of the Malabar Coast. Inside the caves are etched petroglyphs believed to date to at least 6,000 BCE, from the Neolithic man, indicating the presence of a prehistoric settlement in this region. The Stone Age carvings of Edakkal are rare and are the only known examples from South India besides those of Shenthurini, Kollam, also in Kerala. The cave paintings of Shenthurini (Shendurney) forests in Kerala are of the Mesolithic era.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Edakkal caves matters when planning a trip in Wayanad district.\n\n## Quick Notes\n- District: Wayanad\n- Topic: Edakkal caves\n- Source URL: https://en.wikipedia.org/wiki/Edakkal_caves",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-01-17",
+    "readTime": "4 min read",
+    "category": "Heritage",
+    "tags": [
+      "wayanad",
+      "kerala",
+      "edakkal",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Edakkal_Cave.jpg/330px-Edakkal_Cave.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Edakkal_caves",
+    "district": "Wayanad"
+  },
+  {
+    "id": "58",
+    "slug": "wayanad-banasura-sagar-dam",
+    "title": "Banasura Sagar Dam in Wayanad: What Travelers Should Know",
+    "excerpt": "Banasura Sagar Dam, situated in Padinjarathara in Kerala is the largest earth dam in India and second largest dam in Asia. Banasura Dam is under the control of Padinjarathara KSEB Station",
+    "content": "## Overview\nBanasura Sagar Dam, situated in Padinjarathara in Kerala is the largest earth dam in India and second largest dam in Asia. Banasura Dam is under the control of Padinjarathara KSEB Station. \nIndia's first operating floating solar power plant was established in Banasura Dam. The dam is surrounded by Banasura Hills. Dam impounds the Karamanathodu tributary of the Kabini River, is part of the Indian Banasurasagar Project consisting of a dam and a canal project started in 1979. The goal of the project is to support the Kakkayam Hydro electric power project and satisfy the demand for irrigation and drinking water in a region known to have water shortages in seasonal dry periods. The dam is also known as Kuttiyadi Augmentation Main Earthen Dam. The dam has a height of 38.5 metres (126 ft) and length of 776 metres (2,546 ft).\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Banasura Sagar Dam matters when planning a trip in Wayanad district.\n\n## Quick Notes\n- District: Wayanad\n- Topic: Banasura Sagar Dam\n- Source URL: https://en.wikipedia.org/wiki/Banasura_Sagar_Dam",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-01-16",
+    "readTime": "4 min read",
+    "category": "Nature",
+    "tags": [
+      "wayanad",
+      "kerala",
+      "banasura",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Banasurasagar_Main_Dam.jpg/330px-Banasurasagar_Main_Dam.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Banasura_Sagar_Dam",
+    "district": "Wayanad"
+  },
+  {
+    "id": "59",
+    "slug": "wayanad-chembra-peak",
+    "title": "Chembra Peak in Wayanad: What Travelers Should Know",
+    "excerpt": "Chembra Peak is a mountain in the state of Kerala, India, with an elevation of 2,100 m (6,890 ft) above sea level. The highest peak in the Wayanad hills and one of the highest peaks in the Western Ghats, adjoining the...",
+    "content": "## Overview\nChembra Peak is a mountain in the state of Kerala, India, with an elevation of 2,100 m (6,890 ft) above sea level. The highest peak in the Wayanad hills and one of the highest peaks in the Western Ghats, adjoining the Nilgiri Hills and Vellarimala, it is located in the Wayanad district and Malappuram district in Kerala, near Kalpetta town and Nilambur taluk.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Chembra Peak matters when planning a trip in Wayanad district.\n\n## Quick Notes\n- District: Wayanad\n- Topic: Chembra Peak\n- Source URL: https://en.wikipedia.org/wiki/Chembra_Peak",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-01-15",
+    "readTime": "4 min read",
+    "category": "Food & Culture",
+    "tags": [
+      "wayanad",
+      "kerala",
+      "chembra",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Chembra.jpg/330px-Chembra.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Chembra_Peak",
+    "district": "Wayanad"
+  },
+  {
+    "id": "60",
+    "slug": "wayanad-wayanad-wildlife-sanctuary",
+    "title": "Wayanad Wildlife Sanctuary in Wayanad: What Travelers Should Know",
+    "excerpt": "Wayanad Wildlife Sanctuary is a wildlife sanctuary in Wayanad, Kerala, India with an extent of 344.44 km2 (132.99 sq mi) and four hill ranges namely Sulthan Bathery, Muthanga, Kurichiat and Tholpetty. A variety of lar...",
+    "content": "## Overview\nWayanad Wildlife Sanctuary is a wildlife sanctuary in Wayanad, Kerala, India with an extent of 344.44 km2 (132.99 sq mi) and four hill ranges namely Sulthan Bathery, Muthanga, Kurichiat and Tholpetty. A variety of large wild animals such as gaur, Indian elephant, deer and Bengal tiger occur there. There are also quite a few unusual birds in the sanctuary. In particular, Indian peafowl tend to be very common in the area. Wayanad Wildlife Sanctuary is the second largest wildlife sanctuary in Kerala. It is bestowed with lush green forests and rich wildlife. This wildlife area houses some of the rare and endangered species of both flora and fauna.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Wayanad Wildlife Sanctuary matters when planning a trip in Wayanad district.\n\n## Quick Notes\n- District: Wayanad\n- Topic: Wayanad Wildlife Sanctuary\n- Source URL: https://en.wikipedia.org/wiki/Wayanad_Wildlife_Sanctuary",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-01-14",
+    "readTime": "4 min read",
+    "category": "Seasonal",
+    "tags": [
+      "wayanad",
+      "kerala",
+      "wayanad",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Kerala_backwaters_view.jpg/1280px-Kerala_backwaters_view.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Wayanad_Wildlife_Sanctuary",
+    "district": "Wayanad"
+  },
+  {
+    "id": "61",
+    "slug": "kannur-kannur",
+    "title": "Kannur in Kannur: What Travelers Should Know",
+    "excerpt": "Kannur, formerly known in English as Cannanore, is a city and municipal corporation in the state of Kerala, India. It is the administrative headquarters of the Kannur district and situated 274 kilometres (170 mi) nort...",
+    "content": "## Overview\nKannur, formerly known in English as Cannanore, is a city and municipal corporation in the state of Kerala, India. It is the administrative headquarters of the Kannur district and situated 274 kilometres (170 mi) north of the major port city and commercial hub Kochi and 137 kilometres (85 mi) south of the major port city and commercial hub, Mangalore. It is the fifth largest city in Kerala. During British colonial rule in India, when Kannur was a part of the Malabar District, the city was known as Cannanore. Kannur is the fifth largest urban agglomeration in Kerala. As of the 2011 census, Kannur Municipal Corporation, the local body which administers mainland area of city, had a population of 232,486.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Kannur matters when planning a trip in Kannur district.\n\n## Quick Notes\n- District: Kannur\n- Topic: Kannur\n- Source URL: https://en.wikipedia.org/wiki/Kannur",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-01-13",
+    "readTime": "4 min read",
+    "category": "Travel Guide",
+    "tags": [
+      "kannur",
+      "kerala",
+      "kannur",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Kannur_Skyline_3.jpg/330px-Kannur_Skyline_3.jpg",
+    "featured": true,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Kannur",
+    "district": "Kannur"
+  },
+  {
+    "id": "62",
+    "slug": "kannur-st-angelo-fort",
+    "title": "St. Angelo Fort in Kannur: What Travelers Should Know",
+    "excerpt": "St. Angelo Fort is a fort facing the Arabian Sea, situated 3 km from Canannore (Kannur), a city in Kerala state, south India.",
+    "content": "## Overview\nSt. Angelo Fort is a fort facing the Arabian Sea, situated 3 km from Canannore (Kannur), a city in Kerala state, south India.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why St. Angelo Fort matters when planning a trip in Kannur district.\n\n## Quick Notes\n- District: Kannur\n- Topic: St. Angelo Fort\n- Source URL: https://en.wikipedia.org/wiki/St._Angelo_Fort",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-01-12",
+    "readTime": "4 min read",
+    "category": "Heritage",
+    "tags": [
+      "kannur",
+      "kerala",
+      "st",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Kannurfort3.JPG/330px-Kannurfort3.JPG",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/St._Angelo_Fort",
+    "district": "Kannur"
+  },
+  {
+    "id": "63",
+    "slug": "kannur-muzhappilangad",
+    "title": "Muzhappilangad in Kannur: What Travelers Should Know",
+    "excerpt": "Muzhappilangad (മുഴപ്പിലങ്ങാട്) is a coastal census town in Kannur Municipal Corporation in Kannur district in the Indian state of Kerala. It is a suburb of Kannur city.",
+    "content": "## Overview\nMuzhappilangad (മുഴപ്പിലങ്ങാട്) is a coastal census town in Kannur Municipal Corporation in Kannur district in the Indian state of Kerala. It is a suburb of Kannur city.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Muzhappilangad matters when planning a trip in Kannur district.\n\n## Quick Notes\n- District: Kannur\n- Topic: Muzhappilangad\n- Source URL: https://en.wikipedia.org/wiki/Muzhappilangad",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-01-11",
+    "readTime": "4 min read",
+    "category": "Nature",
+    "tags": [
+      "kannur",
+      "kerala",
+      "muzhappilangad",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Kerala_backwaters_view.jpg/1280px-Kerala_backwaters_view.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Muzhappilangad",
+    "district": "Kannur"
+  },
+  {
+    "id": "64",
+    "slug": "kannur-kannur-beach",
+    "title": "Kannur Beach in Kannur: What Travelers Should Know",
+    "excerpt": "Kannur Beach is a group of five beaches on the western side of Kannur city in Kerala, India. They are:Payyambalam Beach\nMeenkunnu Beach\nAdikadalayi Beach\nBaby Beach\nThayyil Beach",
+    "content": "## Overview\nKannur Beach is a group of five beaches on the western side of Kannur city in Kerala, India. They are:Payyambalam Beach\nMeenkunnu Beach\nAdikadalayi Beach\nBaby Beach\nThayyil Beach\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Kannur Beach matters when planning a trip in Kannur district.\n\n## Quick Notes\n- District: Kannur\n- Topic: Kannur Beach\n- Source URL: https://en.wikipedia.org/wiki/Kannur_Beach",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-01-10",
+    "readTime": "4 min read",
+    "category": "Food & Culture",
+    "tags": [
+      "kannur",
+      "kerala",
+      "kannur",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Payyambalam.JPG/330px-Payyambalam.JPG",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Kannur_Beach",
+    "district": "Kannur"
+  },
+  {
+    "id": "65",
+    "slug": "kannur-theyyam",
+    "title": "Theyyam in Kannur: What Travelers Should Know",
+    "excerpt": "Theyyam is an Indian ritual practised in the North Malabar Region of Kerala and some parts of neighbouring Karnataka.",
+    "content": "## Overview\nTheyyam is an Indian ritual practised in the North Malabar Region of Kerala and some parts of neighbouring Karnataka.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Theyyam matters when planning a trip in Kannur district.\n\n## Quick Notes\n- District: Kannur\n- Topic: Theyyam\n- Source URL: https://en.wikipedia.org/wiki/Theyyam",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-01-09",
+    "readTime": "4 min read",
+    "category": "Seasonal",
+    "tags": [
+      "kannur",
+      "kerala",
+      "theyyam",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Kathivanoor_Veeran_Chemmarathi_Thara-Eripuram.jpg/330px-Kathivanoor_Veeran_Chemmarathi_Thara-Eripuram.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Theyyam",
+    "district": "Kannur"
+  },
+  {
+    "id": "66",
+    "slug": "kasaragod-kasaragod",
+    "title": "Kasaragod in Kasaragod: What Travelers Should Know",
+    "excerpt": "Kasaragod is a municipal town and the administrative headquarters of the Kasaragod district in the state of Kerala, India. Established in 1966, Kasaragod was the first municipal town in the district",
+    "content": "## Overview\nKasaragod is a municipal town and the administrative headquarters of the Kasaragod district in the state of Kerala, India. Established in 1966, Kasaragod was the first municipal town in the district. It is the northernmost district of Kerala and is also known as Sapta Bhasha Sangama Bhumi.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Kasaragod matters when planning a trip in Kasaragod district.\n\n## Quick Notes\n- District: Kasaragod\n- Topic: Kasaragod\n- Source URL: https://en.wikipedia.org/wiki/Kasaragod",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-01-08",
+    "readTime": "4 min read",
+    "category": "Travel Guide",
+    "tags": [
+      "kasaragod",
+      "kerala",
+      "kasaragod",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Bakel_Fort_Beach_Kasaragod4.jpg/330px-Bakel_Fort_Beach_Kasaragod4.jpg",
+    "featured": true,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Kasaragod",
+    "district": "Kasaragod"
+  },
+  {
+    "id": "67",
+    "slug": "kasaragod-bekal-fort",
+    "title": "Bekal Fort in Kasaragod: What Travelers Should Know",
+    "excerpt": "Bekal Fort is a medieval fort built by Shivappa Nayaka of Keladi in 1650 AD, at Bekal. It is the largest fort in Kerala, spreading over 40 acres (160,000 m2).",
+    "content": "## Overview\nBekal Fort is a medieval fort built by Shivappa Nayaka of Keladi in 1650 AD, at Bekal. It is the largest fort in Kerala, spreading over 40 acres (160,000 m2).\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Bekal Fort matters when planning a trip in Kasaragod district.\n\n## Quick Notes\n- District: Kasaragod\n- Topic: Bekal Fort\n- Source URL: https://en.wikipedia.org/wiki/Bekal_Fort",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-01-07",
+    "readTime": "4 min read",
+    "category": "Heritage",
+    "tags": [
+      "kasaragod",
+      "kerala",
+      "bekal",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Bakel_Fort_Beach_Kasaragod7.jpg/330px-Bakel_Fort_Beach_Kasaragod7.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Bekal_Fort",
+    "district": "Kasaragod"
+  },
+  {
+    "id": "68",
+    "slug": "kasaragod-chandragiri-fort-kerala",
+    "title": "Chandragiri Fort, Kerala in Kasaragod: What Travelers Should Know",
+    "excerpt": "Chandragiri Fort is a fort built in the 17th century, situated in Kasaragod District of Kerala, India. This large squarish fort is 150 feet (46 m) above sea level and occupies an area of about seven acres the adjacent...",
+    "content": "## Overview\nChandragiri Fort is a fort built in the 17th century, situated in Kasaragod District of Kerala, India. This large squarish fort is 150 feet (46 m) above sea level and occupies an area of about seven acres the adjacent to Chandragiri river. The fort is now in ruins.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Chandragiri Fort, Kerala matters when planning a trip in Kasaragod district.\n\n## Quick Notes\n- District: Kasaragod\n- Topic: Chandragiri Fort, Kerala\n- Source URL: https://en.wikipedia.org/wiki/Chandragiri_Fort%2C_Kerala",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-01-06",
+    "readTime": "4 min read",
+    "category": "Nature",
+    "tags": [
+      "kasaragod",
+      "kerala",
+      "chandragiri",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Chandrigiri_Fort_-Kasaragod_-Kerala_-file_1001.jpg/330px-Chandrigiri_Fort_-Kasaragod_-Kerala_-file_1001.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Chandragiri_Fort%2C_Kerala",
+    "district": "Kasaragod"
+  },
+  {
+    "id": "69",
+    "slug": "kasaragod-ananthapura-lake-temple",
+    "title": "Ananthapura Lake Temple in Kasaragod: What Travelers Should Know",
+    "excerpt": "Sri Ananthapadmanabha Swamy Temple, also known as the Ananthapura Lake Temple, is a Hindu temple dedicated to Anantha Padmanabhaswamy. It is located in Ananthapura village of Manjeshwaram taluk, within Kasaragod distr...",
+    "content": "## Overview\nSri Ananthapadmanabha Swamy Temple, also known as the Ananthapura Lake Temple, is a Hindu temple dedicated to Anantha Padmanabhaswamy. It is located in Ananthapura village of Manjeshwaram taluk, within Kasaragod district, in the state of Kerala, India. The temple is located at the center of a rectangular tank—often referred to as a \"lake\"—and is the only temple of this kind in Kerala. As per some traditions, is believed to be the original seat (Moolasthanam) of Ananthapadmanabha Swami Thiruvananthapuram. It is considered one among the 108 Abhimana Kshethram of Vaishnavate tradition. Legend has it that this is the original site where Ananthapadmanabha settled down.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Ananthapura Lake Temple matters when planning a trip in Kasaragod district.\n\n## Quick Notes\n- District: Kasaragod\n- Topic: Ananthapura Lake Temple\n- Source URL: https://en.wikipedia.org/wiki/Ananthapura_Lake_Temple",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-01-05",
+    "readTime": "4 min read",
+    "category": "Food & Culture",
+    "tags": [
+      "kasaragod",
+      "kerala",
+      "ananthapura",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Anantapura_Lake_Temple.jpg/330px-Anantapura_Lake_Temple.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Ananthapura_Lake_Temple",
+    "district": "Kasaragod"
+  },
+  {
+    "id": "70",
+    "slug": "kasaragod-ranipuram",
+    "title": "Ranipuram in Kasaragod: What Travelers Should Know",
+    "excerpt": "Ranipuram, formerly Madathumala, is a village and a major tourist attraction in the Kasaragod district of the Indian state of Kerala. It is located near Talakaveri Wildlife Sanctuary in Kerala-Karnataka border",
+    "content": "## Overview\nRanipuram, formerly Madathumala, is a village and a major tourist attraction in the Kasaragod district of the Indian state of Kerala. It is located near Talakaveri Wildlife Sanctuary in Kerala-Karnataka border. Situated at 1,048 metres (3,438 ft) above mean sea level, Ranipuram is 48 km from the nearest city Kanhangad and 107 km from the major port city of Mangalore.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why Ranipuram matters when planning a trip in Kasaragod district.\n\n## Quick Notes\n- District: Kasaragod\n- Topic: Ranipuram\n- Source URL: https://en.wikipedia.org/wiki/Ranipuram",
+    "author": "Kerala Research Desk",
+    "authorAvatar": "KRD",
+    "date": "2026-01-04",
+    "readTime": "4 min read",
+    "category": "Seasonal",
+    "tags": [
+      "kasaragod",
+      "kerala",
+      "ranipuram",
+      "web-source"
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Ranipuram.jpg/330px-Ranipuram.jpg",
+    "featured": false,
+    "sourceUrl": "https://en.wikipedia.org/wiki/Ranipuram",
+    "district": "Kasaragod"
+  }
 ];
 
 export function getBlogBySlug(slug: string): BlogPost | undefined {
-  return blogPosts.find(b => b.slug === slug);
+  return blogPosts.find((b) => b.slug === slug);
 }
 
 export function getFeaturedBlogs(): BlogPost[] {
-  return blogPosts.filter(b => b.featured);
+  return blogPosts.filter((b) => b.featured);
 }

@@ -2,9 +2,8 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 import { getDishBySlug, allDishes } from '@/data/gods-own-flavours';
-import { ArrowLeft, Leaf, Flame, MapPin, Clock, Users, ChefHat, Drumstick, Heart, Share2, ChevronRight } from 'lucide-react';
+import { ArrowLeft, Leaf, Flame, MapPin, Clock, Users, ChefHat, Drumstick, Heart, Share2 } from 'lucide-react';
 import { notFound } from 'next/navigation';
 
 const spiceLevels: Record<string, { label: string; color: string; bg: string }> = {

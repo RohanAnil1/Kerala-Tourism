@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { accommodations } from '@/data/accommodations';
 import { Search, Star, MapPin, Wifi, Car, Coffee, Waves, TreePine, Heart, SlidersHorizontal, X } from 'lucide-react';
 

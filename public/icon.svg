@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Kerala Tourism icon">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A6847"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#g)"/>
+  <path d="M48 100V38c0-10 8-18 18-18h0v0c-8 9-12 20-12 31v49z" fill="#F8FAFC"/>
+  <path d="M66 22c16 2 30 16 32 32-13 0-24-4-32-12s-12-19-12-32c4 5 7 9 12 12z" fill="#D4A843"/>
+</svg>

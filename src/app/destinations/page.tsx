@@ -7,7 +7,22 @@ import Link from 'next/link';
 import { motion, AnimatePresence, useInView } from 'framer-motion';
 import { districts, destinations, getDestinationsByDistrict } from '@/data/destinations';
 import { DestinationType } from '@/types';
-import { Search, SlidersHorizontal, X, Star, MapPin, Users, Wallet } from 'lucide-react';
+import { Search, X, Star, MapPin, Users, Wallet, Info } from 'lucide-react';
+
+const MONTH_NAMES = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December',
+];
 
 const DESTINATION_TYPES: { value: DestinationType | 'all'; label: string; icon: string }[] = [
   { value: 'all', label: 'All Types', icon: '✨' },
@@ -24,8 +39,35 @@ const DESTINATION_TYPES: { value: DestinationType | 'all'; label: string; icon: 
 const SORT_OPTIONS = [
   { value: 'popularity', label: 'Most Popular' },
   { value: 'rating', label: 'Highest Rated' },
+  { value: 'visitability', label: 'Best Time Score' },
   { value: 'name', label: 'Name (A-Z)' },
 ];
+
+function includesMonthHint(bestTimeToVisit: string, monthName: string): boolean {
+  const best = bestTimeToVisit.toLowerCase();
+  const month = monthName.toLowerCase();
+  if (best.includes('year-round') || best.includes('all year')) return true;
+  return best.includes(month.slice(0, 3)) || best.includes(month);
+}
+
+function getVisitabilityScore(destination: (typeof destinations)[number], monthName: string): number {
+  let score = 60;
+
+  if (destination.crowdLevel === 'low') score += 15;
+  if (destination.crowdLevel === 'medium') score += 8;
+  if (destination.crowdLevel === 'high') score -= 6;
+
+  if (includesMonthHint(destination.bestTimeToVisit, monthName)) {
+    score += 18;
+  } else {
+    score -= 8;
+  }
+
+  if (destination.rating >= 4.7) score += 6;
+  if (destination.rating >= 4.4 && destination.rating < 4.7) score += 3;
+
+  return Math.max(35, Math.min(98, score));
+}
 
 /* Reveal animation wrapper */
 function Reveal({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
@@ -51,6 +93,7 @@ function DestinationsContent() {
   const [selectedType, setSelectedType] = useState<string>('all');
   const [sortBy, setSortBy] = useState<string>('popularity');
   const [searchQuery, setSearchQuery] = useState<string>('');
+  const [selectedMonth, setSelectedMonth] = useState<string>(MONTH_NAMES[new Date().getMonth()]);
 
   const filteredDestinations = useMemo(() => {
     let filtered = [...destinations];
@@ -80,13 +123,16 @@ function DestinationsContent() {
       case 'rating':
         filtered.sort((a, b) => b.rating - a.rating);
         break;
+      case 'visitability':
+        filtered.sort((a, b) => getVisitabilityScore(b, selectedMonth) - getVisitabilityScore(a, selectedMonth));
+        break;
       case 'name':
         filtered.sort((a, b) => a.name.localeCompare(b.name));
         break;
     }
 
     return filtered;
-  }, [selectedDistrict, selectedType, sortBy, searchQuery]);
+  }, [selectedDistrict, selectedType, sortBy, searchQuery, selectedMonth]);
 
   return (
     <div className="min-h-screen bg-gray-50/50 dark:bg-gray-950">
@@ -225,11 +271,24 @@ function DestinationsContent() {
                 ))}
               </select>
             </div>
+
+            <div>
+              <select
+                value={selectedMonth}
+                onChange={(e) => setSelectedMonth(e.target.value)}
+                className="px-4 py-3 rounded-2xl border border-gray-200/80 dark:border-gray-700/80 bg-white/80 dark:bg-gray-900/80 text-gray-900 dark:text-white focus:ring-2 focus:ring-kerala-green/30 outline-none text-sm appearance-none cursor-pointer transition-all duration-300"
+              >
+                {MONTH_NAMES.map((month) => (
+                  <option key={month} value={month}>{month}</option>
+                ))}
+              </select>
+            </div>
           </div>
 
           {/* Active Filters */}
           <div className="flex items-center justify-between mt-4 pt-4 border-t border-gray-200/50 dark:border-gray-800/50">
-            <p className="text-sm text-gray-500 dark:text-gray-400">
+            <div className="flex items-center gap-2">
+              <p className="text-sm text-gray-500 dark:text-gray-400">
               <span className="font-bold text-gray-900 dark:text-white text-base">{filteredDestinations.length}</span>{' '}
               destination{filteredDestinations.length !== 1 ? 's' : ''} found
               {selectedDistrict !== 'all' && (
@@ -237,7 +296,22 @@ function DestinationsContent() {
                   in <span className="text-kerala-green dark:text-emerald-400 font-semibold">{districts.find(d => d.slug === selectedDistrict)?.name}</span>
                 </span>
               )}
-            </p>
+              </p>
+              <div className="relative group">
+                <button
+                  type="button"
+                  className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-300"
+                  aria-label="Visitability score legend"
+                >
+                  <Info size={13} />
+                </button>
+                <div className="pointer-events-none absolute left-0 top-8 w-64 rounded-xl border border-gray-200/80 dark:border-gray-700/80 bg-white/95 dark:bg-gray-900/95 backdrop-blur-xl p-3 text-[11px] text-gray-600 dark:text-gray-300 shadow-elevated opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 z-20">
+                  <p className="font-semibold text-gray-900 dark:text-white mb-1">Visitability Score Formula</p>
+                  <p>Base score + crowd factor + best-time month match + rating boost.</p>
+                  <p className="mt-1">Higher score means better crowd comfort and seasonal timing for the selected month.</p>
+                </div>
+              </div>
+            </div>
             {(selectedDistrict !== 'all' || selectedType !== 'all' || searchQuery) && (
               <button
                 onClick={() => {
@@ -358,10 +432,18 @@ function DestinationsContent() {
                             </span>
                             <span className="flex items-center gap-1"><Wallet size={12} /> {destination.budgetRange}</span>
                           </div>
-                          <span className="text-xs text-gray-400 dark:text-gray-500">
-                            {destination.reviews.toLocaleString()} reviews
-                          </span>
+                            <div className="text-right">
+                              <p className="text-xs font-semibold text-kerala-green dark:text-emerald-400">
+                                {getVisitabilityScore(destination, selectedMonth)}% visitability
+                              </p>
+                              <span className="text-xs text-gray-400 dark:text-gray-500">
+                                {destination.reviews.toLocaleString()} reviews
+                              </span>
+                            </div>
                         </div>
+                          <p className="mt-2 text-[11px] text-gray-500 dark:text-gray-400">
+                            Best time: <span className="font-medium text-gray-700 dark:text-gray-300">{destination.bestTimeToVisit}</span>
+                          </p>
                       </div>
                     </div>
                   </Link>

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1602158123411-e64e5d76e7c5?w=1200',
+        url: 'https://images.unsplash.com/photo-1595815771614-ade9d652a65d?w=1200',
         width: 1200,
         height: 630,
         alt: 'Kerala Backwaters',
@@ -45,7 +45,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/icon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/icon.png" />
         <meta name="theme-color" content="#0A6847" />
         <link rel="manifest" href="/manifest.json" />
       </head>

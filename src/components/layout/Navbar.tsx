@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { Menu, X, Globe, MapPin, Compass, Calendar, BookOpen, Home, Hotel, Settings, ChevronDown, Sun, Moon, UtensilsCrossed, Flame } from 'lucide-react';
+import { Menu, X, Globe, MapPin, Compass, Calendar, BookOpen, Home, Hotel, Settings, ChevronDown, Sun, Moon, UtensilsCrossed, CalendarDays, CloudRain } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { Language } from '@/types';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -49,6 +49,8 @@ export default function Navbar() {
     { href: '/', label: t('nav.home'), icon: Home },
     { href: '/destinations', label: t('nav.destinations'), icon: MapPin },
     { href: '/experiences', label: t('nav.experiences'), icon: Compass },
+    { href: '/events', label: 'Events', icon: CalendarDays },
+    { href: '/monsoon-mode', label: 'Monsoon Mode', icon: CloudRain },
     { href: '/gods-own-flavours', label: t('nav.godsOwnFlavours'), icon: UtensilsCrossed },
     { href: '/trip-planner', label: t('nav.tripPlanner'), icon: Calendar },
     { href: '/blog', label: t('nav.blog'), icon: BookOpen },

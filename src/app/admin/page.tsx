@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { BarChart3, MapPin, FileText, Users, Settings, PlusCircle, Eye, Edit, Trash2, Search, TrendingUp, Globe, Camera, Shield, Bell, Menu, X, LogOut, Home } from 'lucide-react';
+import { BarChart3, MapPin, FileText, Users, Settings, PlusCircle, Eye, Edit, Trash2, Search, TrendingUp, Globe, Camera, Shield, Bell, Menu, X, Home } from 'lucide-react';
 import Link from 'next/link';
 
 // Mock analytics data

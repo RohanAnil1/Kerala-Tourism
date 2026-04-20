@@ -69,6 +69,8 @@ export interface BlogPost {
   tags: string[];
   image: string;
   featured: boolean;
+  sourceUrl?: string;
+  district?: string;
 }
 
 export interface Itinerary {

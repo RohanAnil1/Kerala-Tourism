@@ -68,7 +68,7 @@ export default function GodsOwnFlavoursPage() {
       <section className="relative h-[65vh] min-h-[520px] overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1626074353765-517a681e40be?w=1600"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Kerala_Sadya_Feast.jpg/1280px-Kerala_Sadya_Feast.jpg"
             alt="Kerala Cuisine - Gods Own Flavours"
             fill
             className="object-cover"

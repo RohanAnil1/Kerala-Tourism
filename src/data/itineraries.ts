@@ -9,7 +9,7 @@ export const itineraries: Itinerary[] = [
     budget: 'mid-range',
     description: 'Perfect weekend getaway covering Kochi\'s heritage, Alleppey\'s backwaters, and Munnar\'s tea gardens.',
     totalCost: '₹15,000 - ₹25,000 per person',
-    image: 'https://images.unsplash.com/photo-1602158123411-e64e5d76e7c5?w=800',
+    image: 'https://images.unsplash.com/photo-1595815771614-ade9d652a65d?w=800',
     dayPlans: [
       {
         day: 1,
@@ -175,8 +175,11 @@ export const itineraries: Itinerary[] = [
 ];
 
 export function generateItinerary(days: number, style: string, budget: string): Itinerary | null {
-  const matching = itineraries.find(
-    i => i.days === days || (days <= 3 && i.days === 3) || (days <= 5 && i.days === 5) || i.days === 7
-  );
+  const matching = itineraries.find(i => {
+    const durationMatch = i.days === days || (days <= 3 && i.days === 3) || (days <= 5 && i.days === 5) || i.days === 7;
+    const styleMatch = style ? i.style === style : true;
+    const budgetMatch = budget ? i.budget === budget : true;
+    return durationMatch && styleMatch && budgetMatch;
+  });
   return matching || itineraries[0];
 }

@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { getBlogBySlug, blogPosts } from '@/data/blog';
-import { ArrowLeft, Calendar, Clock, Tag, Share2, Heart, Facebook, Twitter } from 'lucide-react';
+import { ArrowLeft, Calendar, Clock, Tag, Share2, Heart, Facebook, Twitter, ExternalLink } from 'lucide-react';
 import { notFound } from 'next/navigation';
 
 export default function BlogDetailPage({ params }: { params: { slug: string } }) {
@@ -57,6 +57,19 @@ export default function BlogDetailPage({ params }: { params: { slug: string } })
             </span>
           ))}
         </div>
+
+        {post.sourceUrl ? (
+          <div className="mb-8">
+            <a
+              href={post.sourceUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1 text-sm text-kerala-green dark:text-emerald-400 font-medium hover:underline"
+            >
+              View primary source <ExternalLink size={14} />
+            </a>
+          </div>
+        ) : null}
 
         {/* Article Content */}
         <article className="prose prose-lg prose-green max-w-none">

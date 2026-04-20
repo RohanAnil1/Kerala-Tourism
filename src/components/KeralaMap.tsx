@@ -1,9 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
-import { MapPin, Star, ArrowRight } from 'lucide-react';
-import { districts, getFeaturedDestinations } from '@/data/destinations';
+import { MapPin } from 'lucide-react';
+import { districts } from '@/data/destinations';
 
 const DISTRICT_POSITIONS: Record<string, { top: string; left: string }> = {
   'kasaragod': { top: '5%', left: '35%' },
@@ -24,7 +23,6 @@ const DISTRICT_POSITIONS: Record<string, { top: string; left: string }> = {
 
 export default function KeralaMap() {
   const [hovered, setHovered] = useState<string | null>(null);
-  const featured = getFeaturedDestinations();
 
   return (
     <div className="relative w-full max-w-md mx-auto" style={{ aspectRatio: '1/2' }}>

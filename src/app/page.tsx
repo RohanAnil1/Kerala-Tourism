@@ -55,11 +55,11 @@ function SectionHeader({ label, title, subtitle, center = true }: { label?: stri
 
 /* ---------- DATA ---------- */
 const HERO_VIDEO = 'https://videos.pexels.com/video-files/6981411/6981411-hd_1920_1080_25fps.mp4';
-const HERO_POSTER = 'https://images.unsplash.com/photo-1602158123411-e64e5d76e7c5?w=1920';
+const HERO_POSTER = 'https://images.unsplash.com/photo-1595815771614-ade9d652a65d?w=1920';
 
 const seasons = [
-  { id: 'monsoon', name: 'Monsoon Magic', months: 'Jun - Sep', icon: '🌧️', color: 'from-blue-600 to-cyan-500', desc: 'Lush green Kerala, Ayurveda at its best, spectacular waterfalls', image: 'https://images.unsplash.com/photo-1580309237429-661ea0f15805?w=800' },
-  { id: 'winter', name: 'Winter Bliss', months: 'Oct - Feb', icon: '❄️', color: 'from-emerald-600 to-teal-500', desc: 'Perfect weather, festival season, ideal for beaches & backwaters', image: 'https://images.unsplash.com/photo-1602158123411-e64e5d76e7c5?w=800' },
+  { id: 'monsoon', name: 'Monsoon Magic', months: 'Jun - Sep', icon: '🌧️', color: 'from-blue-600 to-cyan-500', desc: 'Lush green Kerala, Ayurveda at its best, spectacular waterfalls', image: 'https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=800' },
+  { id: 'winter', name: 'Winter Bliss', months: 'Oct - Feb', icon: '❄️', color: 'from-emerald-600 to-teal-500', desc: 'Perfect weather, festival season, ideal for beaches & backwaters', image: 'https://images.unsplash.com/photo-1595815771614-ade9d652a65d?w=800' },
   { id: 'summer', name: 'Summer Escapes', months: 'Mar - May', icon: '☀️', color: 'from-orange-500 to-amber-500', desc: 'Hill station retreats, wildlife safaris, temple festivals', image: 'https://images.unsplash.com/photo-1595815771614-ade9d652a65d?w=800' },
 ];
 
@@ -541,7 +541,7 @@ export default function HomePage() {
       {/* ==================== CTA SECTION ==================== */}
       <section className="relative py-32 md:py-40 overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1602158123411-e64e5d76e7c5?w=1920"
+          src="https://images.unsplash.com/photo-1595815771614-ade9d652a65d?w=1920"
           alt="Kerala Backwaters"
           fill
           className="object-cover"

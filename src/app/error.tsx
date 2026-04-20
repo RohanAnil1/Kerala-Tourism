@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 
-export default function Error({ error, reset }: { error: Error; reset: () => void }) {
+export default function Error({ error: _error, reset }: { error: Error; reset: () => void }) {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-red-50 to-orange-50 dark:from-gray-950 dark:to-gray-900">
       <div className="text-center px-4">
@@ -11,6 +11,11 @@ export default function Error({ error, reset }: { error: Error; reset: () => voi
         <p className="text-gray-500 dark:text-gray-400 mb-6 max-w-md mx-auto">
           We encountered an unexpected error. Please try again or return to the homepage.
         </p>
+        {process.env.NODE_ENV === 'development' && _error?.message ? (
+          <p className="text-sm text-red-600 dark:text-red-400 mb-4 max-w-md mx-auto break-words">
+            {_error.message}
+          </p>
+        ) : null}
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <button onClick={reset} className="bg-kerala-green text-white px-8 py-3 rounded-full font-medium hover:bg-kerala-green/90">
             Try Again
