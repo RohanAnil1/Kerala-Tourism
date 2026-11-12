@@ -1,7 +1,11 @@
+import { verifiedCover } from './media';
+import { festivalGuides } from './festival-guides';
+import type { FestivalGuide } from './guide-types';
 export type FestivalCategory = 'cultural' | 'religious' | 'food' | 'performing-arts';
 
 export interface FestivalEvent {
   id: string;
+  slug: string;
   name: string;
   district: string;
   month: number; // 1-12
@@ -12,9 +16,11 @@ export interface FestivalEvent {
   recommendedFor: string[];
   image: string;
   sourceUrl?: string;
+  months: number[];
+  guide: FestivalGuide;
 }
 
-export const festivalEvents: FestivalEvent[] = [
+const eventArchive: Omit<FestivalEvent, 'slug' | 'months' | 'guide'>[] = [
   {
     id: 'f1',
     name: 'Theyyam Season',
@@ -381,6 +387,13 @@ export const festivalEvents: FestivalEvent[] = [
   },
 ];
 
+export const festivalEvents: FestivalEvent[] = eventArchive.filter(item => Object.hasOwn(festivalGuides, item.id)).map(item => {
+  const guide = festivalGuides[item.id];
+  return { ...item, name: guide.name, summary: guide.summary, slug: guide.slug, months: guide.months, month: guide.months[0], dateLabel: guide.season, image: verifiedCover(`events/${item.id}`), sourceUrl: guide.sources[0].url, guide };
+});
+
+export const getFestivalBySlug = (slug: string) => festivalEvents.find(event => event.slug === slug);
+
 export function getEventsForMonth(month: number): FestivalEvent[] {
-  return festivalEvents.filter((event) => event.month === month);
+  return festivalEvents.filter((event) => event.months.includes(month));
 }

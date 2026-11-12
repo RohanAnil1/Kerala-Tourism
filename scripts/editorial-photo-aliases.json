@@ -1,0 +1,67 @@
+{
+  "experiences/snake-boat-race": {
+    "sourceKey": "events/f13",
+    "name": "Nehru Trophy Snake Boat Race",
+    "match": "The same named Nehru Trophy event at Punnamada Lake; not a different boat race."
+  },
+  "stories/alappuzha-nehru-trophy-boat-race": {
+    "sourceKey": "events/f13",
+    "name": "Nehru Trophy Boat Race",
+    "match": "The story describes the same named Nehru Trophy event depicted in the reviewed 2012 photograph."
+  },
+  "stories/thiruvananthapuram-thiruvananthapuram": {
+    "sourceKey": "destinations/padmanabhaswamy-temple",
+    "name": "Thiruvananthapuram",
+    "match": "Sree Padmanabhaswamy Temple is a landmark in the city covered by this story; the photo caption identifies the temple rather than claiming a city panorama."
+  },
+  "stories/kollam-kollam": {
+    "sourceKey": "destinations/kollam-beach",
+    "name": "Kollam",
+    "match": "The subject is Kollam Beach in the city covered by the article; the specific beach caption is retained."
+  },
+  "stories/malappuram-teak-museum": {
+    "sourceKey": "destinations/nilambur-teak-museum",
+    "name": "Nilambur Teak Museum",
+    "match": "The destination and article describe the same named Teak Museum in Nilambur."
+  },
+  "stories/kozhikode-sm-street": {
+    "sourceKey": "destinations/sm-street",
+    "name": "S. M. Street, Kozhikode",
+    "match": "The same named Sweetmeat Street / Mittayitheruvu; the reviewed street photograph is retained."
+  },
+  "stories/wayanad-wayanad-wildlife-sanctuary": {
+    "sourceKey": "destinations/wayanad-wildlife-sanctuary",
+    "name": "Wayanad Wildlife Sanctuary",
+    "match": "The destination and story identify the same reserve, retaining the original sanctuary photograph's specific caption."
+  },
+  "stories/kannur-muzhappilangad": {
+    "sourceKey": "destinations/muzhappilangad-beach",
+    "name": "Muzhappilangad",
+    "match": "Muzhappilangad Beach is the shoreline of the town described in this article; its specific beach caption is retained."
+  },
+  "stories/malappuram-nilambur": {
+    "sourceKey": "destinations/teak-forest-nilambur",
+    "name": "Nilambur",
+    "match": "The reviewed Nilambur teak forest photograph provides a named local landscape, replacing an ambiguous resort image formerly selected from the reference article."
+  },
+  "stories/palakkad-silent-valley-national-park": {
+    "sourceKey": "destinations/silent-valley-national-park",
+    "name": "Silent Valley National Park",
+    "match": "The corrected photograph explicitly identifies Silent Valley in Kerala; the previous Kurangini Hills image from Tamil Nadu is rejected."
+  },
+  "stories/a-slower-day-in-fort-kochi": {
+    "sourceKey": "destinations/fort-kochi",
+    "name": "A slower day in Fort Kochi",
+    "match": "The Fort Kochi waterfront photograph depicts the same locality as the curated walking story."
+  },
+  "stories/finding-your-backwater-rhythm": {
+    "sourceKey": "destinations/kumarakom",
+    "name": "Finding your backwater rhythm",
+    "match": "The Kumarakom backwater photograph depicts the named landscape discussed in the curated backwater story."
+  },
+  "stories/a-place-at-the-kerala-table": {
+    "sourceKey": "dishes/kerala-sadya",
+    "name": "A place at the Kerala table",
+    "match": "The reviewed Kerala sadya photograph depicts the meal described in this culinary story."
+  }
+}

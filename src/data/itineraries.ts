@@ -1,185 +1,31 @@
-import { Itinerary } from '@/types';
+import type { Itinerary } from '@/types';
+import { tripSeeds, baseById } from './travel-guide';
+import { buildTrip } from '@/lib/trip-planner';
+import { verifiedCover } from './media';
 
-export const itineraries: Itinerary[] = [
-  {
-    id: '1',
-    title: 'Classic Kerala — 3 Days',
-    days: 3,
-    style: 'relax',
-    budget: 'mid-range',
-    description: 'Perfect weekend getaway covering Kochi\'s heritage, Alleppey\'s backwaters, and Munnar\'s tea gardens.',
-    totalCost: '₹15,000 - ₹25,000 per person',
-    image: 'https://images.unsplash.com/photo-1595815771614-ade9d652a65d?w=800',
-    dayPlans: [
-      {
-        day: 1,
-        title: 'Fort Kochi Heritage Walk',
-        location: 'Kochi',
-        activities: ['Chinese Fishing Nets at sunrise', 'St. Francis Church visit', 'Mattancherry Palace & Jewish Synagogue', 'Street art walk in Fort Kochi', 'Kathakali performance at Kerala Kathakali Centre'],
-        accommodation: 'Heritage homestay in Fort Kochi',
-        meals: 'Breakfast at Kashi Art Café, Fish lunch at Fort House, Dinner at Dal Roti',
-        tips: 'Hire a bicycle to explore Fort Kochi — it\'s flat and easy to navigate.',
-      },
-      {
-        day: 2,
-        title: 'Alleppey Backwater Cruise',
-        location: 'Alleppey',
-        activities: ['Drive to Alleppey (2 hrs)', 'Board houseboat by noon', 'Cruise through Vembanad Lake', 'Village walks along the canals', 'Sunset from the houseboat deck'],
-        accommodation: 'Overnight on luxury houseboat',
-        meals: 'Traditional Kerala meals prepared onboard by the crew',
-        tips: 'Book a houseboat with upper deck for the best views.',
-      },
-      {
-        day: 3,
-        title: 'Munnar Tea Gardens',
-        location: 'Munnar',
-        activities: ['Disembark and drive to Munnar (5 hrs)', 'Tea Museum visit', 'Evening walk through tea plantations', 'Sunset at Photo Point'],
-        accommodation: 'Mountain resort in Munnar',
-        meals: 'Lunch en route, dinner at hotel with mountain views',
-        tips: 'The drive from Alleppey to Munnar through Kothamangalam is scenic — keep your camera ready.',
-      },
-    ],
-  },
-  {
-    id: '2',
-    title: 'Kerala Adventure — 5 Days',
-    days: 5,
-    style: 'adventure',
-    budget: 'mid-range',
-    description: 'Adrenaline-packed itinerary with treks, wildlife safaris, bamboo rafting, and waterfall rappelling.',
-    totalCost: '₹25,000 - ₹45,000 per person',
-    image: 'https://images.unsplash.com/photo-1595815771614-ade9d652a65d?w=800',
-    dayPlans: [
-      {
-        day: 1,
-        title: 'Munnar Trek & Tea Trails',
-        location: 'Munnar',
-        activities: ['Arrive at Kochi Airport, drive to Munnar (4 hrs)', 'Afternoon tea plantation walk', 'Visit Eravikulam National Park (if open)'],
-        accommodation: 'Eco lodge in Munnar',
-        meals: 'Lunch at Saravana Bhavan, Dinner at resort',
-        tips: 'Book Eravikulam tickets online in advance — they sell out.',
-      },
-      {
-        day: 2,
-        title: 'Kolukkumalai Sunrise Trek',
-        location: 'Munnar',
-        activities: ['4 AM start for Kolukkumalai', 'Jeep ride to base camp', 'Trek to world\'s highest tea plantation', 'Fresh tea tasting at the estate', 'Return and relax'],
-        accommodation: 'Eco lodge in Munnar',
-        meals: 'Early breakfast packed, Lunch at plantation, Dinner at resort',
-        tips: 'Dress in warm layers — it\'s cold at the summit before sunrise.',
-      },
-      {
-        day: 3,
-        title: 'Thekkady Wildlife Safari',
-        location: 'Thekkady',
-        activities: ['Drive to Thekkady (4 hrs)', 'Afternoon Periyar Lake boat safari', 'Evening spice plantation tour', 'Kalaripayattu martial arts show'],
-        accommodation: 'Jungle lodge near Thekkady',
-        meals: 'Local restaurant in Kumily',
-        tips: 'Early morning boat has better wildlife sighting chances.',
-      },
-      {
-        day: 4,
-        title: 'Bamboo Rafting & Nature Walk',
-        location: 'Thekkady',
-        activities: ['Morning bamboo rafting in Periyar', 'Guided nature walk in forest', 'Border hiking trail', 'Visit Mangala Devi Temple'],
-        accommodation: 'Jungle lodge near Thekkady',
-        meals: 'Packed lunch for rafting, dinner at lodge',
-        tips: 'Bamboo rafting must be booked through the Forest Department — limited 25 spots daily.',
-      },
-      {
-        day: 5,
-        title: 'Athirappilly Falls Adventure',
-        location: 'Athirappilly',
-        activities: ['Drive to Athirappilly (5 hrs)', 'Waterfall trekking', 'Visit Vazhachal Falls', 'Drive to Kochi Airport (2 hrs)'],
-        accommodation: 'Departure or Kochi stay',
-        meals: 'Lunch at Athirappilly, Farewell dinner in Kochi',
-        tips: 'Carry waterproof bags for your electronics near the falls.',
-      },
-    ],
-  },
-  {
-    id: '3',
-    title: 'Grand Kerala — 7 Days',
-    days: 7,
-    style: 'couple',
-    budget: 'luxury',
-    description: 'The ultimate romantic Kerala experience — from beaches to backwaters, hills to heritage, with luxury stays throughout.',
-    totalCost: '₹60,000 - ₹1,50,000 per person',
-    image: 'https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?w=800',
-    dayPlans: [
-      {
-        day: 1,
-        title: 'Arrival & Kochi Heritage',
-        location: 'Kochi',
-        activities: ['Airport pickup in luxury car', 'Check-in at Brunton Boatyard or CGH', 'Fort Kochi heritage walk', 'Sunset cruise at Marine Drive', 'Private Kathakali performance'],
-        accommodation: 'Luxury heritage hotel, Fort Kochi',
-        meals: 'Welcome lunch at Malabar Junction, Romantic dinner at Fort House',
-        tips: 'The ferry from Fort Kochi to Ernakulam at sunset is magical and free.',
-      },
-      {
-        day: 2,
-        title: 'Munnar — Tea Country',
-        location: 'Munnar',
-        activities: ['Scenic drive to Munnar (4 hrs)', 'Check-in at luxury resort', 'Private tea garden tour', 'Couples spa at resort', 'Mountain dining under stars'],
-        accommodation: 'Luxury plantation resort',
-        meals: 'Brunch en route, Gourmet dinner at resort',
-        tips: 'Request the room with the best valley view when booking.',
-      },
-      {
-        day: 3,
-        title: 'Munnar Exploration',
-        location: 'Munnar',
-        activities: ['Eravikulam National Park', 'Photo Point & Echo Point', 'Mattupetty Dam boat ride', 'Evening walk in tea gardens', 'Bonfire night at resort'],
-        accommodation: 'Luxury plantation resort',
-        meals: 'All meals at resort',
-        tips: 'Carry binoculars for spotting Nilgiri Tahr at Eravikulam.',
-      },
-      {
-        day: 4,
-        title: 'Thekkady — Spice Country',
-        location: 'Thekkady',
-        activities: ['Drive to Thekkady (4 hrs)', 'Private spice plantation tour', 'Traditional Ayurvedic massage', 'Kalaripayattu show'],
-        accommodation: 'Luxury jungle resort',
-        meals: 'Traditional Kerala thali at Spice Village',
-        tips: 'Buy fresh spices directly from the plantation for the best quality.',
-      },
-      {
-        day: 5,
-        title: 'Kumarakom — Lake Paradise',
-        location: 'Kumarakom',
-        activities: ['Drive to Kumarakom (4 hrs)', 'Check-in at Kumarakom Lake Resort', 'Bird sanctuary visit', 'Village walk', 'Private sunset canoe ride'],
-        accommodation: 'Premium lake resort',
-        meals: 'Waterside lunch, Private dining on lake deck',
-        tips: 'Kumarakom Lake Resort\'s Ayurvedic center is world-renowned.',
-      },
-      {
-        day: 6,
-        title: 'Alleppey — Backwater Romance',
-        location: 'Alleppey',
-        activities: ['Board premium houseboat', 'Cruise through palm-fringed canals', 'Kerala cooking class onboard', 'Sunset and stargazing on deck', 'Traditional music performance'],
-        accommodation: 'Luxury houseboat',
-        meals: 'All gourmet meals onboard',
-        tips: 'Premium houseboats have jacuzzis and private chefs.',
-      },
-      {
-        day: 7,
-        title: 'Marari Beach & Departure',
-        location: 'Marari / Kochi',
-        activities: ['Disembark at Marari Beach', 'Beach morning — yoga, swim', 'Artisan market visit', 'Drive to Kochi Airport', 'Departure'],
-        accommodation: 'Beach resort (if extending)',
-        meals: 'Beachside brunch',
-        tips: 'Marari Beach is much quieter than Kovalam — perfect for a peaceful goodbye to Kerala.',
-      },
-    ],
-  },
-];
+export const itineraries: Itinerary[] = tripSeeds.map((seed,index)=>{
+ const trip=buildTrip({name:seed.title,days:seed.days,startDate:'',travellers:2,pace:'balanced',transport:'car',stops:seed.stops});
+ return {id:seed.id,title:seed.title,days:seed.days,style: index===0?'relax':index===1?'adventure':'couple',budget:index===2?'luxury':'mid-range',description:seed.stops.map(id=>baseById(id)!.name).join(' → '),totalCost:'Add your own quotes in the planner',image:verifiedCover(index===0?'destinations/alappuzha-backwaters':index===1?'editorial/hills':'destinations/bekal-fort'),dayPlans:trip.dayPlans.map((day,index)=>({day:index+1,title:baseById(day.base)!.name,location:baseById(day.base)!.name,activities:day.activities,accommodation:'Choose and book your own stay',meals:'Choose locally; confirm dietary needs',tips:day.notes}))};
+});
+
+export interface ItineraryMatch {
+  itinerary: Itinerary;
+  exact: boolean;
+  differences: string[];
+}
+
+export function matchItinerary(days: number, style: string, budget: string): ItineraryMatch | null {
+  if (!Number.isInteger(days) || days < 1 || days > 21 || !['relax', 'adventure', 'family', 'couple', 'solo', 'spiritual'].includes(style) || !['budget', 'mid-range', 'luxury'].includes(budget) || !itineraries.length) return null;
+  const ranked = itineraries.map(itinerary => ({ itinerary, score: (itinerary.style === style ? 4 : 0) + (itinerary.budget === budget ? 3 : 0) - Math.abs(itinerary.days - days) }));
+  ranked.sort((a, b) => b.score - a.score);
+  const itinerary = ranked[0].itinerary;
+  const differences: string[] = [];
+  if (itinerary.days !== days) differences.push(`This route is ${itinerary.days} days; you requested ${days}.`);
+  if (itinerary.style !== style) differences.push(`Its travel style is ${itinerary.style}; you selected ${style}.`);
+  if (itinerary.budget !== budget) differences.push(`Its budget is ${itinerary.budget}; you selected ${budget}.`);
+  return { itinerary, exact: differences.length === 0, differences };
+}
 
 export function generateItinerary(days: number, style: string, budget: string): Itinerary | null {
-  const matching = itineraries.find(i => {
-    const durationMatch = i.days === days || (days <= 3 && i.days === 3) || (days <= 5 && i.days === 5) || i.days === 7;
-    const styleMatch = style ? i.style === style : true;
-    const budgetMatch = budget ? i.budget === budget : true;
-    return durationMatch && styleMatch && budgetMatch;
-  });
-  return matching || itineraries[0];
+  return matchItinerary(days, style, budget)?.itinerary || null;
 }

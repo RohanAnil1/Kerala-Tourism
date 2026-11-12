@@ -11,16 +11,16 @@ const config: Config = {
     extend: {
       colors: {
         kerala: {
-          green: '#0A6847',
+          green: '#173C32',
           'green-light': '#16A34A',
-          gold: '#D4A843',
-          sand: '#F5E6CC',
+          gold: '#B79A64',
+          sand: '#F4F0E7',
           water: '#0EA5E9',
           'water-dark': '#0369A1',
           earth: '#8B4513',
           lotus: '#E91E8C',
           coconut: '#2D5016',
-          lagoon: '#06B6D4',
+          lagoon: '#526C5B',
           sunset: '#F97316',
           spice: '#DC2626',
         },

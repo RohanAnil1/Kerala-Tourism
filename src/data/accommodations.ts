@@ -1,6 +1,8 @@
+import { verifiedPhotos } from './media';
 import { Accommodation } from '@/types';
+import { stayGuides } from './stay-guides';
 
-export const accommodations: Accommodation[] = [
+const accommodationArchive: Accommodation[] = [
   {
     id: '1',
     slug: 'kumarakom-lake-resort',
@@ -99,7 +101,12 @@ export const accommodations: Accommodation[] = [
   },
 ];
 
-export function getAccommodationBySlug(slug: string): Accommodation | undefined {
+export const accommodations = accommodationArchive.filter(item => Object.hasOwn(stayGuides, item.slug)).map(item => {
+  const guide = stayGuides[item.slug];
+  return { ...item, guide, images: verifiedPhotos(`stays/${item.slug}`), priceRange: 'Request a current room quote', sourceUrl: guide.sources[0].url, description: guide.summary, amenities: guide.facilities, ...(item.slug === 'wayanad-wild-homestay' ? { name: 'Wayanad Wild', type: 'resort' as const, location: 'Lakkidi, Wayanad', coordinates: { lat: 11.522, lng: 76.04 } } : {}) };
+});
+
+export function getAccommodationBySlug(slug: string): (typeof accommodations)[number] | undefined {
   return accommodations.find(a => a.slug === slug);
 }
 

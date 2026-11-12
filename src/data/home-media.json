@@ -1,0 +1,51 @@
+{
+  "waterfall": {
+    "src": "/media/9a89bc7e34a641.jpg",
+    "alt": "Athirappilly Falls in full flow above the Chalakudy River, Thrissur",
+    "focalPosition": "center",
+    "credit": "Jan Joseph George",
+    "source": "https://commons.wikimedia.org/wiki/File:The_View_of_the_Athirapally_Falls_during_the_onset_of_Monsoon.jpg"
+  },
+  "palms": {
+    "src": "/media/40538f5bd40c61.jpg",
+    "alt": "Canals and palms on Munroe Island in Kollam",
+    "focalPosition": "center",
+    "credit": "Kkkriku",
+    "source": "https://commons.wikimedia.org/wiki/File:Beautiful_Munroe_Island_,_kollam_district_,_kerala.jpg"
+  },
+  "backwaters": {
+    "src": "/media/8493719d0a611e.jpg",
+    "alt": "A view across the backwaters at Kumarakom",
+    "focalPosition": "center",
+    "credit": "Jigyasu",
+    "source": "https://commons.wikimedia.org/wiki/File:Kumarkom.jpg"
+  },
+  "hills": {
+    "src": "/media/49c4c4612083a5.jpg",
+    "alt": "Tea plantations following the slopes of Munnar",
+    "focalPosition": "center",
+    "credit": "Ingo Mehling",
+    "source": "https://commons.wikimedia.org/wiki/File:Munnar_-_Tea_Plantations.jpg"
+  },
+  "coast": {
+    "src": "/media/94980aff822589.jpg",
+    "alt": "Varkala Beach and the Arabian Sea",
+    "focalPosition": "center",
+    "credit": "Devender Goyal",
+    "source": "https://commons.wikimedia.org/wiki/File:Varkala_Beach,_Varkala,_Kerala.jpg"
+  },
+  "culture": {
+    "src": "/media/4317ee7bb3095d.jpg",
+    "alt": "Chinese fishing nets beside the Fort Kochi waterfront",
+    "focalPosition": "center",
+    "credit": "Vyacheslav Argenberg",
+    "source": "https://commons.wikimedia.org/wiki/File:Kochi,_Fishing_nets_at_sunset,_Kerala,_India.jpg"
+  },
+  "sadya": {
+    "src": "/media/45fcdb5a16f3e2.jpg",
+    "alt": "A Kerala sadya served on a banana leaf",
+    "focalPosition": "center",
+    "credit": "Augustus Binu/ facebook",
+    "source": "https://commons.wikimedia.org/wiki/File:Sadhya_DSW.jpg"
+  }
+}

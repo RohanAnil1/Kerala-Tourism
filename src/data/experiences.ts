@@ -1,6 +1,8 @@
+import { verifiedPhotos } from './media';
+import { experienceGuides } from './experience-guides';
 import { Experience } from '@/types';
 
-export const experiences: Experience[] = [
+const experienceArchive: Experience[] = [
   {
     id: '1',
     slug: 'alleppey-houseboat-cruise',
@@ -249,11 +251,11 @@ export const experiences: Experience[] = [
     title: 'Nehru Trophy Snake Boat Race',
     category: 'festival',
     description: 'Witness Kerala\'s most thrilling sporting spectacle — 100-foot snake boats racing on Punnamada Lake.',
-    longDescription: 'The Nehru Trophy Boat Race, held on the second Saturday of August, is the most famous of Kerala\'s boat races. Over 100-foot-long chundan vallams (snake boats) with up to 120 rowers each compete in a thrilling race on Punnamada Lake in Alleppey. The event attracts over 200,000 spectators and features synchronized rowing, singing, and incredible team spirit.',
+    longDescription: 'The Nehru Trophy Boat Race, held on a date announced by the organiser, usually in August, is the most famous of Kerala\'s boat races. Over 100-foot-long chundan vallams (snake boats) with up to 120 rowers each compete in a thrilling race on Punnamada Lake in Alleppey. The event attracts over 200,000 spectators and features synchronized rowing, singing, and incredible team spirit.',
     duration: '1 day event (August)',
     costEstimate: '₹500 - ₹3,000 (gallery tickets)',
     difficulty: 'easy',
-    bestSeason: 'Second Saturday of August (specific annual date)',
+    bestSeason: 'Usually August; confirm the organiser-announced annual date',
     safetyTips: [
       'Book gallery tickets well in advance',
       'Arrive early for good viewing spots',
@@ -557,7 +559,12 @@ export const experiences: Experience[] = [
   },
 ];
 
-export function getExperienceBySlug(slug: string): Experience | undefined {
+export const experiences = experienceArchive.map(item => {
+  const guide = experienceGuides[item.slug];
+  return { ...item, guide, description: guide.summary, longDescription: guide.overview.join('\n\n'), duration: guide.duration, bestSeason: guide.season, highlights: guide.highlights, inclusions: guide.arrangements, safetyTips: guide.visitingNotes, images: verifiedPhotos(`experiences/${item.slug}`), costEstimate: 'Request an itemized quote from the operator' };
+});
+
+export function getExperienceBySlug(slug: string): (typeof experiences)[number] | undefined {
   return experiences.find(e => e.slug === slug);
 }
 

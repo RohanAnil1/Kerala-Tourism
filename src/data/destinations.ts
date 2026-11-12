@@ -1,6 +1,9 @@
+import { verifiedPhotos, districtCover } from './media';
+import { destinationCorrections } from './destination-corrections';
+import { destinationLocationReviews } from './destination-locations';
 import { Destination, DestinationType, District } from '@/types';
 
-// ========== VERIFIED KERALA-SPECIFIC UNSPLASH IMAGES ==========
+// Legacy archive defaults. Public exports below replace these with reviewed local media.
 const IMG = {
   houseboat1: 'https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=800',
   houseboat2: 'https://images.unsplash.com/photo-1593693401060-9fc28cf9e368?w=800',
@@ -45,7 +48,7 @@ const IMG = {
 };
 
 // ========== ALL 14 DISTRICTS OF KERALA ==========
-export const districts: District[] = [
+const districtArchive: District[] = [
   {
     id: 'thiruvananthapuram', name: 'Thiruvananthapuram', slug: 'thiruvananthapuram',
     description: 'The capital city — home to Kovalam Beach, the iconic Padmanabhaswamy Temple, museums, and vibrant culture.',
@@ -78,7 +81,7 @@ export const districts: District[] = [
   },
   {
     id: 'idukki', name: 'Idukki', slug: 'idukki',
-    description: 'Home to Munnar — the highest arch dam in Asia, spice plantations, and breathtaking hill stations.',
+    description: 'Tea country around Munnar, the Idukki reservoir, spice plantations, and the high Western Ghats.',
     coordinates: { lat: 9.9189, lng: 77.1025 }, image: IMG.munnarTea1, attractions: 23,
     pathData: 'M170,400 L200,370 L225,400 L210,440 L175,435 Z',
   },
@@ -147,7 +150,7 @@ function d(
 }
 
 // ========== ALL DESTINATIONS ==========
-export const destinations: Destination[] = [
+const destinationArchive: Destination[] = [
 
   // ━━━━━━━━━━━━━━━━ THIRUVANANTHAPURAM (20) ━━━━━━━━━━━━━━━━
   d('tvm-1','kovalam-beach','Kovalam Beach','Thiruvananthapuram','thiruvananthapuram',
@@ -680,7 +683,7 @@ export const destinations: Destination[] = [
     'According to legend, Lord Ayyappa meditated here after slaying the demoness Mahishi. The temple is believed to be 800+ years old.',
     'November to January (main season)','Free','Specific season dates only',
     {air:'Cochin Airport (145 km)',rail:'Chengannur Station (90 km)',road:'Base camp Pamba, 90 km from Pathanamthitta'},
-    {lat:9.4350,lng:77.0825},[IMG.temple,IMG.forest,IMG.trek],
+    {lat:9.4350,lng:77.0825},['https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Sannidhanam%2C_Sabarimala.jpg/1280px-Sannidhanam%2C_Sabarimala.jpg',IMG.forest,IMG.trek],
     4.7,35000,'high','budget',
     ['Annual 50 million+ pilgrimage','Makaravilakku divine light','Forest trek to hilltop','18 sacred steps','Pamba River rituals'],
     ['41-day vratham (fasting) observed before visit','Specific seasons only — check dates','Physically demanding trek — prepare accordingly'],
@@ -2024,7 +2027,7 @@ export const destinations: Destination[] = [
     'According to legend, the idol was installed by Guru (Brihaspati) and Vayu (wind god), hence "Guruvayur."',
     'Year-round','Free (only Hindus allowed)','3:00 AM – 1:00 PM, 4:30 PM – 9:30 PM',
     {air:'Cochin Airport (80 km)',rail:'Guruvayur Station (2 km)',road:'30 km from Thrissur city'},
-    {lat:10.5953,lng:76.0401},[IMG.temple,IMG.keralaPalms,IMG.pooramElephants],
+    {lat:10.5953,lng:76.0401},['https://upload.wikimedia.org/wikipedia/commons/1/17/Guruvayoor_Temple_1.jpg',IMG.keralaPalms,IMG.pooramElephants],
     4.7,32000,'high','budget',
     ['5,000-year-old Krishna temple','Most popular wedding venue','Millions of annual visitors','Unique Krishna idol','Dwarka of the South'],
     ['Only Hindus allowed inside','Strict dress code — mundu for men, saree for women','Early morning darshan less crowded'],
@@ -3674,7 +3677,7 @@ export const destinations: Destination[] = [
     ['Visit during Ganapathy festival for full experience','Copper roof is impressive','Peaceful at non-festival times'],
     ['Ananthapura Temple','Malik Dinar Mosque','Kasaragod town'],false),
 
-  d('kgd-9','kappil-beach','Kappil Beach','Kasaragod','kasaragod',
+  d('kgd-9','kappil-beach-kasaragod','Kappil Beach','Kasaragod','kasaragod',
     ['beach','backwater'],
     'Where a river meets the sea through a sand barrier — swim in the sea or float in the calm backwater.',
     'Kappil Beach is a unique coastal destination where the Kappil River meets the Arabian Sea separated by a narrow sand barrier. Visitors can swim in the sea on one side or enjoy calm backwaters on the other. Bekal Fort is visible in the distance.',
@@ -3806,18 +3809,34 @@ export const destinations: Destination[] = [
 
 ];
 
+export const districts: District[] = districtArchive.map(item=>({...item,image:districtCover(item.slug)}));
+destinationArchive.push({id:'thekkady',slug:'thekkady',name:'Thekkady',district:'Idukki',districtSlug:'idukki',type:['nature','wildlife'],description:'A forest-edge base near Kumily for Periyar Lake, guided nature programmes, and spice country.',longDescription:'Thekkady sits beside Periyar Tiger Reserve in Kerala’s highlands. Base yourself around Kumily and choose a small number of officially operated forest experiences. A lake outing, a permitted nature walk, and time in a spice garden each offer a different introduction to the landscape. Activities, access, and permits must be confirmed with their operator.',history:'The landscape is part of the Western Ghats. Today the reserve’s visitor programmes offer opportunities to learn about its forest environment with authorized guides.',bestTimeToVisit:'Check reserve access and local weather for your dates',entryFee:'Book directly with the reserve; programme fees vary',timings:'Programme-specific; confirm with the reserve',howToReach:{air:'Plan arrival through Kochi or Madurai and confirm your transfer.',rail:'Check onward connections from Kottayam.',road:'Kumily is the planning base; hill roads need a generous travel allowance.'},coordinates:{lat:9.603,lng:77.161},images:[],rating:0,reviews:0,crowdLevel:'medium',budgetRange:'mid-range',highlights:['Periyar Lake','Officially operated forest programmes','Spice gardens around Kumily'],travelTips:['Reserve permits with Periyar Tiger Reserve','Wildlife sightings are not guaranteed','Follow reserve staff and guide instructions'],nearbyAttractions:['Kumily','Periyar Lake'],featured:true});
+export const destinations: Destination[] = destinationArchive.map(item => {
+  const locationReview = destinationLocationReviews[item.slug];
+  return {
+    ...item,
+    ...destinationCorrections[item.slug],
+    ...(locationReview ? { locationReview, coordinates: locationReview.coordinates } : {}),
+    images: verifiedPhotos(`destinations/${item.slug}`),
+    entryFee: 'Confirm current fees with the venue',
+    timings: 'Confirm current hours and access',
+    ...(item.slug === 'athirappilly-waterfalls' ? { entryFee: 'Adult ₹50 / child ₹10 — DTPC reference, 26 Oct 2026', timings: '08:00–18:00 — confirm access with DTPC' } : {}),
+    ...(item.slug === 'eravikulam-national-park' ? { entryFee: 'Indian adult ₹200; other ticket and camera fees apply', timings: 'Entry slots 08:00–14:00; confirm seasonal closures' } : {}),
+  };
+});
+
 // ========== HELPER FUNCTIONS ==========
 export function getDestinationBySlug(slug: string): Destination | undefined {
   return destinations.find(d => d.slug === slug);
 }
 export function getDestinationsByDistrict(districtSlug: string): Destination[] {
-  return destinations.filter(d => d.districtSlug === districtSlug).sort((a, b) => b.reviews - a.reviews);
+  return destinations.filter(d => d.districtSlug === districtSlug);
 }
 export function getDestinationsByType(type: string): Destination[] {
   return destinations.filter(d => d.type.includes(type as DestinationType));
 }
 export function getFeaturedDestinations(): Destination[] {
-  return destinations.filter(d => d.featured).sort((a, b) => b.reviews - a.reviews);
+  return destinations.filter(d => d.featured);
 }
 export function getDistrictBySlug(slug: string): District | undefined {
   return districts.find(d => d.slug === slug);

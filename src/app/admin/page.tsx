@@ -49,7 +49,7 @@ export default function AdminDashboard() {
           <button onClick={() => setSidebarOpen(!sidebarOpen)} className="lg:hidden p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg">
             {sidebarOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
-          <h1 className="font-display text-lg font-bold text-gray-900 dark:text-white">Admin Dashboard</h1>
+          <div><h1 className="font-display text-lg font-bold text-gray-900 dark:text-white">Admin Dashboard</h1><p className="text-xs text-gray-500">Demo dashboard · sample data</p></div>
         </div>
         <div className="flex items-center gap-3">
           <button className="relative p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg">
@@ -113,8 +113,8 @@ function OverviewTab() {
       {/* Stats */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
         {[
-          { label: 'Total Visitors', value: analytics.totalVisitors.toLocaleString(), change: `+${analytics.monthlyGrowth}%`, color: 'bg-blue-500' },
-          { label: 'Total Bookings', value: analytics.totalBookings.toLocaleString(), change: '+8.3%', color: 'bg-kerala-green' },
+          { label: 'Total Visitors', value: analytics.totalVisitors.toLocaleString('en-IN'), change: `+${analytics.monthlyGrowth}%`, color: 'bg-blue-500' },
+          { label: 'Total Bookings', value: analytics.totalBookings.toLocaleString('en-IN'), change: '+8.3%', color: 'bg-kerala-green' },
           { label: 'Revenue', value: '₹84.5L', change: '+15.2%', color: 'bg-kerala-gold' },
           { label: 'Avg Rating', value: '4.7', change: '+0.2', color: 'bg-purple-500' },
         ].map((stat, i) => (
@@ -141,7 +141,7 @@ function OverviewTab() {
                   <span className="w-6 h-6 bg-kerala-green/10 text-kerala-green text-xs font-bold rounded-full flex items-center justify-center">{i + 1}</span>
                   <span className="text-sm text-gray-700 dark:text-gray-300 font-mono">{page.page}</span>
                 </div>
-                <span className="text-sm font-semibold text-gray-900 dark:text-white">{page.views.toLocaleString()}</span>
+                <span className="text-sm font-semibold text-gray-900 dark:text-white">{page.views.toLocaleString('en-IN')}</span>
               </div>
             ))}
           </div>
@@ -206,7 +206,7 @@ function DestinationsTab() {
                     {d.status}
                   </span>
                 </td>
-                <td className="px-6 py-4 text-gray-600 dark:text-gray-400">{d.views.toLocaleString()}</td>
+                <td className="px-6 py-4 text-gray-600 dark:text-gray-400">{d.views.toLocaleString('en-IN')}</td>
                 <td className="px-6 py-4 text-right">
                   <div className="flex justify-end gap-2">
                     <button className="p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg text-gray-500"><Eye size={16} /></button>
@@ -260,7 +260,7 @@ function BlogTab() {
                   </span>
                 </td>
                 <td className="px-6 py-4 text-gray-600 dark:text-gray-400">{p.date}</td>
-                <td className="px-6 py-4 text-gray-600 dark:text-gray-400">{p.views.toLocaleString()}</td>
+                <td className="px-6 py-4 text-gray-600 dark:text-gray-400">{p.views.toLocaleString('en-IN')}</td>
                 <td className="px-6 py-4 text-right">
                   <div className="flex justify-end gap-2">
                     <button className="p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg text-gray-500"><Eye size={16} /></button>

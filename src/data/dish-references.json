@@ -1,0 +1,402 @@
+{
+  "kerala-sadya": [
+    {
+      "label": "Kerala Tourism · the Onam sadya tradition",
+      "url": "https://www.keralatourism.org/onam/ona-sadya/thrikkakkara-sadya"
+    },
+    {
+      "label": "Culinary background reference · en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Sadya"
+    }
+  ],
+  "avial": [
+    {
+      "label": "Kerala Tourism · Avial",
+      "url": "https://www.keralatourism.org/kerala-food/avial/1/"
+    },
+    {
+      "label": "Culinary background reference · en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Avial"
+    }
+  ],
+  "puttu-kadala-curry": [
+    {
+      "label": "Kerala Tourism · Puttu and Kadala Curry",
+      "url": "https://www.keralatourism.org/kerala-food/puttu-kadala/43/"
+    }
+  ],
+  "appam-vegetable-stew": [
+    {
+      "label": "Kerala Tourism · Appam",
+      "url": "https://www.keralatourism.org/kerala-food/appam-malabar-kerala-food/134/"
+    }
+  ],
+  "idiyappam-egg-curry": [
+    {
+      "label": "Kerala Tourism · Idiyappam",
+      "url": "https://www.keralatourism.org/kerala-food/idiyappam-noolputtu/171/"
+    }
+  ],
+  "paal-payasam": [
+    {
+      "label": "Kerala Tourism · Paal Payasam recipe",
+      "url": "https://www.keralatourism.org/video-gallery/pal-payasam-kerala-dessert/85/"
+    }
+  ],
+  "olan": [
+    {
+      "label": "Kerala Tourism · Olan",
+      "url": "https://www.keralatourism.org/kerala-food/olan-recipe/124/"
+    }
+  ],
+  "thoran": [
+    {
+      "label": "Kerala Tourism · related preparation: Cabbage Thoran",
+      "url": "https://www.keralatourism.org/kerala-food/cabbage-thoran/185/"
+    }
+  ],
+  "erissery": [
+    {
+      "label": "Kerala Tourism · Erissery",
+      "url": "https://www.keralatourism.org/kerala-food/erissery-recipe/119/"
+    },
+    {
+      "label": "Culinary background reference · en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Erissery"
+    }
+  ],
+  "sambar": [
+    {
+      "label": "Kerala Tourism · Sambar",
+      "url": "https://www.keralatourism.org/kerala-food/sambar-recipe/110/"
+    },
+    {
+      "label": "Culinary background reference · en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Sambar_%28dish%29"
+    }
+  ],
+  "parippu-curry": [
+    {
+      "label": "Kerala Tourism · Parippu",
+      "url": "https://www.keralatourism.org/kerala-food/parippu-recipe/112/"
+    }
+  ],
+  "pazham-pori": [
+    {
+      "label": "Culinary background reference · en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Banana_fritter"
+    }
+  ],
+  "unniyappam": [
+    {
+      "label": "Kerala Tourism · Unniyappam recipe",
+      "url": "https://www.keralatourism.org/video-gallery/unniyappam/1251/"
+    },
+    {
+      "label": "Culinary background reference · en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Unni_appam"
+    }
+  ],
+  "kozhukatta": [
+    {
+      "label": "Culinary background reference · en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Kozhukkatta"
+    }
+  ],
+  "ada-pradhaman": [
+    {
+      "label": "Kerala Tourism · Ada Pradhaman recipe",
+      "url": "https://www.keralatourism.org/kerala-food/ada-pradhaman-recipe/117/"
+    }
+  ],
+  "Kerala-dosa-chutney": [
+    {
+      "label": "Kerala Tourism · cuisine background and recipe collection",
+      "url": "https://www.keralatourism.org/kerala-food/"
+    }
+  ],
+  "kootu-curry": [
+    {
+      "label": "Kerala Tourism · Koottu Kari",
+      "url": "https://www.keralatourism.org/kerala-food/koottu-kari-tribal-cuisine/144/"
+    }
+  ],
+  "kalan": [
+    {
+      "label": "Kerala Tourism · Kaalan",
+      "url": "https://www.keralatourism.org/kerala-food/kaalan-recipe/113/"
+    }
+  ],
+  "pachadi": [
+    {
+      "label": "Kerala Tourism · related preparation: Pineapple Pachadi",
+      "url": "https://www.keralatourism.org/kerala-food/pineapple-madhura-pachadi/126/"
+    }
+  ],
+  "rasam": [
+    {
+      "label": "Kerala Tourism · Rasam",
+      "url": "https://www.keralatourism.org/kerala-food/rasam/181/"
+    },
+    {
+      "label": "Culinary background reference · en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Rasam_%28dish%29"
+    }
+  ],
+  "pathiri": [
+    {
+      "label": "Kerala Tourism · Pathiri",
+      "url": "https://www.keralatourism.org/kerala-food/pathiri/72/"
+    },
+    {
+      "label": "Culinary background reference · en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Pathiri"
+    }
+  ],
+  "kaaya-varuthathu": [
+    {
+      "label": "Kerala Tourism · cuisine background and recipe collection",
+      "url": "https://www.keralatourism.org/kerala-food/"
+    }
+  ],
+  "kerala-porotta-veg-kurma": [
+    {
+      "label": "Kerala Tourism · Malabar flatbread and rice traditions",
+      "url": "https://www.keralatourism.org/malabar/malabar-cuisine/55"
+    }
+  ],
+  "kappa-puzhukku": [
+    {
+      "label": "Kerala Tourism · related preparation: Kappa and Fish Curry",
+      "url": "https://www.keralatourism.org/kerala-food/kappa-fish-curry/90/"
+    }
+  ],
+  "injipuli": [
+    {
+      "label": "Kerala Tourism · cuisine background and recipe collection",
+      "url": "https://www.keralatourism.org/kerala-food/"
+    }
+  ],
+  "nei-choru": [
+    {
+      "label": "Kerala Tourism · Ghee Rice (Neichoru)",
+      "url": "https://www.keralatourism.org/kerala-food/ghee-rice-neichoru/120/"
+    }
+  ],
+  "kerala-vegetable-biryani": [
+    {
+      "label": "Kerala Tourism · cuisine background and recipe collection",
+      "url": "https://www.keralatourism.org/kerala-food/"
+    }
+  ],
+  "chakka-pradhaman": [
+    {
+      "label": "Kerala Tourism · payasam varieties and sadya context",
+      "url": "https://www.keralatourism.org/kerala-article/2021/payasam-onam-sadya/1106"
+    },
+    {
+      "label": "Culinary background reference · en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Chakka_prathaman"
+    }
+  ],
+  "pazhampori-bajji": [
+    {
+      "label": "Kerala Tourism · cuisine background and recipe collection",
+      "url": "https://www.keralatourism.org/kerala-food/"
+    }
+  ],
+  "sulaimani-chai": [
+    {
+      "label": "Kerala Tourism · Malabar cuisine and Sulaimani",
+      "url": "https://www.keralatourism.org/malabar/malabar-cuisine/55"
+    }
+  ],
+  "meen-curry": [
+    {
+      "label": "Kerala Tourism · Meen Curry",
+      "url": "https://www.keralatourism.org/kerala-food/kerala-fish-curry/4/"
+    }
+  ],
+  "malabar-biryani": [
+    {
+      "label": "Kerala Tourism · Malabar Chicken Biriyani",
+      "url": "https://www.keralatourism.org/kerala-food/malabar-chicken-biriyani/28/"
+    }
+  ],
+  "nadan-kozhi-curry": [
+    {
+      "label": "Kerala Tourism · Chicken Curry",
+      "url": "https://www.keralatourism.org/kerala-food/chicken-curry/93/"
+    }
+  ],
+  "karimeen-pollichathu": [
+    {
+      "label": "Kerala Tourism · Karimeen Pollichathu",
+      "url": "https://www.keralatourism.org/kerala-food/karimeen-pollichathu/35/"
+    }
+  ],
+  "beef-fry-ularthiyathu": [
+    {
+      "label": "Kerala Tourism · Beef Ularthiyathu recipe",
+      "url": "https://www.keralatourism.org/kerala-food/beef-ularthiyathu/38/"
+    },
+    {
+      "label": "Kerala Tourism · Beef Fry",
+      "url": "https://www.keralatourism.org/kerala-food/beef-fry/92/"
+    }
+  ],
+  "prawn-curry-chemmeen": [
+    {
+      "label": "Kerala Tourism · related preparation: North Malabar Prawns Curry",
+      "url": "https://www.keralatourism.org/kerala-food/north-malabar-prawns-curry/107/"
+    }
+  ],
+  "meen-moilee": [
+    {
+      "label": "Kerala Tourism · Fish Moilee",
+      "url": "https://www.keralatourism.org/kerala-food/fish-moilee/98/"
+    }
+  ],
+  "duck-roast-tharavu": [
+    {
+      "label": "Kerala Tourism · Duck Roast dining-directory reference",
+      "url": "https://www.keralatourism.org/responsible-tourism/ethnic-cuisine/dishes/duck-roast-units/33"
+    }
+  ],
+  "crab-masala-njandu": [
+    {
+      "label": "Kerala Tourism · related preparation: Appam and Crab Masala",
+      "url": "https://www.keralatourism.org/kerala-food/appam-njandu-masala/51/"
+    }
+  ],
+  "mutton-stew": [
+    {
+      "label": "Kerala Tourism · Mutton Stew",
+      "url": "https://www.keralatourism.org/kerala-food/mutton-stew/99/"
+    }
+  ],
+  "egg-roast-mutta-roast": [
+    {
+      "label": "Kerala Tourism · Idiyappam and Egg Roast dining-directory reference",
+      "url": "https://www.keralatourism.org/responsible-tourism/ethnic-cuisine/dishes/idiappam-and-egg-roast-combo-units/49"
+    },
+    {
+      "label": "Culinary background reference · en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Egg_roast"
+    }
+  ],
+  "chicken-65-kerala": [
+    {
+      "label": "Kerala Tourism · cuisine background and recipe collection",
+      "url": "https://www.keralatourism.org/kerala-food/"
+    }
+  ],
+  "fish-fry-meen-varuthathu": [
+    {
+      "label": "Kerala Tourism · Masala Fried Fish dining-directory reference",
+      "url": "https://www.keralatourism.org/responsible-tourism/ethnic-cuisine/dishes/masala-fried-fish-units/84"
+    }
+  ],
+  "chicken-porotta": [
+    {
+      "label": "Kerala Tourism · Chicken Curry",
+      "url": "https://www.keralatourism.org/kerala-food/chicken-curry/93/"
+    }
+  ],
+  "prawn-fry-chemmeen-varuthathu": [
+    {
+      "label": "Kerala Tourism · Prawn Fry dining-directory reference",
+      "url": "https://www.keralatourism.org/responsible-tourism/ethnic-cuisine/dishes/prawns-fry-or-chemmeen-varuthathu-units/124"
+    }
+  ],
+  "mutton-biryani-kerala": [
+    {
+      "label": "Kerala Tourism · related preparation: Malabar Mutton Biriyani",
+      "url": "https://www.keralatourism.org/kerala-food/malabar-mutton-biriyani/39/"
+    }
+  ],
+  "squid-roast-koonthal": [
+    {
+      "label": "Kerala Tourism · Squid Ularthiyathu dining-directory reference",
+      "url": "https://www.keralatourism.org/responsible-tourism/ethnic-cuisine/dishes/squid-ularthiyathu-units/139"
+    }
+  ],
+  "chicken-mappas": [
+    {
+      "label": "Kerala Tourism · cuisine background and recipe collection",
+      "url": "https://www.keralatourism.org/kerala-food/"
+    }
+  ],
+  "sardine-fry-mathi-varuthathu": [
+    {
+      "label": "Kerala Tourism · cuisine background and recipe collection",
+      "url": "https://www.keralatourism.org/kerala-food/"
+    }
+  ],
+  "beef-biryani-kerala": [
+    {
+      "label": "Kerala Tourism · cuisine background and recipe collection",
+      "url": "https://www.keralatourism.org/kerala-food/"
+    }
+  ],
+  "allepey-fish-curry": [
+    {
+      "label": "Kerala Tourism · related preparation: Fish Curry",
+      "url": "https://www.keralatourism.org/kerala-food/fish-curry-kerala/97/"
+    }
+  ],
+  "pepper-chicken": [
+    {
+      "label": "Kerala Tourism · Chicken Pepper Fry",
+      "url": "https://www.keralatourism.org/kerala-food/chicken-pepper-fry/58/"
+    }
+  ],
+  "kallummakkaya-nirachathu": [
+    {
+      "label": "Kerala Tourism · Malabar cuisine and Arikadukka",
+      "url": "https://www.keralatourism.org/malabar/malabar-cuisine/55"
+    }
+  ],
+  "naadan-beef-curry": [
+    {
+      "label": "Kerala Tourism · related preparation: Beef Kurumulakittathu",
+      "url": "https://www.keralatourism.org/kerala-food/beef-kurumulakittathu-malabar-cuisine/136/"
+    }
+  ],
+  "kozhi-porichathu": [
+    {
+      "label": "Kerala Tourism · related preparation: Grilled Chicken",
+      "url": "https://www.keralatourism.org/kerala-food/grilled-chicken/131/"
+    }
+  ],
+  "prawn-biryani": [
+    {
+      "label": "Kerala Tourism · Prawns Biriyani dining-directory reference",
+      "url": "https://www.keralatourism.org/responsible-tourism/ethnic-cuisine/dishes/prawns-biriyani-units/181"
+    }
+  ],
+  "kottayam-fish-curry": [
+    {
+      "label": "Kerala Tourism · cuisine background and recipe collection",
+      "url": "https://www.keralatourism.org/kerala-food/"
+    }
+  ],
+  "erachi-choru": [
+    {
+      "label": "Kerala Tourism · cuisine background and recipe collection",
+      "url": "https://www.keralatourism.org/kerala-food/"
+    }
+  ],
+  "thenga-aracha-meen-curry": [
+    {
+      "label": "Kerala Tourism · related preparation: Meen Curry",
+      "url": "https://www.keralatourism.org/kerala-food/kerala-fish-curry/4/"
+    }
+  ],
+  "chattichoru": [
+    {
+      "label": "Kerala Tourism · cuisine background and recipe collection",
+      "url": "https://www.keralatourism.org/kerala-food/"
+    }
+  ]
+}

@@ -1,6 +1,8 @@
+import { verifiedCover } from './media';
+import { editorialStories } from './editorial';
 import { BlogPost } from '@/types';
 
-export const blogPosts: BlogPost[] = [
+const archivePosts: BlogPost[] = [
   {
     "id": "1",
     "slug": "thiruvananthapuram-thiruvananthapuram",
@@ -1169,24 +1171,24 @@ export const blogPosts: BlogPost[] = [
   },
   {
     "id": "54",
-    "slug": "kozhikode-sm-city-zamboanga",
-    "title": "SM City Zamboanga in Kozhikode: What Travelers Should Know",
-    "excerpt": "SM City Zamboanga is a shopping mall currently under construction in Zamboanga City. Developed and owned by SM Prime Holdings, it will be the second SM Supermall in both the city and the Zamboanga Peninsula",
-    "content": "## Overview\nSM City Zamboanga is a shopping mall currently under construction in Zamboanga City. Developed and owned by SM Prime Holdings, it will be the second SM Supermall in both the city and the Zamboanga Peninsula. Once completed, it will become the 90th SM Supermall in the Philippines, and the 8th in Mindanao following SM City Mindpro. Upon its opening, SM City Zamboanga is set to become the second largest mall in the city and the region, following KCC Mall de Zamboanga which is located just across the same street.\n\n## Why It Matters For Trip Planning\nThis article uses publicly available web information to help travelers understand why SM City Zamboanga matters when planning a trip in Kozhikode district.\n\n## Quick Notes\n- District: Kozhikode\n- Topic: SM City Zamboanga\n- Source URL: https://en.wikipedia.org/wiki/SM_City_Zamboanga",
-    "author": "Kerala Research Desk",
-    "authorAvatar": "KRD",
-    "date": "2026-01-20",
-    "readTime": "4 min read",
+    "slug": "kozhikode-sm-street",
+    "title": "A walk along S. M. Street",
+    "excerpt": "Halwa, textiles, spices, and a little time on foot in the commercial heart of Kozhikode.",
+    "content": "## Follow the street\nS. M. Street, also called Sweetmeat Street or Mittayitheruvu, is a pedestrian shopping area in central Kozhikode. Walk past sweet shops, textile stores, and spice sellers at a pace that leaves room to look around. This is a working shopping street, so give residents and shopkeepers space.\n\n## Make room for halwa\nKozhikode halwa is one of the street's best-known specialities. Ask a shopkeeper about flavours, ingredients, and packing before choosing something to take home. Tell them about allergies rather than relying on a product's name.\n\n## Keep your afternoon flexible\nTown Hall is among the landmarks nearby. You can combine a walk here with another short stop in the city, leaving time for breaks and local traffic. Individual shops set their own opening times; check directly if a particular shop is the reason for your visit.",
+    "author": "Kerala Journal",
+    "authorAvatar": "KJ",
+    "date": "2026-10-27",
+    "readTime": "2 min read",
     "category": "Food & Culture",
     "tags": [
       "kozhikode",
       "kerala",
-      "sm",
+      "sm-street",
       "web-source"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/SMZA_20260307_133055.jpg/330px-SMZA_20260307_133055.jpg",
+    "image": "",
     "featured": false,
-    "sourceUrl": "https://en.wikipedia.org/wiki/SM_City_Zamboanga",
+    "sourceUrl": "https://www.dtpckozhikode.com/destination/mittayitheruvu-sm-street",
     "district": "Kozhikode"
   },
   {
@@ -1542,6 +1544,22 @@ export const blogPosts: BlogPost[] = [
     "district": "Kasaragod"
   }
 ];
+
+export const blogPosts: BlogPost[] = [
+  ...editorialStories,
+  ...archivePosts.map(post => ({
+    ...post,
+    image: verifiedCover(`stories/${post.slug}`),
+    title: post.title.includes(': What Travelers Should Know') ? `Exploring ${post.title.split(' in ')[0].replace(': What Travelers Should Know', '')}` : post.title,
+    excerpt: post.title.includes(': What Travelers Should Know') ? `A closer look at ${post.title.split(' in ')[0]}: background, heritage, and notes to help you decide where to explore next.` : post.excerpt,
+    featured: false,
+  })),
+];
+
+// Preserve an inherited, incorrectly named URL while sending readers to the correction.
+export const blogRedirects: Record<string, string> = {
+  'kozhikode-sm-city-zamboanga': 'kozhikode-sm-street',
+};
 
 export function getBlogBySlug(slug: string): BlogPost | undefined {
   return blogPosts.find((b) => b.slug === slug);

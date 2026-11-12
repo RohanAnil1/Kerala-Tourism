@@ -1,35 +1,40 @@
-import type { Metadata } from 'next';
-import './globals.css';
-import { LanguageProvider } from '@/contexts/LanguageContext';
-import { ThemeProvider } from '@/components/ThemeProvider';
-import Navbar from '@/components/layout/Navbar';
-import Footer from '@/components/layout/Footer';
+import type { Metadata } from "next";
+import { displayFont, bodyFont } from "./fonts";
+import "./globals.css";
+import "./field-guide.css";
+import { LanguageProvider } from "@/contexts/LanguageContext";
+import { ThemeProvider } from "@/components/ThemeProvider";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: 'Kerala Tourism — God\'s Own Country | Official Travel Guide',
-  description: 'Explore Kerala — India\'s most beautiful state. Discover backwaters, hill stations, beaches, Ayurveda, wildlife, and cultural experiences. Plan your dream Kerala trip today.',
-  keywords: 'Kerala tourism, Kerala travel, backwaters, Munnar, Alleppey, houseboat, Ayurveda, God\'s Own Country, India travel',
-  authors: [{ name: 'Kerala Tourism' }],
+  title: "Kerala — At Its Own Pace | Independent Travel Guide",
+  description:
+    "Kerala, at its own pace. Discover landscapes, everyday culture, food, and curated journeys in an independent editorial travel guide.",
+  keywords:
+    "Kerala tourism, Kerala travel, backwaters, Munnar, Alleppey, houseboat, Ayurveda, God's Own Country, India travel",
+  authors: [{ name: "Kerala Tourism" }],
   openGraph: {
-    title: 'Kerala Tourism — God\'s Own Country',
-    description: 'Discover the magic of Kerala. Plan your dream trip to India\'s most beautiful state.',
-    url: 'https://keralatourism.vercel.app',
-    siteName: 'Kerala Tourism',
-    locale: 'en_US',
-    type: 'website',
+    title: "Kerala — At Its Own Pace",
+    description:
+      "An independent editorial portrait of Kerala: landscapes, culture, food, and curated journeys.",
+    url: "https://kerala-tourism-five.vercel.app",
+    siteName: "Kerala Tourism",
+    locale: "en_US",
+    type: "website",
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1595815771614-ade9d652a65d?w=1200',
+        url: "https://kerala-tourism-five.vercel.app/media/8493719d0a611e.jpg",
         width: 1200,
         height: 630,
-        alt: 'Kerala Backwaters',
+        alt: "Kerala Backwaters",
       },
     ],
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Kerala Tourism — God\'s Own Country',
-    description: 'Discover the magic of Kerala. Plan your dream trip.',
+    card: "summary_large_image",
+    title: "Kerala — At Its Own Pace",
+    description: "Discover landscapes, culture, food, and curated journeys.",
   },
   robots: {
     index: true,
@@ -45,16 +50,28 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/icon.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/icon.png" />
-        <meta name="theme-color" content="#0A6847" />
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+        <meta name="theme-color" content="#173C32" />
         <link rel="manifest" href="/manifest.json" />
       </head>
-      <body className="font-body antialiased bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100 transition-colors duration-300">
+      <body
+        className={`${displayFont.variable} ${bodyFont.variable} font-body antialiased`}
+      >
+        <a href="#main-content" className="skip-link">
+          Skip to content
+        </a>
         <ThemeProvider>
           <LanguageProvider>
             <Navbar />
-            <main className="min-h-screen">{children}</main>
+            <main
+              id="main-content"
+              className="min-h-screen"
+              tabIndex={-1}
+              lang="en"
+              dir="ltr"
+            >
+              {children}
+            </main>
             <Footer />
           </LanguageProvider>
         </ThemeProvider>

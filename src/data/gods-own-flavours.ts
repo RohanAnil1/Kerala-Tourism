@@ -1,3 +1,4 @@
+import { verifiedCover, verifiedPhotos } from './media';
 // Gods Own Flavours - Kerala Specialty Dishes Data
 
 export interface Dish {
@@ -29,9 +30,10 @@ export interface Dish {
 
 export type DishType = 'rice' | 'curry' | 'snack' | 'breakfast' | 'dessert' | 'beverage' | 'side-dish' | 'festive' | 'street-food' | 'seafood';
 
-// Curated dish-specific image URLs
+// Inherited image references are archive data. Public images and galleries are
+// replaced by the reviewed local media index when dishes are exported below.
 const IMG = {
-  // Veg dish images — all URLs verified working & unique
+  // Inherited vegetarian image references (not used for public rendering).
   sadya: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Kerala_Sadya_Feast.jpg/1280px-Kerala_Sadya_Feast.jpg',
   avial: 'https://upload.wikimedia.org/wikipedia/commons/9/99/Avial_kyra_theatre.jpg',
   puttuKadala: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Puttu_%28Rice_Flour_steamed_cake%29.jpg/330px-Puttu_%28Rice_Flour_steamed_cake%29.jpg',
@@ -62,7 +64,7 @@ const IMG = {
   chakkaPradhaman: 'https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=800',
   sukhiyan: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Sukhiyan_01.jpg/1280px-Sukhiyan_01.jpg',
   sulaimani: 'https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=800',
-  // Non-veg dish images — all URLs verified working & unique
+  // Inherited non-vegetarian image references (not used for public rendering).
   meenCurry: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Meen_curry_2.JPG/1280px-Meen_curry_2.JPG',
   malabarBiryani: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/%22Hyderabadi_Dum_Biryani%22.jpg/330px-%22Hyderabadi_Dum_Biryani%22.jpg',
   nadanKozhi: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Nadan_Chicken_Curry_%2815292486764%29.jpg/1280px-Nadan_Chicken_Curry_%2815292486764%29.jpg',
@@ -96,7 +98,7 @@ const IMG = {
 };
 
 // ==================== VEGETARIAN DISHES (30) ====================
-export const vegDishes: Dish[] = [
+const vegArchive: Dish[] = [
   {
     id: 'v1',
     slug: 'kerala-sadya',
@@ -599,7 +601,7 @@ export const vegDishes: Dish[] = [
     category: 'veg',
     dishType: 'curry',
     description: 'Spicy, tangy pepper-tomato broth with tamarind and aromatic spices.',
-    longDescription: 'Kerala Rasam is a thin, aromatic broth served after sambar in a traditional Kerala meal. It features tamarind, tomato, and a freshly ground rasam powder of black pepper, cumin, coriander, and garlic. Unlike some South Indian variants, Kerala rasam is notably peppery and garlicky, making it an excellent digestive. It is sipped with rice or drunk directly from a glass. During colds, a potent version called "jeerakam rasam" (cumin rasam) is taken as a home remedy.',
+    longDescription: 'Kerala Rasam is a thin, aromatic broth served after sambar in a traditional Kerala meal. It features tamarind, tomato, and a freshly ground rasam powder of black pepper, cumin, coriander, and garlic. Unlike some South Indian variants, Kerala rasam is notably peppery and garlicky, giving it a distinctive flavour. It is sipped with rice or drunk directly from a glass. During colds, a potent version called "jeerakam rasam" (cumin rasam) is taken as a home remedy.',
     origin: 'South Indian tradition, with distinct Kerala pepper emphasis',
     ingredients: ['Tamarind', 'Tomatoes', 'Black pepper', 'Cumin', 'Garlic', 'Curry leaves', 'Coriander', 'Mustard seeds', 'Asafoetida'],
     cookingMethod: 'Tamarind water boiled with spice powder and tomato; tempered with mustard seeds and garlic; served piping hot',
@@ -729,7 +731,7 @@ export const vegDishes: Dish[] = [
     category: 'veg',
     dishType: 'side-dish',
     description: 'Sweet, sour, and spicy ginger-tamarind condiment — essential Sadya pickle.',
-    longDescription: 'Injipuli or Puli Inji is a ginger-tamarind pickle that is an indispensable part of the Kerala Sadya. Fresh ginger is sautéed with green chilies, then cooked with tamarind, jaggery, and a special spice blend. The result is a thick, glossy condiment that is simultaneously sweet, sour, spicy, and slightly bitter from raw ginger. It acts as a digestive aid and flavor bomb in the Sadya. Some families make large batches during Onam that last for weeks, as the flavor improves with time.',
+    longDescription: 'Injipuli or Puli Inji is a ginger-tamarind pickle that is an indispensable part of the Kerala Sadya. Fresh ginger is sautéed with green chilies, then cooked with tamarind, jaggery, and a special spice blend. The result is a thick, glossy condiment that is simultaneously sweet, sour, spicy, and slightly bitter from raw ginger. It adds a concentrated sweet-and-sour contrast to the Sadya. Some families make large batches during Onam that last for weeks, as the flavor improves with time.',
     origin: 'Traditional Sadya condiment, South Kerala origin',
     ingredients: ['Fresh ginger', 'Tamarind', 'Jaggery', 'Green chilies', 'Sesame oil', 'Mustard seeds', 'Fenugreek', 'Asafoetida', 'Curry leaves'],
     cookingMethod: 'Ginger julienned and sautéed, tamarind and jaggery cooked down to thick consistency, tempered with mustard and fenugreek',
@@ -859,7 +861,7 @@ export const vegDishes: Dish[] = [
     category: 'veg',
     dishType: 'beverage',
     description: 'Black tea with lemon, spices, and jaggery — Malabar\'s signature digestive drink.',
-    longDescription: 'Sulaimani is a fragrant black tea from the Malabar region, traditionally served after a heavy meal to aid digestion. Black tea is brewed strong with cardamom, cloves, and a hint of mint, then sweetened with jaggery or sugar and finished with a squeeze of fresh lime. The tea has a golden color and a refreshing, spiced flavor. Sulaimani holds cultural significance in Malabar Muslim households, where it is served to guests as a gesture of hospitality, especially after biryani meals.',
+    longDescription: 'Sulaimani is a fragrant black tea from the Malabar region, traditionally served after a meal. Black tea is brewed strong with cardamom, cloves, and a hint of mint, then sweetened with jaggery or sugar and finished with a squeeze of fresh lime. The tea has a golden color and a refreshing, spiced flavor. Sulaimani holds cultural significance in Malabar Muslim households, where it is served to guests as a gesture of hospitality, especially after biryani meals.',
     origin: 'Malabar Muslim tradition, influenced by Arab tea culture',
     ingredients: ['Black tea leaves', 'Cardamom', 'Cloves', 'Mint leaves', 'Lemon juice', 'Jaggery or sugar'],
     cookingMethod: 'Tea brewed with crushed cardamom and cloves, strained, mixed with lemon juice and sweetener',
@@ -880,7 +882,7 @@ export const vegDishes: Dish[] = [
 ];
 
 // ==================== NON-VEGETARIAN DISHES (30) ====================
-export const nonVegDishes: Dish[] = [
+const nonVegArchive: Dish[] = [
   {
     id: 'nv1',
     slug: 'meen-curry',
@@ -1663,6 +1665,9 @@ export const nonVegDishes: Dish[] = [
   },
 ];
 
+const withPhotographs=(item:Dish):Dish=>({...item,image:verifiedCover(`dishes/${item.slug}`),gallery:verifiedPhotos(`dishes/${item.slug}`),nutritionHighlights:[],...(item.slug==='chattichoru'?{description:"A Kerala meal served together in a clay pot, with rice, curries, vegetables, and accompaniments.",longDescription:"Chattichoru brings rice and several accompaniments together in a clay pot. The combination varies by kitchen and may include fish or meat, vegetable preparations, pickles, and a papadum. Ask which dishes are included and whether they suit your dietary needs.",cookingMethod:"The components are prepared separately and served together in a clay pot.",origin:"Kerala",prepTime:"Varies by kitchen",cookTime:"Varies by the dishes served",serves:"Usually an individual meal"}:{})});
+export const vegDishes: Dish[] = vegArchive.map(withPhotographs);
+export const nonVegDishes: Dish[] = nonVegArchive.map(withPhotographs);
 // Combined data
 export const allDishes: Dish[] = [...vegDishes, ...nonVegDishes];
 

@@ -1,4 +1,11 @@
 // ============== CORE TYPES ==============
+export interface EditorialImage {
+  src: string;
+  alt: string;
+  focalPosition: string;
+  credit: string;
+  source: string;
+}
 
 export interface Destination {
   id: string;
@@ -18,7 +25,8 @@ export interface Destination {
     rail: string;
     road: string;
   };
-  coordinates: { lat: number; lng: number };
+  coordinates?: { lat: number; lng: number };
+  locationReview?: DestinationLocationReview;
   images: string[];
   rating: number;
   reviews: number;
@@ -28,6 +36,14 @@ export interface Destination {
   travelTips: string[];
   nearbyAttractions: string[];
   featured: boolean;
+}
+
+export interface DestinationLocationReview {
+  status: 'verified' | 'unverified';
+  checkedAt: string;
+  note: string;
+  references: { title: string; url: string }[];
+  coordinates?: { lat: number; lng: number };
 }
 
 export type DestinationType = 'nature' | 'beach' | 'hill' | 'spiritual' | 'wildlife' | 'backwater' | 'heritage' | 'urban';

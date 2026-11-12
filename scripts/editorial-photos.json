@@ -1,0 +1,57 @@
+{
+  "events/f2": {
+    "file": "Kathakali of Kerala at Nishagandhi dance festival 2024 (266).jpg",
+    "name": "Nishagandhi Dance Festival",
+    "alt": "Two Kathakali performers at the Nishagandhi Dance Festival in 2024",
+    "match": "The photographer's Commons filename and event category identify Nishagandhi Dance Festival 2024; the reviewed image shows the Kathakali performance.",
+    "note": "Archive photograph of the 2024 Nishagandhi Dance Festival; not a current-year programme announcement.",
+    "reviewed": true
+  },
+  "events/f13": {
+    "file": "Nehru Trophy Boat Race 2012 7791.JPG",
+    "name": "Nehru Trophy Boat Race",
+    "alt": "A snake boat and rowing crew at the 2012 Nehru Trophy Boat Race on Punnamada Lake",
+    "match": "The original photographer's Commons description explicitly identifies the Nehru Trophy Boat Race and Punnamada Lake. Visually reviewed the boat, crew and race setting.",
+    "note": "Archive photograph of the 2012 Nehru Trophy Boat Race; check the organizer for this year's dates and arrangements.",
+    "reviewed": true
+  },
+  "events/f17": {
+    "file": "Aranmula-boat race- Kerala-India-1.jpg",
+    "name": "Aranmula Uthrattathi Boat Race",
+    "alt": "Decorated palliyodam boats on the Pamba River during the Aranmula boat race",
+    "match": "The Commons original identifies the Aranmula boat race and Pamba River. The reviewed image shows the distinctive decorated palliyodam boats, not a different Kerala regatta.",
+    "note": "Archive photograph of the Aranmula boat race; it does not confirm a current-year programme.",
+    "reviewed": true
+  },
+  "stays/kumarakom-lake-resort": {
+    "file": "Kumarakom lake resort entrance.jpg",
+    "name": "Kumarakom Lake Resort",
+    "alt": "The tiled-roof entrance pavilion of Kumarakom Lake Resort",
+    "match": "The photographer identifies the resort front view in English and Malayalam. Visually reviewed the actual named property's entrance, rejecting the separate Cocobay Resort candidates.",
+    "note": "Archive photograph of the resort entrance. Confirm current facilities and room details directly with the property.",
+    "reviewed": true
+  },
+  "stays/munnar-tea-county": {
+    "file": "TEA COUNTY.jpg",
+    "name": "Tea County Munnar",
+    "alt": "The exterior and planted grounds of Tea County Munnar",
+    "match": "The photographer's Commons description explicitly identifies Tea County Munnar. Reviewed the hotel exterior; the similarly titled tea-estate photograph is a different subject and was rejected.",
+    "note": "Archive exterior photograph of Tea County Munnar. Confirm current facilities directly with the property.",
+    "reviewed": true
+  },
+  "context/elephant-pass-ayurveda": {
+    "file": "Kerala ayurveda resort and yoga retreat- Elephant Pass Ayurveda.jpg",
+    "name": "Elephant Pass Ayurveda retreat grounds",
+    "alt": "Garden seating and a path through the grounds of Elephant Pass Ayurveda in Kerala",
+    "match": "The original uploader identifies Elephant Pass Ayurveda in Kerala and the reviewed image shows its grounds. Used only as explicitly labelled retreat context, never as proof of treatment or a bookable package.",
+    "note": "Retreat grounds at Elephant Pass Ayurveda, shown only as context. No treatment, medical outcome or named package is depicted.",
+    "reviewed": true
+  },
+  "destinations/silent-valley-national-park": {
+    "file": "Evergreen forest of Silent Valley Np Kerala.jpg",
+    "name": "Silent Valley National Park",
+    "alt": "Dense evergreen canopy in Silent Valley National Park, Kerala",
+    "match": "The photographer explicitly identifies Silent Valley National Park in Kerala; visually reviewed the forest photograph. Replaces SAN BIRDS 48.jpg, whose description identifies Kurangini Hills in Tamil Nadu.",
+    "reviewed": true
+  }
+}
