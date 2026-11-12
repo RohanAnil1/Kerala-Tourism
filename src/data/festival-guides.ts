@@ -63,7 +63,7 @@ export const festivalGuides: Record<string, FestivalGuide> = {
     gettingThere: 'Plan the authorised approach through the official pilgrimage arrangements, including the transfer to Pamba and onward access. Do not rely on a general sightseeing itinerary for festival-day transfers.',
     visitTips: ['Complete the registration and checks required by the temple authorities.', 'Allow generous time for controlled approaches and queues.', 'Keep this pilgrimage separate from a tightly timed day of sightseeing.'],
     relatedPlaces: ['sabarimala-temple', 'pandalam-palace'],
-    sources: [{ label: 'Kerala Tourism · Makaravilakku observances', url: 'https://www.keralatourism.org/sabarimala/makaravilakku-festival' }, { label: 'Kerala Tourism · pilgrimage seasons', url: 'https://www.keralatourism.org/sabarimala/pilgrimage-season' }, { label: 'Travancore Devaswom Board · current notices', url: 'https://travancoredevaswomboard.org/' }],
+    sources: [{ label: 'Kerala Tourism · Makaravilakku observances', url: 'https://www.keralatourism.org/sabarimala/makaravilakku-festival' }, { label: 'Kerala Tourism · pilgrimage seasons', url: 'https://www.keralatourism.org/sabarimala/pilgrimage-season' }, { label: 'Government of Kerala · Sabarimala pilgrim information', url: 'https://sabarimala.kerala.gov.in/' }],
   },
   f4: {
     slug: 'attukal-pongala', name: 'Attukal Pongala',
@@ -143,7 +143,7 @@ export const festivalGuides: Record<string, FestivalGuide> = {
     gettingThere: 'Plan a road transfer to Kottiyoor in Kannur district and check the pilgrimage transport arrangements for the chosen day.',
     visitTips: ['Ask the temple authorities which areas and observances visitors may enter.', 'Follow local instructions around the river and ritual spaces.', 'Leave enough time for the approach rather than combining it with a rushed coastal itinerary.'],
     relatedPlaces: ['kottiyoor-temple', 'aralam-wildlife-sanctuary', 'st-angelo-fort'],
-    sources: [{ label: 'Kerala Tourism · Kottiyoor festival', url: 'https://www.keralatourism.org/malabar/kottiyoor-vaishaka-mahotsavam/187' }, { label: 'Ministry of Tourism · Vaishaka Mahotsavam', url: 'https://utsav.gov.in/public/view-event/vaishaka-mahotsavam-2' }],
+    sources: [{ label: 'Kerala Tourism · Kottiyoor festival', url: 'https://www.keralatourism.org/malabar/kottiyoor-vaishaka-mahotsavam/187' }, { label: 'Kottiyoor Devaswom · festival rituals', url: 'https://kottiyoordevaswom.com/rituals.html' }],
   },
   f9: {
     slug: 'thrissur-pooram', name: 'Thrissur Pooram',
@@ -305,6 +305,6 @@ export const festivalGuides: Record<string, FestivalGuide> = {
     gettingThere: 'Plan through the current official pilgrimage arrangements for the approach to Pamba and onward access to Sannidhanam. Confirm return transport and the permitted route before setting out.',
     visitTips: ['Follow the current Board registration and temple-entry instructions.', 'Arrange adequate time for the approach and queues.', 'Treat temple rules and forest-access instructions as part of planning the pilgrimage.'],
     relatedPlaces: ['sabarimala-temple', 'pandalam-palace'],
-    sources: [{ label: 'Kerala Tourism · Mandala and Makaravilakku seasons', url: 'https://www.keralatourism.org/sabarimala/pilgrimage-season' }, { label: 'Travancore Devaswom Board · current pilgrimage notices', url: 'https://travancoredevaswomboard.org/' }],
+    sources: [{ label: 'Kerala Tourism · Mandala and Makaravilakku seasons', url: 'https://www.keralatourism.org/sabarimala/pilgrimage-season' }, { label: 'Government of Kerala · Sabarimala pilgrim information', url: 'https://sabarimala.kerala.gov.in/' }],
   },
 };
